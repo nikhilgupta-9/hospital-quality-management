@@ -1,0 +1,32 @@
+{
+    "name": "hospital-quality/nabh-portal",
+    "description": "NABH Hospital Quality Management compliance portal (CodeIgniter 4 + MySQL)",
+    "license": "proprietary",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "laminas/laminas-escaper": "^2.14",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "kint-php/kint": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeIgniter\\": "system/",
+            "App\\": "app/",
+            "Config\\": "app/Config/"
+        },
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**",
+            "system/ThirdParty/**"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}

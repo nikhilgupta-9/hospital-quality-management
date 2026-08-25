@@ -1,0 +1,34 @@
+# --- Environment / secrets --------------------------------------------
+.env
+
+# --- Runtime-generated (framework recreates these on demand) ------------
+writable/cache/*
+!writable/cache/index.html
+writable/logs/*
+!writable/logs/index.html
+writable/session/*
+!writable/session/index.html
+writable/debugbar/*
+!writable/debugbar/index.html
+writable/uploads/*
+!writable/uploads/index.html
+
+# --- Local DB files used only for CLI smoke-testing ----------------------
+*.sqlite
+*.sqlite3
+*.db
+
+# --- OS / editor cruft ----------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- NOTE on vendor/ --------------------------------------------------
+# This project is set up as a CodeIgniter 4 "manual installation"
+# (system/ vendored at the project root, not fetched through Composer —
+# see README.md for why). vendor/ IS committed here, deliberately, so the
+# app runs immediately after a clone/unzip with zero setup steps. If your
+# machine has normal Packagist access and you'd rather manage vendor/ the
+# usual Composer way, that's fine too — just remove this note and add
+# vendor/ back to this file before running `composer install`.
