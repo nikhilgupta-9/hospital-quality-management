@@ -4,8 +4,27 @@ use CodeIgniter\Router\RouteCollection;
 
 /** @var RouteCollection $routes */
 
-// Root — decides where to send the visitor without exposing a public homepage.
-$routes->get('/', 'Auth\LoginController::show');
+// Public Guidance & Accreditation Platform (International Standard)
+$routes->get('/', 'HomeController::index');
+$routes->get('standards', 'HomeController::standards');
+$routes->get('sop-suite', 'HomeController::sopSuite');
+$routes->get('documents-sop', 'HomeController::sopSuite');
+$routes->get('hr-suite', 'HomeController::hrSuite');
+$routes->get('hr-credentialing', 'HomeController::hrSuite');
+$routes->get('equipment-grid', 'HomeController::equipmentGrid');
+$routes->get('equipment-utilities', 'HomeController::equipmentGrid');
+$routes->get('quality-indicators', 'HomeController::qualityIndicators');
+$routes->get('checklists', 'HomeController::checklists');
+$routes->get('assessment-tool', 'HomeController::assessmentTool');
+$routes->get('about', 'HomeController::about');
+$routes->get('contact', 'HomeController::contact');
+$routes->post('contact/submit', 'HomeController::submitContact');
+
+// Legal & Gateway Pages
+$routes->get('privacy-policy', 'HomeController::privacyPolicy');
+$routes->get('terms-of-service', 'HomeController::termsOfService');
+$routes->get('compliance-disclaimer', 'HomeController::complianceDisclaimer');
+$routes->get('portal-gateway', 'HomeController::portalGateway');
 
 // --- Auth ------------------------------------------------------------------
 $routes->get('login', 'Auth\LoginController::show');
@@ -17,11 +36,21 @@ $routes->get('dashboard', 'DashboardController::index', ['filter' => 'role']);
 
 // --- Super Admin -------------------------------------------------------------
 $routes->group('admin', ['filter' => 'role:super_admin'], static function ($routes) {
-    $routes->get('/', 'Admin\HospitalController::index'); // overview lands on hospitals for now
+    $routes->get('/', 'Admin\HospitalController::index');
+    $routes->post('hospitals', 'Admin\HospitalController::create');
     $routes->resource('hospitals', ['controller' => 'Admin\HospitalController']);
     $routes->resource('users', ['controller' => 'Admin\UserController']);
     $routes->resource('subscriptions', ['controller' => 'Admin\SubscriptionController']);
     $routes->get('audit-logs', 'Admin\AuditLogController::index');
+    
+    // CMS Legal & Public Pages Management
+    $routes->get('pages', 'Admin\PageController::index');
+    $routes->get('pages/edit/(:segment)', 'Admin\PageController::edit/$1');
+    $routes->post('pages/update/(:segment)', 'Admin\PageController::update/$1');
+
+    // Global Site & Contact Settings
+    $routes->get('settings', 'Admin\SettingController::index');
+    $routes->post('settings/update', 'Admin\SettingController::update');
 });
 
 // --- Hospital Admin ------------------------------------------------------------
@@ -32,29 +61,33 @@ $routes->group('hospital-admin', ['filter' => 'role:hospital_admin'], static fun
     $routes->get('reports', 'HospitalAdmin\ReportController::index');
 });
 
-// --- NABH Coordinator panels (nabh_coordinator sees everything hospital-wide;
-//     dept_user is narrowed to their own department at the model layer —
-//     see app/Helpers/auth_helper.php) --------------------------------------
+// --- NABH Coordinator & Departmental Panels ---------------------------------
 $routes->group(
     'document',
-    ['filter' => ['role:nabh_coordinator,dept_user', 'deptscope']],
+    ['filter' => ['role:nabh_coordinator,dept_user,hospital_admin', 'deptscope']],
     static function ($routes) {
         $routes->get('/', 'Document\DocumentController::index');
+        $routes->post('create', 'Document\DocumentController::create');
+        $routes->post('close-capa/(:num)', 'Document\DocumentController::closeCapa/$1');
+        $routes->get('export', 'Document\DocumentController::export');
     }
 );
 
 $routes->group(
     'hr',
-    ['filter' => ['role:nabh_coordinator,dept_user', 'deptscope']],
+    ['filter' => ['role:nabh_coordinator,dept_user,hospital_admin', 'deptscope']],
     static function ($routes) {
         $routes->get('/', 'HR\StaffController::index');
+        $routes->post('create', 'HR\StaffController::create');
+        $routes->post('create-training', 'HR\StaffController::createTraining');
     }
 );
 
 $routes->group(
     'equipment',
-    ['filter' => ['role:nabh_coordinator,dept_user', 'deptscope']],
+    ['filter' => ['role:nabh_coordinator,dept_user,hospital_admin', 'deptscope']],
     static function ($routes) {
         $routes->get('/', 'Equipment\EquipmentController::index');
+        $routes->post('create', 'Equipment\EquipmentController::create');
     }
 );

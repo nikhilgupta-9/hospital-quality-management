@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class ChecklistItemModel extends Model
+{
+    protected $table            = 'checklist_items';
+    protected $primaryKey       = 'id';
+    protected $useAutoIncrement = true;
+    protected $returnType       = 'array';
+    protected $useTimestamps    = true;
+
+    protected $allowedFields = [
+        'checklist_id', 'question', 'sort_order'
+    ];
+}

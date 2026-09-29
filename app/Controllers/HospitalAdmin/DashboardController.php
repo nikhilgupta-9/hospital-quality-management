@@ -8,9 +8,8 @@ class DashboardController extends BaseController
 {
     public function index()
     {
-        return $this->renderWithLayout('placeholder', [
+        return $this->renderWithLayout('hospital_admin/dashboard', [
             'heading' => 'Hospital Compliance Dashboard',
-            'message' => 'NABH readiness score and department-wise compliance land here in the next build phase.',
-        ], 'Hospital Admin');
+        ], 'Hospital Admin — Compliance Scorecard');
     }
 }

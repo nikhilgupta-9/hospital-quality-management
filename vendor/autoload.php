@@ -16,6 +16,8 @@
  * Nothing else in the app depends on this file being hand-written.
  */
 
+require_once __DIR__ . '/intl_polyfill.php';
+
 spl_autoload_register(static function (string $class): void {
     static $prefixes = [
         'CodeIgniter\\'    => __DIR__ . '/../system/',

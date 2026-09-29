@@ -13,3 +13,23 @@
  *
  * @see: https://codeigniter.com/user_guide/extending/common.html
  */
+
+if (!function_exists('site_setting')) {
+    /**
+     * Retrieve a global site setting by key with an optional fallback.
+     */
+    function site_setting(string $key, ?string $default = null): ?string
+    {
+        static $settingsMap = null;
+        if ($settingsMap === null) {
+            try {
+                $model = new \App\Models\SettingModel();
+                $settingsMap = $model->getAllAsMap();
+            } catch (\Throwable $e) {
+                $settingsMap = [];
+            }
+        }
+
+        return $settingsMap[$key] ?? $default;
+    }
+}
