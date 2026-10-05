@@ -13,7 +13,8 @@ class CredentialingModel extends Model
     protected $useTimestamps    = true;
 
     protected $allowedFields = [
-        'staff_id', 'procedure', 'status', 'verified_by', 'valid_until'
+        'staff_id', 'procedure', 'privilege_type', 'status', 'committee_status',
+        'verified_by', 'committee_reviewed_at', 'ms_approved_at', 'valid_until', 'notes'
     ];
 
     public function getWithDetails(int $hospitalId, ?string $status = null)

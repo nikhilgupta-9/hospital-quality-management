@@ -33,6 +33,40 @@
             <p class="text-muted">Comprehensive governance framework for medical staff primary source verification (PSV), clinical procedural privileging matrix, state council renewals, and mandatory annual training logs.</p>
         </div>
 
+        <!-- Visual Hero Card with AI Image -->
+        <div class="card card-max p-0 mb-5 overflow-hidden" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-7 p-4 p-md-5 text-white">
+                    <span class="badge badge-max badge-max-emerald mb-3"><i class="fas fa-certificate me-1"></i> NABH Digital Health Standards (2nd Edition)</span>
+                    <h3 class="h3 fw-bold mb-3 text-white">Smart Digital Credentialing &amp; Staff Immunity Platform</h3>
+                    <p class="text-white-50 mb-4">Transforming medical staff credentialing from static paper files into an active, automated DQMS governance engine. Featuring 100% Primary Source Verification, 3-tier credentials committee approval, and real-time Hepatitis-B vaccination immunity monitoring.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-4">
+                            <div class="p-2 rounded bg-white bg-opacity-10 text-center">
+                                <strong class="d-block text-white font-monospace">60/30/15d</strong>
+                                <span class="small text-white-50" style="font-size:0.75rem;">Council Expiry Alerts</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="p-2 rounded bg-white bg-opacity-10 text-center">
+                                <strong class="d-block text-success font-monospace">Hep-B &amp; TT</strong>
+                                <span class="small text-white-50" style="font-size:0.75rem;">Staff Health Roster</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="p-2 rounded bg-white bg-opacity-10 text-center">
+                                <strong class="d-block text-warning font-monospace">Level 1 - 4</strong>
+                                <span class="small text-white-50" style="font-size:0.75rem;">Privileging Matrix</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <img src="<?= base_url('assets/images/hr_credentialing_banner.jpg') ?>" alt="Doctor Credentialing Platform" class="img-fluid" style="height: 340px; width: 100%; object-fit: cover; opacity: 0.92;">
+                </div>
+            </div>
+        </div>
+
         <!-- Metrics & Feature Highlights Strip -->
         <div class="row g-3 mb-5">
             <div class="col-6 col-md-3">
@@ -647,6 +681,83 @@
             </div>
         </div>
 
+    </div>
+</section>
+
+<!-- =========================================================
+     STAFF OCCUPATIONAL HEALTH & VACCINATION SHOWCASE
+========================================================= -->
+<section class="py-5 bg-main">
+    <div class="container">
+        <div class="row align-items-center g-4 mb-5">
+            <div class="col-lg-6">
+                <span class="badge badge-max badge-max-emerald mb-2"><i class="fas fa-shield-virus me-1"></i> Infection Control &amp; Staff Immunity</span>
+                <h3 class="display-6 fw-bold text-navy mb-3">Hepatitis-B &amp; Occupational Health Roster</h3>
+                <p class="text-muted mb-4">Under NABH HRM.6 standards, every hospital must maintain documented health assessments and 100% Hepatitis-B immunization for clinical staff exposed to blood and bodily fluids.</p>
+                
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <div class="p-3 bg-surface-alt rounded-3 h-100">
+                            <strong class="text-navy d-block mb-1"><i class="fas fa-syringe text-success me-1"></i> 3-Dose Hep-B Tracker</strong>
+                            <span class="small text-muted">0, 1, 6 months primary schedule with booster alerts when anti-HBs titers drop below 10 mIU/mL.</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="p-3 bg-surface-alt rounded-3 h-100">
+                            <strong class="text-navy d-block mb-1"><i class="fas fa-heart-pulse text-danger me-1"></i> Annual Medical Fitness</strong>
+                            <span class="small text-muted">Pre-employment screening and annual physician checkup fitness logs with digital certificate archive.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="position-relative">
+                    <img src="<?= base_url('assets/images/staff_vaccination_banner.jpg') ?>" alt="Staff Vaccination Clinic" class="img-fluid rounded-4 shadow-lg" style="width: 100%; object-fit: cover; max-height: 380px;">
+                    <div class="position-absolute bottom-0 start-0 m-3 p-3 bg-white bg-opacity-90 rounded-3 shadow-sm border">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-check-circle text-success fs-4"></i>
+                            <div>
+                                <strong class="small text-navy d-block">100% Clinical Staff Immunized</strong>
+                                <span class="text-muted" style="font-size:0.75rem;">NABH 5th Edition Standard HRM.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Credentials Committee Section -->
+        <div class="row align-items-center g-4 pt-4 border-top">
+            <div class="col-lg-6 order-lg-2">
+                <span class="badge badge-max badge-max-blue mb-2"><i class="fas fa-stamp me-1"></i> Clinical Privileging Governance</span>
+                <h3 class="display-6 fw-bold text-navy mb-3">Credentials Committee &amp; MS E-Approval</h3>
+                <p class="text-muted mb-4">Eliminate unauthorized clinical procedures. Our digital matrix ensures that high-risk surgical, ICU, and interventional procedures are formally reviewed by peer committees and authorized by the Medical Superintendent.</p>
+                
+                <div class="p-3 bg-surface-alt rounded-3 mb-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="badge badge-max badge-max-rose fs-6 p-2"><i class="fas fa-gavel"></i></span>
+                        <div>
+                            <strong class="text-navy d-block small">Medical Board Privileging Decision Flow</strong>
+                            <span class="small text-muted">Application $\to$ Surgical Logbook Review $\to$ Committee Approval $\to$ EMR Auto-Privilege Unlock.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="position-relative">
+                    <img src="<?= base_url('assets/images/credentials_committee_banner.jpg') ?>" alt="Credentials Committee Board" class="img-fluid rounded-4 shadow-lg" style="width: 100%; object-fit: cover; max-height: 380px;">
+                    <div class="position-absolute bottom-0 start-0 m-3 p-3 bg-white bg-opacity-90 rounded-3 shadow-sm border">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-award text-primary fs-4"></i>
+                            <div>
+                                <strong class="small text-navy d-block">4-Tier Procedural Scope</strong>
+                                <span class="text-muted" style="font-size:0.75rem;">NABH 5th Edition Standard HRM.3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 

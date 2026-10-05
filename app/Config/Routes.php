@@ -80,6 +80,9 @@ $routes->group(
         $routes->get('/', 'HR\StaffController::index');
         $routes->post('create', 'HR\StaffController::create');
         $routes->post('create-training', 'HR\StaffController::createTraining');
+        $routes->post('update-health', 'HR\StaffController::updateHealthRecord');
+        $routes->post('update-privileging', 'HR\StaffController::updatePrivileging');
+        $routes->post('run-expiry-check', 'HR\StaffController::triggerExpiryCheck');
     }
 );
 
