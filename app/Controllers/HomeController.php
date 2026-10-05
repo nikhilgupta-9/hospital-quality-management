@@ -102,9 +102,12 @@ class HomeController extends BaseController
 
     public function about(): string
     {
+        $page = $this->pageModel->getBySlug('about');
         return view('layouts/public', [
-            'title'   => 'About Hospital Quality Management Framework & Advisory',
-            'content' => view('public/about'),
+            'title'   => $page['meta_title'] ?? 'About Hospital Quality Management Framework & Advisory',
+            'content' => view('public/about', [
+                'page' => $page,
+            ]),
         ]);
     }
 
