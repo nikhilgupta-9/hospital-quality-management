@@ -108,10 +108,10 @@
                 </div>
 
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="<?= site_url('standards') ?>" class="btn btn-primary px-4 py-2 fw-bold" style="background: linear-gradient(135deg, #0284c7 0%, #0052cc 100%); border: none;">
+                    <a href="<?= site_url('standards') ?>" class="btn btn-primary px-4 py-2 fw-bold" style="background: #0c74c5; border: none; border-radius: 8px;">
                         <i class="fas fa-book-medical me-1"></i> Explore NABH Standards
                     </a>
-                    <a href="<?= site_url('contact') ?>" class="btn btn-outline-primary px-4 py-2 fw-semibold">
+                    <a href="<?= site_url('contact') ?>" class="btn btn-outline-primary px-4 py-2 fw-semibold" style="border-radius: 8px;">
                         <i class="fas fa-headset me-1"></i> Book Mock Hospital Audit
                     </a>
                 </div>
@@ -273,10 +273,10 @@
                 </div>
 
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-warning px-4 py-2 fw-bold text-dark" style="background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); border: none;">
+                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-warning px-4 py-2 fw-bold text-white" style="background: #ff7a00; border: none; border-radius: 8px;">
                         <i class="fas fa-calculator me-1"></i> Start Gap Assessment
                     </a>
-                    <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-outline-navy px-4 py-2">
+                    <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-outline-navy px-4 py-2" style="border-radius: 8px;">
                         <i class="fas fa-heart-pulse me-1"></i> Clinical &amp; DPDP Hub
                     </a>
                 </div>

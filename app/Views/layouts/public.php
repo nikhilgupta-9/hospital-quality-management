@@ -19,7 +19,7 @@
     <div class="hinton-top-header d-none d-lg-block">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-2">
-                <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-topabha" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);"><i class="fas fa-id-card me-1"></i>ABHA Card</a>
+                <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-topabha"><i class="fas fa-id-card me-1"></i>ABHA Card</a>
                 <a href="https://esanjeevani.mohfw.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-esanjeevni"><i class="fas fa-heart-pulse me-1"></i>E-Sanjeevani</a>
                 <span class="ms-2 text-white-50 small">&bull; NABH Digital Health Standards (2nd Edition)</span>
             </div>
@@ -35,7 +35,7 @@
     <nav class="navbar navbar-expand-lg navbar-hinton">
         <div class="container">
             <a class="navbar-brand" href="<?= site_url('/') ?>">
-                <div class="brand-icon" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);">
+                <div class="brand-icon" style="background: #0c74c5;">
                     <i class="fas fa-hospital text-white"></i>
                 </div>
                 <div>
@@ -159,7 +159,7 @@
                     <a href="<?= site_url('contact') ?>" class="btn-hinton-outline-nav d-none d-xl-inline-flex" style="border-color: #ff7a00; color: #ff7a00;">
                         <i class="fas fa-calendar-check"></i> Book Mock Audit
                     </a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%); border: none;">
+                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary">
                         <i class="fas fa-lock me-1"></i> Portal Sign In
                     </a>
                 </div>
@@ -171,7 +171,7 @@
     <div class="offcanvas offcanvas-end offcanvas-hinton" tabindex="-1" id="mobileOffcanvasNav" aria-labelledby="mobileOffcanvasNavLabel">
         <div class="offcanvas-header border-bottom py-3">
             <div class="d-flex align-items-center gap-2">
-                <div class="brand-icon" style="width:36px; height:36px; font-size:1.1rem; background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);">
+                <div class="brand-icon" style="width:36px; height:36px; font-size:1.1rem; background: #0c74c5;">
                     <i class="fas fa-hospital text-white"></i>
                 </div>
                 <div>
@@ -244,13 +244,13 @@
 
                 <div class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.72rem; letter-spacing: 0.08em;">Quick Portals &amp; Health ID</div>
                 <div class="d-grid gap-2 mb-4">
-                    <a href="https://healthid.ndhm.gov.in" target="_blank" class="btn btn-topabha text-center justify-content-center" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%); border-radius: 8px;">
+                    <a href="https://healthid.ndhm.gov.in" target="_blank" class="btn btn-topabha text-center justify-content-center" style="border-radius: 6px;">
                         <i class="fas fa-id-card-clip me-1"></i> Create ABHA Card
                     </a>
-                    <a href="https://esanjeevani.mohfw.gov.in" target="_blank" class="btn btn-esanjeevni text-center justify-content-center" style="border-radius: 8px;">
+                    <a href="https://esanjeevani.mohfw.gov.in" target="_blank" class="btn btn-esanjeevni text-center justify-content-center" style="border-radius: 6px;">
                         <i class="fas fa-video me-1"></i> E-Sanjeevani Teleconsult
                     </a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary text-center justify-content-center" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%); border: none;">
+                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary text-center justify-content-center" style="border-radius: 6px;">
                         <i class="fas fa-lock me-1"></i> Portal Sign In
                     </a>
                 </div>
@@ -339,7 +339,7 @@
                 <!-- Column 1: Brand Logo & Mission -->
                 <div class="col-lg-4 col-md-6 pe-lg-4">
                     <a href="<?= site_url('/') ?>" class="brand-logo-wrap text-decoration-none">
-                        <div class="brand-logo-icon" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);">
+                        <div class="brand-logo-icon" style="background: #0c74c5;">
                             <i class="fas fa-hospital"></i>
                         </div>
                         <span class="brand-logo-text text-white">Hospital <span style="color:#ff7a00;">Quality</span></span>
@@ -391,7 +391,7 @@
                     </p>
                     <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Hospital Quality Management updates!');">
                         <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="btn-newsletter" aria-label="Subscribe" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);">
+                        <button type="submit" class="btn-newsletter" aria-label="Subscribe" style="background: #0c74c5;">
                             <i class="fas fa-arrow-right"></i>
                         </button>
                     </form>

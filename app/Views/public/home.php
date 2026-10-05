@@ -4,12 +4,9 @@
 ========================================================= -->
 
 <!-- =========================================================
-     SECTION 1: REJUVENATE DIGITAL HEALTH HERO SECTION
+     SECTION 1: CLINICAL HERO SECTION (CLEAN & FLAT)
 ========================================================= -->
-<section class="position-relative overflow-hidden w-100" style="background: linear-gradient(135deg, #f4fbfb 0%, #e8f7f5 40%, #ffffff 100%); border-bottom: 1px solid #e2e8f0; padding-top: 45px; padding-bottom: 65px;">
-    <!-- Subtle Ambient Medical Glow -->
-    <div class="position-absolute top-0 end-0 w-50 h-100" style="background: radial-gradient(circle at 70% 30%, rgba(2, 201, 184, 0.12) 0%, rgba(255, 255, 255, 0) 70%); pointer-events: none;"></div>
-
+<section class="position-relative overflow-hidden w-100" style="background: #f8fafc; border-bottom: 1px solid #e2e8f0; padding-top: 45px; padding-bottom: 65px;">
     <div class="container position-relative" style="z-index: 2;">
         <div class="row align-items-center g-5">
             
@@ -17,13 +14,13 @@
             <div class="col-lg-7">
                 <!-- Trust & Accreditation Badges -->
                 <div class="d-flex flex-wrap gap-2 mb-3">
-                    <span class="badge px-3 py-2 rounded-pill fw-bold bg-white text-primary border shadow-xs" style="color: #0c74c5 !important; border-color: rgba(12, 116, 197, 0.25) !important;">
+                    <span class="badge px-3 py-2 rounded-2 fw-bold bg-white text-primary border shadow-xs" style="color: #0c74c5 !important; border-color: #cbd5e1 !important;">
                         <i class="fas fa-shield-halved text-success me-1"></i> NABH Digital Mitra Empanelment Track
                     </span>
-                    <span class="badge px-3 py-2 rounded-pill fw-bold bg-white border shadow-xs" style="color: #02c9b8 !important; border-color: rgba(2, 201, 184, 0.35) !important;">
+                    <span class="badge px-3 py-2 rounded-2 fw-bold bg-white border shadow-xs" style="color: #0284c7 !important; border-color: #cbd5e1 !important;">
                         <i class="fas fa-network-wired me-1"></i> ABDM M3 Interoperable
                     </span>
-                    <span class="badge px-3 py-2 rounded-pill fw-bold bg-white text-warning border shadow-xs" style="color: #d97706 !important;">
+                    <span class="badge px-3 py-2 rounded-2 fw-bold bg-white text-warning border shadow-xs" style="color: #ff7a00 !important; border-color: #cbd5e1 !important;">
                         <i class="fas fa-gavel me-1"></i> DPDP Act 2023 Compliant
                     </span>
                 </div>
@@ -40,13 +37,13 @@
 
                 <!-- Core Call-to-Actions -->
                 <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#fourPillars" class="btn theme-btn text-white px-4 py-3 fw-bold shadow-sm" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%); border: none; border-radius: 50px;">
+                    <a href="#fourPillars" class="btn theme-btn text-white px-4 py-3 fw-bold shadow-sm" style="background: #0c74c5; border: none; border-radius: 8px;">
                         <i class="fas fa-cubes-stacked me-2"></i> Explore 4 Digital Pillars
                     </a>
-                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-outline-primary bg-white px-4 py-3 fw-semibold shadow-xs" style="border-radius: 50px; border-color: #ff7a00; color: #ff7a00;">
+                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-outline-warning bg-white px-4 py-3 fw-semibold shadow-xs" style="border-radius: 8px; border-color: #ff7a00; color: #ff7a00;">
                         <i class="fas fa-calculator me-2"></i> Instant Compliance Quiz
                     </a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-light border px-4 py-3 fw-semibold shadow-xs text-navy" style="border-radius: 50px;">
+                    <a href="<?= site_url('login') ?>" class="btn btn-light border px-4 py-3 fw-semibold shadow-xs text-navy" style="border-radius: 8px;">
                         <i class="fas fa-lock me-1 text-primary"></i> Portal Sign In &rarr;
                     </a>
                 </div>
@@ -202,8 +199,8 @@
             </p>
         </div>
 
-        <!-- Visual Framework Banner Card (Blue & Orange Accents) -->
-        <div class="card card-max p-0 mb-5 overflow-hidden border-0 shadow-md" style="background: linear-gradient(135deg, #0c74c5 0%, #1a2340 100%); border-radius: 18px;">
+        <!-- Visual Framework Banner Card (Solid Navy & Orange Accents) -->
+        <div class="card card-max p-0 mb-5 overflow-hidden border-0 shadow-sm" style="background: #1a2340; border-radius: 14px;">
             <div class="row g-0 align-items-center">
                 <div class="col-lg-6 p-4 p-md-5 text-white">
                     <span class="badge bg-warning text-dark mb-3 fw-bold px-3 py-2"><i class="fas fa-atom me-1"></i> Unified Telemetry Model</span>
@@ -212,10 +209,10 @@
                         HQM seamlessly integrates medical credentialing, physical building safety, biomedical asset telemetry, and patient consent into a single unified dashboard.
                     </p>
                     <div class="d-flex flex-wrap gap-2">
-                        <a href="<?= site_url('hr-suite') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 50px;"><i class="fas fa-user-doctor me-1 text-primary"></i> HR Suite</a>
-                        <a href="<?= site_url('equipment-grid') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 50px;"><i class="fas fa-microscope me-1 text-warning"></i> Biomedical Suite</a>
-                        <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 50px;"><i class="fas fa-heart-pulse me-1 text-success"></i> Clinical &amp; DPDP Suite</a>
-                        <a href="<?= site_url('sop-suite') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 50px;"><i class="fas fa-file-shield me-1 text-info"></i> SOP Suite</a>
+                        <a href="<?= site_url('hr-suite') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 6px;"><i class="fas fa-user-doctor me-1 text-primary"></i> HR Suite</a>
+                        <a href="<?= site_url('equipment-grid') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 6px;"><i class="fas fa-microscope me-1 text-warning"></i> Biomedical Suite</a>
+                        <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 6px;"><i class="fas fa-heart-pulse me-1 text-success"></i> Clinical &amp; DPDP Suite</a>
+                        <a href="<?= site_url('sop-suite') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 6px;"><i class="fas fa-file-shield me-1 text-info"></i> SOP Suite</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -422,8 +419,8 @@
         <div class="row g-4">
             
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 16px;">
-                    <div class="rounded-circle bg-primary text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 50px; height: 50px; font-size: 1.15rem; background: linear-gradient(135deg, #0284c7 0%, #0052cc 100%) !important;">
+                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 14px;">
+                    <div class="rounded-circle text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 48px; height: 48px; font-size: 1.15rem; background: #0c74c5 !important;">
                         01
                     </div>
                     <h5 class="fw-bold text-navy mb-2">Live Hospital Deployments</h5>
@@ -434,8 +431,8 @@
             </div>
 
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 16px;">
-                    <div class="rounded-circle bg-info text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 50px; height: 50px; font-size: 1.15rem; background: linear-gradient(135deg, #0284c7 0%, #06b6d4 100%) !important;">
+                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 14px;">
+                    <div class="rounded-circle text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 48px; height: 48px; font-size: 1.15rem; background: #0284c7 !important;">
                         02
                     </div>
                     <h5 class="fw-bold text-navy mb-2">ABDM M3 Certification</h5>
@@ -446,8 +443,8 @@
             </div>
 
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 16px;">
-                    <div class="rounded-circle bg-warning text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 50px; height: 50px; font-size: 1.15rem; background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%) !important;">
+                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 14px;">
+                    <div class="rounded-circle text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 48px; height: 48px; font-size: 1.15rem; background: #ff7a00 !important;">
                         03
                     </div>
                     <h5 class="fw-bold text-navy mb-2">NABH Assessor Exam</h5>
@@ -458,8 +455,8 @@
             </div>
 
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 16px;">
-                    <div class="rounded-circle bg-success text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 50px; height: 50px; font-size: 1.15rem; background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;">
+                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 14px;">
+                    <div class="rounded-circle text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 48px; height: 48px; font-size: 1.15rem; background: #16a34a !important;">
                         04
                     </div>
                     <h5 class="fw-bold text-navy mb-2">Official Empanelment</h5>
@@ -480,7 +477,7 @@
 <section class="py-5 bg-white">
     <div class="container py-4">
 
-        <div class="card card-max p-0 overflow-hidden border-0 shadow-lg" style="background: linear-gradient(135deg, #0c74c5 0%, #1a2340 100%); border-radius: 20px;">
+        <div class="card card-max p-0 overflow-hidden border-0 shadow-sm" style="background: #1a2340; border-radius: 14px;">
             <div class="row g-0 align-items-center">
                 
                 <div class="col-lg-6 p-4 p-md-5 text-white">
@@ -491,10 +488,10 @@
                     </p>
                     
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="<?= site_url('assessment-tool') ?>" class="btn px-4 py-3 fw-bold shadow-sm text-white" style="background: #ff7a00; border: none; border-radius: 50px;">
+                        <a href="<?= site_url('assessment-tool') ?>" class="btn px-4 py-3 fw-bold shadow-sm text-white" style="background: #ff7a00; border: none; border-radius: 8px;">
                             <i class="fas fa-play me-2"></i> Take Compliance Readiness Quiz
                         </a>
-                        <a href="<?= site_url('contact') ?>" class="btn btn-outline-light px-4 py-3 fw-semibold" style="border-radius: 50px;">
+                        <a href="<?= site_url('contact') ?>" class="btn btn-outline-light px-4 py-3 fw-semibold" style="border-radius: 8px;">
                             <i class="fas fa-calendar-check me-2"></i> Book Mock Hospital Audit
                         </a>
                     </div>
