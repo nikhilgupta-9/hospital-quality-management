@@ -19,6 +19,7 @@ $routes->get('dpdp-consent', 'HomeController::clinicalWorkflow');
 $routes->get('quality-indicators', 'HomeController::qualityIndicators');
 $routes->get('checklists', 'HomeController::checklists');
 $routes->get('assessment-tool', 'HomeController::assessmentTool');
+$routes->get('pricing', 'HomeController::pricing');
 $routes->get('about', 'HomeController::about');
 $routes->get('contact', 'HomeController::contact');
 $routes->post('contact/submit', 'HomeController::submitContact');
@@ -57,6 +58,13 @@ $routes->group('admin', ['filter' => 'admin_auth:super_admin'], static function 
     $routes->resource('subscriptions', ['controller' => 'Admin\SubscriptionController']);
     $routes->get('audit-logs', 'Admin\AuditLogController::index');
     
+    // SaaS Pricing Plans Management
+    $routes->get('pricing', 'Admin\PricingController::index');
+    $routes->post('pricing/create', 'Admin\PricingController::create');
+    $routes->post('pricing/update/(:num)', 'Admin\PricingController::update/$1');
+    $routes->post('pricing/delete/(:num)', 'Admin\PricingController::delete/$1');
+    $routes->post('pricing/toggle-active/(:num)', 'Admin\PricingController::toggleActive/$1');
+
     // CMS Legal & Public Pages Management
     $routes->get('pages', 'Admin\PageController::index');
     $routes->get('pages/edit/(:segment)', 'Admin\PageController::edit/$1');

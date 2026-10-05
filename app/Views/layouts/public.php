@@ -137,6 +137,12 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link <?= uri_string() === 'pricing' ? 'active' : '' ?>" href="<?= site_url('pricing') ?>">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'about' ? 'active' : '' ?>" href="<?= site_url('about') ?>">
                             About Us
                         </a>
@@ -207,6 +213,11 @@
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'quality-indicators' ? 'active' : '' ?>" href="<?= site_url('quality-indicators') ?>">
                             <i class="fas fa-chart-line text-primary"></i> Quality KPIs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= uri_string() === 'pricing' ? 'active' : '' ?>" href="<?= site_url('pricing') ?>">
+                            <i class="fas fa-tags text-primary"></i> Pricing Plans
                         </a>
                     </li>
                     <li class="nav-item">
@@ -363,6 +374,7 @@
                     <h5 class="footer-heading">Portals &amp; Tools</h5>
                     <ul class="footer-links">
                         <li><a href="<?= site_url('/') ?>">Home Portal</a></li>
+                        <li><a href="<?= site_url('pricing') ?>">SaaS Pricing &amp; Plans</a></li>
                         <li><a href="<?= site_url('about') ?>">About Framework</a></li>
                         <li><a href="<?= site_url('checklists') ?>">Audit &amp; Inspection Checklists</a></li>
                         <li><a href="<?= site_url('assessment-tool') ?>">Compliance Readiness Quiz</a></li>

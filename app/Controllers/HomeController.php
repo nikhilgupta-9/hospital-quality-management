@@ -3,14 +3,17 @@
 namespace App\Controllers;
 
 use App\Models\PageModel;
+use App\Models\PricingPlanModel;
 
 class HomeController extends BaseController
 {
     protected PageModel $pageModel;
+    protected PricingPlanModel $pricingModel;
 
     public function __construct()
     {
-        $this->pageModel = new PageModel();
+        $this->pageModel    = new PageModel();
+        $this->pricingModel = new PricingPlanModel();
     }
 
     public function index(): string
@@ -82,6 +85,18 @@ class HomeController extends BaseController
         return view('layouts/public', [
             'title'   => 'Interactive NABH Hospital Readiness Quiz & Gap Estimator — Hospital Quality',
             'content' => view('public/assessment'),
+        ]);
+    }
+
+    public function pricing(): string
+    {
+        $plans = $this->pricingModel->getActivePlans();
+
+        return view('layouts/public', [
+            'title'   => 'Transparent Hospital Quality SaaS Pricing & Subscription Plans — HQM',
+            'content' => view('public/pricing', [
+                'plans' => $plans,
+            ]),
         ]);
     }
 

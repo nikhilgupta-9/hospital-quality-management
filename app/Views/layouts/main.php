@@ -8,6 +8,7 @@ if (has_role('super_admin')) {
         ['label' => 'Hospitals / Branches', 'url' => '/admin/hospitals',     'icon' => 'fas fa-hospital-alt'],
         ['label' => 'User Management & RBAC', 'url' => '/admin/users',       'icon' => 'fas fa-users-gear'],
         ['label' => 'Hospital Subscriptions', 'url' => '/admin/subscriptions', 'icon' => 'fas fa-id-card-clip'],
+        ['label' => 'SaaS Pricing Plans',   'url' => '/admin/pricing',       'icon' => 'fas fa-tags'],
         ['label' => 'Legal & Public Pages (CMS)', 'url' => '/admin/pages',    'icon' => 'fas fa-file-shield'],
         ['label' => 'Site & Contact Settings', 'url' => '/admin/settings',   'icon' => 'fas fa-sliders'],
         ['label' => 'System Audit Trail',   'url' => '/admin/audit-logs',    'icon' => 'fas fa-shield-halved'],
