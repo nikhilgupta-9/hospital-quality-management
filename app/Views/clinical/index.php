@@ -297,7 +297,7 @@
 
     <!-- Right Column: DPDP 2023 Digital Consent Hub & Signature Station -->
     <div class="col-lg-5" id="consentStation">
-        <div class="card card-max p-4 sticky-top" style="top: 20px; z-index: 10;">
+        <div class="card card-max p-4 sticky-top" style="top: 85px; z-index: 10;">
             <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
                 <div>
                     <span class="badge badge-max badge-max-gold mb-1"><i class="fas fa-gavel me-1"></i> DPDP Act 2023</span>

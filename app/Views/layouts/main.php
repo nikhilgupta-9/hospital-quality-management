@@ -49,8 +49,8 @@ $currentPath = trim(current_url(true)->getPath(), '/');
     <!-- Chart.js for analytics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- Custom Theme CSS -->
-    <link href="<?= base_url('assets/css/premium-theme.css') ?>" rel="stylesheet">
+    <!-- Custom Theme CSS with Dynamic Cache Buster -->
+    <link href="<?= base_url('assets/css/premium-theme.css?v=' . (file_exists(FCPATH . 'assets/css/premium-theme.css') ? filemtime(FCPATH . 'assets/css/premium-theme.css') : time())) ?>" rel="stylesheet">
 </head>
 <body>
 
@@ -119,8 +119,8 @@ $currentPath = trim(current_url(true)->getPath(), '/');
         </div>
     </aside>
 
-    <!-- Main Content Area -->
-    <div class="flex-grow-1 d-flex flex-column" style="min-width: 0;">
+    <!-- Main Content Area with Independent Scroll & Sticky Topbar -->
+    <div class="portal-main-area">
         <!-- Topbar -->
         <header class="portal-topbar">
             <div class="d-flex align-items-center gap-3">
