@@ -131,12 +131,6 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link <?= uri_string() === 'clinical-workflow' ? 'active' : '' ?>" href="<?= site_url('clinical-workflow') ?>">
-                            Clinical &amp; DPDP
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'quality-indicators' ? 'active' : '' ?>" href="<?= site_url('quality-indicators') ?>">
                             Quality KPIs
                         </a>
@@ -208,11 +202,6 @@
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'equipment-grid' ? 'active' : '' ?>" href="<?= site_url('equipment-grid') ?>">
                             <i class="fas fa-microscope" style="color: #ff7a00;"></i> Equipment &amp; Utilities
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?= uri_string() === 'clinical-workflow' ? 'active' : '' ?>" href="<?= site_url('clinical-workflow') ?>">
-                            <i class="fas fa-heart-pulse text-primary"></i> Clinical &amp; DPDP
                         </a>
                     </li>
                     <li class="nav-item">
