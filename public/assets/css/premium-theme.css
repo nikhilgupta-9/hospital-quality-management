@@ -8,24 +8,24 @@
 
 :root {
     --theme-color: #0c74c5;
-    --theme-color-2: #02c9b8;
-    --rdh-blue: #0c74c5;
-    --rdh-teal: #02c9b8;
-    --rdh-dark: #1a2340;
-    --rdh-light: #f4fbfb;
+    --theme-color-2: #ff7a00;
+    --hqm-blue: #0c74c5;
+    --hqm-orange: #ff7a00;
+    --hqm-dark: #1a2340;
+    --hqm-light: #f8fafc;
     --header: #1a2340;
     --text: #4b5563;
     
     --hinton-primary: #0c74c5;
     --hinton-primary-dark: #1a2340;
-    --hinton-secondary: #02c9b8;
-    --hinton-secondary-dark: #00a89a;
-    --hinton-accent: #f59e0b;
+    --hinton-secondary: #ff7a00;
+    --hinton-secondary-dark: #e06900;
+    --hinton-accent: #ff7a00;
     --hinton-danger: #e11d48;
     --hinton-navy: #1a2340;
     --hinton-body: #4b5563;
     --hinton-heading: #1a2340;
-    --hinton-bg: #f4fbfb;
+    --hinton-bg: #f8fafc;
     --hinton-card-bg: #ffffff;
     --hinton-border: #e6efff;
     --hinton-shadow-sm: 0 2px 10px rgba(12, 116, 197, 0.05);
@@ -73,14 +73,14 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .btn-topabha {
-    background: linear-gradient(135deg, #02c9b8 0%, #0c74c5 100%);
+    background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);
     color: #ffffff !important;
     border-radius: 50px;
     font-weight: 700;
     font-size: 0.78rem;
     padding: 3px 14px;
     border: none;
-    box-shadow: 0 2px 8px rgba(2, 201, 184, 0.3);
+    box-shadow: 0 2px 8px rgba(12, 116, 197, 0.3);
 }
 
 .btn-esanjeevni {
@@ -707,37 +707,37 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .icon-green { background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); color: #16a34a; box-shadow: 0 6px 16px rgba(22, 163, 74, 0.16); }
 
 /* Buttons with Smooth Hover Lifts */
-.btn-hinton-primary {
-    background: linear-gradient(135deg, var(--hinton-primary) 0%, #0040a8 100%);
+.btn-hinton-primary, .theme-btn {
+    background: linear-gradient(135deg, var(--hinton-primary) 0%, var(--hinton-secondary) 100%);
     color: #ffffff;
     border: none;
     font-weight: 600;
     padding: 11px 24px;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-full);
     transition: all 0.25s var(--ease-smooth);
-    box-shadow: 0 6px 16px rgba(0, 82, 204, 0.25);
+    box-shadow: 0 6px 16px rgba(12, 116, 197, 0.25);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
 }
 
-.btn-hinton-primary:hover {
-    background: linear-gradient(135deg, #0040a8 0%, #003080 100%);
+.btn-hinton-primary:hover, .theme-btn:hover {
+    background: linear-gradient(135deg, #ff7a00 0%, #0c74c5 100%);
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(0, 82, 204, 0.35);
+    box-shadow: 0 8px 22px rgba(255, 122, 0, 0.35);
 }
 
 .btn-hinton-secondary {
-    background: linear-gradient(135deg, var(--hinton-secondary) 0%, var(--hinton-secondary-dark) 100%);
+    background: #ff7a00;
     color: #ffffff;
     border: none;
     font-weight: 600;
     padding: 11px 24px;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-full);
     transition: all 0.25s var(--ease-smooth);
-    box-shadow: 0 6px 16px rgba(0, 191, 165, 0.25);
+    box-shadow: 0 6px 16px rgba(255, 122, 0, 0.25);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -745,9 +745,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .btn-hinton-secondary:hover {
-    background: linear-gradient(135deg, var(--hinton-secondary-dark) 0%, #00695c 100%);
+    background: #e06900;
     color: #ffffff;
     transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(255, 122, 0, 0.35);
 }
 
 .btn-hinton-outline {

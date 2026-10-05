@@ -40,10 +40,10 @@
 
                 <!-- Core Call-to-Actions -->
                 <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#fourPillars" class="btn theme-btn text-white px-4 py-3 fw-bold shadow-sm" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%); border: none; border-radius: 50px;">
+                    <a href="#fourPillars" class="btn theme-btn text-white px-4 py-3 fw-bold shadow-sm" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%); border: none; border-radius: 50px;">
                         <i class="fas fa-cubes-stacked me-2"></i> Explore 4 Digital Pillars
                     </a>
-                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-outline-primary bg-white px-4 py-3 fw-semibold shadow-xs" style="border-radius: 50px; border-color: #0c74c5; color: #0c74c5;">
+                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-outline-primary bg-white px-4 py-3 fw-semibold shadow-xs" style="border-radius: 50px; border-color: #ff7a00; color: #ff7a00;">
                         <i class="fas fa-calculator me-2"></i> Instant Compliance Quiz
                     </a>
                     <a href="<?= site_url('login') ?>" class="btn btn-light border px-4 py-3 fw-semibold shadow-xs text-navy" style="border-radius: 50px;">
@@ -202,11 +202,11 @@
             </p>
         </div>
 
-        <!-- Visual Framework Banner Card (Rejuvenate Gradient) -->
-        <div class="card card-max p-0 mb-5 overflow-hidden border-0 shadow-md" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%); border-radius: 18px;">
+        <!-- Visual Framework Banner Card (Blue & Orange Accents) -->
+        <div class="card card-max p-0 mb-5 overflow-hidden border-0 shadow-md" style="background: linear-gradient(135deg, #0c74c5 0%, #1a2340 100%); border-radius: 18px;">
             <div class="row g-0 align-items-center">
                 <div class="col-lg-6 p-4 p-md-5 text-white">
-                    <span class="badge bg-white text-primary mb-3 fw-bold px-3 py-2" style="color: #0c74c5 !important;"><i class="fas fa-atom me-1"></i> Unified Telemetry Model</span>
+                    <span class="badge bg-warning text-dark mb-3 fw-bold px-3 py-2"><i class="fas fa-atom me-1"></i> Unified Telemetry Model</span>
                     <h3 class="h3 fw-bold mb-3 text-white">Interconnected Clinical Governance</h3>
                     <p class="text-white-50 mb-4" style="line-height: 1.6; color: rgba(255, 255, 255, 0.9) !important;">
                         HQM seamlessly integrates medical credentialing, physical building safety, biomedical asset telemetry, and patient consent into a single unified dashboard.
@@ -480,19 +480,19 @@
 <section class="py-5 bg-white">
     <div class="container py-4">
 
-        <div class="card card-max p-0 overflow-hidden border-0 shadow-lg" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%); border-radius: 20px;">
+        <div class="card card-max p-0 overflow-hidden border-0 shadow-lg" style="background: linear-gradient(135deg, #0c74c5 0%, #1a2340 100%); border-radius: 20px;">
             <div class="row g-0 align-items-center">
                 
                 <div class="col-lg-6 p-4 p-md-5 text-white">
-                    <span class="badge bg-white text-primary mb-3 px-3 py-2 fw-bold" style="color: #0c74c5 !important;"><i class="fas fa-award me-1"></i> Zero-Gap Audit Readiness</span>
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 fw-bold"><i class="fas fa-award me-1"></i> Zero-Gap Audit Readiness</span>
                     <h2 class="display-6 fw-bold mb-3 text-white">Empower Your Hospital with 100% Digital NABH Governance</h2>
                     <p class="text-white-50 mb-4" style="line-height: 1.6; font-size: 1.05rem; color: rgba(255, 255, 255, 0.95) !important;">
-                        Join leading healthcare institutions that have replaced chaotic spreadsheets and missing paper logs with REJUVENATE Digital Health Quality Management. Experience effortless mock audits, automated incident resolution, and total peace of mind.
+                        Join leading healthcare institutions that have replaced chaotic spreadsheets and missing paper logs with Hospital Quality Management (HQM). Experience effortless mock audits, automated incident resolution, and total peace of mind.
                     </p>
                     
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="<?= site_url('assessment-tool') ?>" class="btn px-4 py-3 fw-bold shadow-sm text-white" style="background: #1a2340; border: none; border-radius: 50px;">
-                            <i class="fas fa-play me-2 text-warning"></i> Take Compliance Readiness Quiz
+                        <a href="<?= site_url('assessment-tool') ?>" class="btn px-4 py-3 fw-bold shadow-sm text-white" style="background: #ff7a00; border: none; border-radius: 50px;">
+                            <i class="fas fa-play me-2"></i> Take Compliance Readiness Quiz
                         </a>
                         <a href="<?= site_url('contact') ?>" class="btn btn-outline-light px-4 py-3 fw-semibold" style="border-radius: 50px;">
                             <i class="fas fa-calendar-check me-2"></i> Book Mock Hospital Audit

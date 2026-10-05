@@ -2,45 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?= esc($title ?? 'REJUVENATE Digital Health — Hospital Quality Management (DQMS)') ?></title>
+    <title><?= esc($title ?? 'Hospital Quality Management (HQM) — NABH 5th Edition & DQMS Platform') ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="REJUVENATE Digital Health — Smart Digital Quality Management System (DQMS), NABH Digital Mitra, ABDM M3, UHID & DPDP Act 2023 Consent Platform.">
+    <meta name="description" content="Hospital Quality Management (HQM) — Smart Digital Quality Management System (DQMS), NABH Digital Mitra, ABDM M3, UHID & DPDP Act 2023 Consent Platform.">
 
     <!-- Bootstrap 5.3 & FontAwesome Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-    <!-- Rejuvenate Theme CSS with Dynamic Cache Buster -->
+    <!-- Theme CSS with Dynamic Cache Buster -->
     <link href="<?= base_url('assets/css/premium-theme.css?v=' . (file_exists(FCPATH . 'assets/css/premium-theme.css') ? filemtime(FCPATH . 'assets/css/premium-theme.css') : time())) ?>" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Rejuvenate Top Header Bar -->
+    <!-- Top Header Bar (Blue & Orange Accents) -->
     <div class="hinton-top-header d-none d-lg-block">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-2">
-                <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-topabha"><i class="fas fa-id-card me-1"></i>ABHA Card</a>
+                <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-topabha" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);"><i class="fas fa-id-card me-1"></i>ABHA Card</a>
                 <a href="https://esanjeevani.mohfw.gov.in" target="_blank" rel="noopener noreferrer" class="btn btn-esanjeevni"><i class="fas fa-heart-pulse me-1"></i>E-Sanjeevani</a>
                 <span class="ms-2 text-white-50 small">&bull; NABH Digital Health Standards (2nd Edition)</span>
             </div>
             <div class="d-flex align-items-center gap-4">
-                <a href="tel:+919027914122"><i class="fas fa-phone text-info me-1"></i> <strong>Support: +91-9027914122</strong></a>
-                <a href="mailto:info@rejuvenatedigitalhealth.com"><i class="fas fa-envelope text-warning me-1"></i> info@rejuvenatedigitalhealth.com</a>
-                <a href="<?= site_url('login') ?>" class="text-white fw-bold"><i class="fas fa-user-lock text-success me-1"></i> Login / Portal</a>
+                <a href="tel:+9118004195959"><i class="fas fa-phone text-warning me-1"></i> <strong>Helpline: +91 1800-419-5959</strong></a>
+                <a href="mailto:support@hospitalquality.org"><i class="fas fa-envelope text-info me-1"></i> support@hospitalquality.org</a>
+                <a href="<?= site_url('login') ?>" class="text-white fw-bold"><i class="fas fa-user-lock text-warning me-1"></i> Login / Portal</a>
             </div>
         </div>
     </div>
 
-    <!-- Main Navigation Bar (Rejuvenate Style) -->
+    <!-- Main Navigation Bar (Clean & Professional) -->
     <nav class="navbar navbar-expand-lg navbar-hinton">
         <div class="container">
             <a class="navbar-brand" href="<?= site_url('/') ?>">
-                <div class="brand-icon" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%);">
-                    <i class="fas fa-stethoscope text-white"></i>
+                <div class="brand-icon" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);">
+                    <i class="fas fa-hospital text-white"></i>
                 </div>
                 <div>
-                    <span class="d-block lh-1 fw-extrabold text-navy" style="font-size:1.35rem; font-family: var(--font-heading); color: #1a2340;">REJUVENATE <span style="color:#02c9b8;">Digital Health</span></span>
-                    <span class="d-block text-muted" style="font-size:0.68rem; letter-spacing:0.06em; font-weight:700;">HOSPITAL QUALITY &amp; NABH MITRA</span>
+                    <span class="d-block lh-1 fw-extrabold text-navy" style="font-size:1.35rem; font-family: var(--font-heading); color: #1a2340;">Hospital <span style="color:#ff7a00;">Quality</span></span>
+                    <span class="d-block text-muted" style="font-size:0.68rem; letter-spacing:0.06em; font-weight:700;">HOSPITAL QUALITY MANAGEMENT (DQMS)</span>
                 </div>
             </a>
 
@@ -75,7 +75,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('sop-suite') ?>">
-                                    <i class="fas fa-file-signature" style="color: #02c9b8;"></i>
+                                    <i class="fas fa-file-signature" style="color: #ff7a00;"></i>
                                     <div>
                                         <span class="item-title">Document &amp; SOP Suite</span>
                                         <span class="item-desc">Clinical SOPs, policies &amp; version control</span>
@@ -93,7 +93,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('equipment-grid') ?>">
-                                    <i class="fas fa-microscope" style="color: #f59e0b;"></i>
+                                    <i class="fas fa-microscope" style="color: #ff7a00;"></i>
                                     <div>
                                         <span class="item-title">Equipment &amp; Utilities Grid</span>
                                         <span class="item-desc">Biomedical calibrations, PPM &amp; utility NOCs</span>
@@ -102,7 +102,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('clinical-workflow') ?>">
-                                    <i class="fas fa-heart-pulse" style="color: #02c9b8;"></i>
+                                    <i class="fas fa-heart-pulse" style="color: #0c74c5;"></i>
                                     <div>
                                         <span class="item-title">Clinical &amp; DPDP Workflow</span>
                                         <span class="item-desc">UHID, ABHA linking &amp; DPDP 2023 e-consent</span>
@@ -111,7 +111,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('checklists') ?>">
-                                    <i class="fas fa-list-check" style="color: #0c74c5;"></i>
+                                    <i class="fas fa-list-check" style="color: #ff7a00;"></i>
                                     <div>
                                         <span class="item-title">Hospital Audit Checklists</span>
                                         <span class="item-desc">OT, ICU, Fire Safety & BMW inspection logs</span>
@@ -120,7 +120,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('assessment-tool') ?>">
-                                    <i class="fas fa-calculator" style="color: #02c9b8;"></i>
+                                    <i class="fas fa-calculator" style="color: #0c74c5;"></i>
                                     <div>
                                         <span class="item-title">Accreditation Readiness Quiz</span>
                                         <span class="item-desc">12-question instant compliance score</span>
@@ -156,10 +156,10 @@
                 </ul>
 
                 <div class="d-flex align-items-center gap-2">
-                    <a href="<?= site_url('contact') ?>" class="btn-hinton-outline-nav d-none d-xl-inline-flex" style="border-color: #0c74c5; color: #0c74c5;">
+                    <a href="<?= site_url('contact') ?>" class="btn-hinton-outline-nav d-none d-xl-inline-flex" style="border-color: #ff7a00; color: #ff7a00;">
                         <i class="fas fa-calendar-check"></i> Book Mock Audit
                     </a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%); border: none;">
+                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%); border: none;">
                         <i class="fas fa-lock me-1"></i> Portal Sign In
                     </a>
                 </div>
@@ -171,11 +171,11 @@
     <div class="offcanvas offcanvas-end offcanvas-hinton" tabindex="-1" id="mobileOffcanvasNav" aria-labelledby="mobileOffcanvasNavLabel">
         <div class="offcanvas-header border-bottom py-3">
             <div class="d-flex align-items-center gap-2">
-                <div class="brand-icon" style="width:36px; height:36px; font-size:1.1rem; background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%);">
-                    <i class="fas fa-heart-pulse"></i>
+                <div class="brand-icon" style="width:36px; height:36px; font-size:1.1rem; background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);">
+                    <i class="fas fa-hospital text-white"></i>
                 </div>
                 <div>
-                    <h5 class="offcanvas-title fw-bold text-navy mb-0" id="mobileOffcanvasNavLabel" style="font-size:1.1rem;">REJUVENATE <span style="color:#02c9b8;">Digital Health</span></h5>
+                    <h5 class="offcanvas-title fw-bold text-navy mb-0" id="mobileOffcanvasNavLabel" style="font-size:1.1rem;">Hospital <span style="color:#ff7a00;">Quality</span></h5>
                     <span class="text-muted" style="font-size:0.65rem; font-weight:700;">HOSPITAL QUALITY MANAGEMENT</span>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'sop-suite' ? 'active' : '' ?>" href="<?= site_url('sop-suite') ?>">
-                            <i class="fas fa-file-signature text-primary"></i> Document &amp; SOP Suite
+                            <i class="fas fa-file-signature" style="color: #ff7a00;"></i> Document &amp; SOP Suite
                         </a>
                     </li>
                     <li class="nav-item">
@@ -207,7 +207,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'equipment-grid' ? 'active' : '' ?>" href="<?= site_url('equipment-grid') ?>">
-                            <i class="fas fa-microscope text-primary"></i> Equipment &amp; Utilities
+                            <i class="fas fa-microscope" style="color: #ff7a00;"></i> Equipment &amp; Utilities
                         </a>
                     </li>
                     <li class="nav-item">
@@ -222,7 +222,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'checklists' ? 'active' : '' ?>" href="<?= site_url('checklists') ?>">
-                            <i class="fas fa-list-check text-primary"></i> Audit Checklists
+                            <i class="fas fa-list-check" style="color: #ff7a00;"></i> Audit Checklists
                         </a>
                     </li>
                     <li class="nav-item">
@@ -244,13 +244,13 @@
 
                 <div class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.72rem; letter-spacing: 0.08em;">Quick Portals &amp; Health ID</div>
                 <div class="d-grid gap-2 mb-4">
-                    <a href="https://healthid.ndhm.gov.in" target="_blank" class="btn btn-topabha text-center justify-content-center" style="border-radius: 8px;">
+                    <a href="https://healthid.ndhm.gov.in" target="_blank" class="btn btn-topabha text-center justify-content-center" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%); border-radius: 8px;">
                         <i class="fas fa-id-card-clip me-1"></i> Create ABHA Card
                     </a>
                     <a href="https://esanjeevani.mohfw.gov.in" target="_blank" class="btn btn-esanjeevni text-center justify-content-center" style="border-radius: 8px;">
                         <i class="fas fa-video me-1"></i> E-Sanjeevani Teleconsult
                     </a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary text-center justify-content-center" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%); border: none;">
+                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary text-center justify-content-center" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%); border: none;">
                         <i class="fas fa-lock me-1"></i> Portal Sign In
                     </a>
                 </div>
@@ -259,11 +259,11 @@
             <!-- Offcanvas Footer Contact Info -->
             <div class="p-3 rounded-3 bg-light border">
                 <div class="d-flex align-items-center gap-2 mb-1">
-                    <i class="fas fa-phone-alt text-primary"></i>
-                    <strong class="text-navy small">+91-9027914122</strong>
+                    <i class="fas fa-phone-alt text-warning"></i>
+                    <strong class="text-navy small">+91 1800-419-5959</strong>
                 </div>
                 <div class="text-muted small" style="font-size: 0.75rem;">
-                    info@rejuvenatedigitalhealth.com | 24/7 Quality &amp; NABH Support
+                    support@hospitalquality.org | 24/7 Quality &amp; NABH Support
                 </div>
             </div>
         </div>
@@ -274,7 +274,7 @@
         <?= $content ?? '' ?>
     </main>
 
-    <!-- Rejuvenate Footer -->
+    <!-- Footer -->
     <footer class="footer-hinton">
         <!-- Floating Ambient Decoration Circle -->
         <div class="footer-decor-circle"></div>
@@ -286,12 +286,12 @@
                     <!-- Item 1: Support Hotline -->
                     <div class="col-lg-4 col-md-12">
                         <div class="hinton-pre-footer-item">
-                            <div class="contact-icon" style="background: rgba(2, 201, 184, 0.15); color: #02c9b8;">
+                            <div class="contact-icon" style="background: rgba(255, 122, 0, 0.15); color: #ff7a00;">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
                                 <div class="contact-label">Hospital Support Helpline</div>
-                                <div class="contact-val">+91-9027914122</div>
+                                <div class="contact-val">+91 1800-419-5959</div>
                             </div>
                         </div>
                     </div>
@@ -304,12 +304,12 @@
                     <!-- Item 2: Support Email -->
                     <div class="col-lg-3 col-md-12">
                         <div class="hinton-pre-footer-item">
-                            <div class="contact-icon" style="background: rgba(2, 201, 184, 0.15); color: #02c9b8;">
+                            <div class="contact-icon" style="background: rgba(12, 116, 197, 0.15); color: #0c74c5;">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div>
                                 <div class="contact-label">Official Support Email</div>
-                                <div class="contact-val">info@rejuvenatedigitalhealth.com</div>
+                                <div class="contact-val">support@hospitalquality.org</div>
                             </div>
                         </div>
                     </div>
@@ -322,12 +322,12 @@
                     <!-- Item 3: Visit Us On -->
                     <div class="col-lg-4 col-md-12">
                         <div class="hinton-pre-footer-item">
-                            <div class="contact-icon" style="background: rgba(2, 201, 184, 0.15); color: #02c9b8;">
+                            <div class="contact-icon" style="background: rgba(255, 122, 0, 0.15); color: #ff7a00;">
                                 <i class="fas fa-location-dot"></i>
                             </div>
                             <div>
                                 <div class="contact-label">Headquarters</div>
-                                <div class="contact-val">Ghaziabad, Uttar Pradesh, India</div>
+                                <div class="contact-val">New Delhi, India</div>
                             </div>
                         </div>
                     </div>
@@ -339,13 +339,13 @@
                 <!-- Column 1: Brand Logo & Mission -->
                 <div class="col-lg-4 col-md-6 pe-lg-4">
                     <a href="<?= site_url('/') ?>" class="brand-logo-wrap text-decoration-none">
-                        <div class="brand-logo-icon" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%);">
-                            <i class="fas fa-heart-pulse"></i>
+                        <div class="brand-logo-icon" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);">
+                            <i class="fas fa-hospital"></i>
                         </div>
-                        <span class="brand-logo-text text-white">REJUVENATE <span style="color:#02c9b8;">Digital Health</span></span>
+                        <span class="brand-logo-text text-white">Hospital <span style="color:#ff7a00;">Quality</span></span>
                     </a>
                     <p class="footer-desc">
-                        Empowering hospitals, clinical networks, and healthcare providers across India with robust NABH 5th Edition digital quality assurance, ABHA / ABDM ecosystem integration, and DPDP compliant patient workflows.
+                        Empowering hospitals, clinical networks, and healthcare providers across India with robust NABH 5th Edition digital quality management, ABHA / ABDM ecosystem integration, and DPDP compliant patient workflows.
                     </p>
                     <div class="d-flex align-items-center gap-2">
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -389,9 +389,9 @@
                     <p class="newsletter-text">
                         Subscribe to receive monthly NABH compliance bulletins, statutory updates, and clinical safety alerts.
                     </p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Rejuvenate Digital Health updates!');">
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Hospital Quality Management updates!');">
                         <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="btn-newsletter" aria-label="Subscribe" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%);">
+                        <button type="submit" class="btn-newsletter" aria-label="Subscribe" style="background: linear-gradient(135deg, #0c74c5 0%, #ff7a00 100%);">
                             <i class="fas fa-arrow-right"></i>
                         </button>
                     </form>
@@ -401,7 +401,7 @@
             <!-- Footer Bottom Strip -->
             <div class="footer-hinton-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
                 <p class="mb-0 copyright-text text-white small">
-                    &copy; <?= date('Y') ?> <strong class="text-white">REJUVENATE Digital Health</strong> - Hospital Quality Management (HQM). All Rights Reserved. &nbsp;|&nbsp; Developed by <a href="https://nikhilworks.com" target="_blank" rel="noopener noreferrer" class="dev-link" style="color: #02c9b8;">nikhilworks.com</a>
+                    &copy; <?= date('Y') ?> <strong class="text-white">Hospital Quality Management</strong> (HQM). All Rights Reserved. &nbsp;|&nbsp; Developed by <a href="https://nikhilworks.com" target="_blank" rel="noopener noreferrer" class="dev-link" style="color: #ff7a00;">nikhilworks.com</a>
                 </p>
                 <div class="d-flex flex-wrap gap-4 small">
                     <a href="<?= site_url('privacy-policy') ?>" style="color: #a0aec0;">Privacy Policy</a>
