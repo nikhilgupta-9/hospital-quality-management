@@ -276,7 +276,17 @@
 
     <!-- Footer -->
     <footer class="footer-hinton">
-        <div class="container position-relative">
+        <!-- Tech Blueprint Grid Pattern & Ambient Glow Overlays -->
+        <div class="footer-grid-overlay"></div>
+        <div class="footer-ambient-glow-left"></div>
+        <div class="footer-ambient-glow-right"></div>
+        
+        <!-- Subtle Tech Cross Watermarks -->
+        <div class="footer-tech-cross" style="top: 40px; left: 8%;"><i class="fas fa-plus"></i></div>
+        <div class="footer-tech-cross" style="top: 120px; right: 12%;"><i class="fas fa-plus"></i></div>
+        <div class="footer-tech-cross" style="bottom: 80px; left: 25%;"><i class="fas fa-plus"></i></div>
+
+        <div class="container position-relative" style="z-index: 2;">
             <!-- Pre-Footer Contact Bar -->
             <div class="hinton-pre-footer-bar">
                 <div class="row align-items-center g-3">
@@ -410,6 +420,29 @@
                     <div class="small text-white-50" style="font-size: 0.75rem;">
                         <i class="fas fa-lock text-success me-1"></i> 256-Bit SSL Encrypted Healthcare Portal
                     </div>
+                </div>
+            </div>
+
+            <!-- Trust Key Counter Metrics Strip -->
+            <div class="p-3 rounded-3 mb-4 d-none d-md-flex align-items-center justify-content-around flex-wrap gap-3" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08);">
+                <div class="d-flex align-items-center gap-2 small text-white-50">
+                    <i class="fas fa-shield-check" style="color: #ff7a00;"></i>
+                    <span class="text-light fw-semibold">650+ Objective Elements</span>
+                </div>
+                <div class="text-white-50 small">&bull;</div>
+                <div class="d-flex align-items-center gap-2 small text-white-50">
+                    <i class="fas fa-network-wired" style="color: #0c74c5;"></i>
+                    <span class="text-light fw-semibold">ABDM M3 14-Digit ABHA Link</span>
+                </div>
+                <div class="text-white-50 small">&bull;</div>
+                <div class="d-flex align-items-center gap-2 small text-white-50">
+                    <i class="fas fa-signature" style="color: #10b981;"></i>
+                    <span class="text-light fw-semibold">SHA-256 DPDP 2023 Consent</span>
+                </div>
+                <div class="text-white-50 small">&bull;</div>
+                <div class="d-flex align-items-center gap-2 small text-white-50">
+                    <i class="fas fa-server" style="color: #38bdf8;"></i>
+                    <span class="text-light fw-semibold">99.9% High Availability SLA</span>
                 </div>
             </div>
 
