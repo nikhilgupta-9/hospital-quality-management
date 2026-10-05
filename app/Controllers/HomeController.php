@@ -53,6 +53,14 @@ class HomeController extends BaseController
         ]);
     }
 
+    public function clinicalWorkflow(): string
+    {
+        return view('layouts/public', [
+            'title'   => 'Digital Clinical Workflow & DPDP Consent Management — Hospital Quality Management (HQM)',
+            'content' => view('public/clinical_workflow'),
+        ]);
+    }
+
     public function qualityIndicators(): string
     {
         return view('layouts/public', [

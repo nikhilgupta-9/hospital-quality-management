@@ -21,6 +21,7 @@ if (has_role('super_admin')) {
         ['label' => 'Document Suite',        'url' => '/document',                   'icon' => 'fas fa-file-signature'],
         ['label' => 'HR & Credentialing',    'url' => '/hr',                         'icon' => 'fas fa-user-doctor'],
         ['label' => 'Equipment & Utilities', 'url' => '/equipment',                  'icon' => 'fas fa-microscope'],
+        ['label' => 'Clinical & DPDP Workflow', 'url' => '/clinical',                'icon' => 'fas fa-heart-pulse'],
     ];
 } else {
     // nabh_coordinator and dept_user
@@ -28,6 +29,7 @@ if (has_role('super_admin')) {
         ['label' => '📄 Document Panel',                'url' => '/document',  'icon' => 'fas fa-file-signature'],
         ['label' => '👥 HR & Credentialing',            'url' => '/hr',        'icon' => 'fas fa-user-doctor'],
         ['label' => '🏥 Equipment & Infrastructure',    'url' => '/equipment', 'icon' => 'fas fa-hospital-symbol'],
+        ['label' => '🩺 Clinical & DPDP Workflow',      'url' => '/clinical',  'icon' => 'fas fa-heart-pulse'],
     ];
 }
 

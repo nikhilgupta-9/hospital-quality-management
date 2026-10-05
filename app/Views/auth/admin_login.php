@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Executive Admin Gateway — Hinton DQMS Suite</title>
+    <title>Executive Admin Gateway — Hospital Quality Management (HQM)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Google Fonts & Bootstrap 5.3 -->
@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     
-    <!-- Custom Hinton Theme CSS -->
+    <!-- Custom Theme CSS -->
     <link href="<?= base_url('assets/css/premium-theme.css') ?>" rel="stylesheet">
 
     <style>
@@ -60,7 +60,7 @@
                 <i class="fas fa-crown"></i>
             </div>
             <h1 class="h4 text-white fw-extrabold mb-0" style="font-family: var(--font-heading); letter-spacing: -0.02em;">
-                <?= esc(site_setting('site_name', 'Hinton DQMS')) ?>
+                <?= esc(site_setting('site_name', 'Hospital Quality Management')) ?>
             </h1>
             <p class="text-light small opacity-75 mb-0" style="font-size: 0.82rem; letter-spacing: 0.08em; font-weight: 700; color: #f59e0b !important;">
                 EXECUTIVE &amp; SUPER ADMIN COMMAND SUITE

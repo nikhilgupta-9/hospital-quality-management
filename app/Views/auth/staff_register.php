@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Staff Account Registration — Hinton DQMS Suite</title>
+    <title>Staff Account Registration — Hospital Quality Management (HQM)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Google Fonts & Bootstrap 5.3 -->
@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     
-    <!-- Custom Hinton Theme CSS -->
+    <!-- Custom Theme CSS -->
     <link href="<?= base_url('assets/css/premium-theme.css') ?>" rel="stylesheet">
 </head>
 <body style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; background: linear-gradient(135deg, #040e24 0%, #07193b 50%, #0052cc 100%); font-family: var(--font-body);">
@@ -26,7 +26,7 @@
                 <i class="fas fa-user-plus"></i>
             </div>
             <h1 class="h4 text-white fw-extrabold mb-0" style="font-family: var(--font-heading); letter-spacing: -0.02em;">
-                <?= esc(site_setting('site_name', 'Hinton Quality')) ?>
+                <?= esc(site_setting('site_name', 'Hospital Quality Management')) ?>
             </h1>
             <p class="text-light small opacity-75 mb-0" style="font-size: 0.82rem; letter-spacing: 0.05em; font-weight: 600;">
                 CLINICAL &amp; DEPARTMENTAL STAFF ONBOARDING

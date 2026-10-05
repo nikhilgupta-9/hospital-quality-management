@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?= esc($title ?? 'Hinton — Hospital Quality Management & NABH Standards Portal') ?></title>
+    <title><?= esc($title ?? 'Hospital Quality Management — NABH Standards & DQMS Portal') ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hinton Hospital Quality Management Platform — NABH 5th Edition, JCI Standards, Clinical Governance, Credentialing, Biomedical Asset Safety, and Hospital Accreditation.">
+    <meta name="description" content="Hospital Quality Management (HQM) Platform — NABH Digital Mitra, JCI Standards, Clinical Governance, Credentialing, Biomedical Asset Safety, UHID & DPDP Act 2023 Consent.">
 
     <!-- Bootstrap 5.3 & FontAwesome Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom Theme CSS (Hinton Style) with Dynamic Cache Buster -->
+    <!-- Custom Theme CSS (HQM Style) with Dynamic Cache Buster -->
     <link href="<?= base_url('assets/css/premium-theme.css?v=' . (file_exists(FCPATH . 'assets/css/premium-theme.css') ? filemtime(FCPATH . 'assets/css/premium-theme.css') : time())) ?>" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Hinton Top Header Bar -->
+    <!-- Top Header Bar -->
     <div class="hinton-top-header d-none d-lg-block">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-4">
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <!-- Main Navigation Bar (Hinton Style) -->
+    <!-- Main Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-hinton">
         <div class="container">
             <a class="navbar-brand" href="<?= site_url('/') ?>">
@@ -42,8 +42,8 @@
                     <i class="fas fa-stethoscope"></i>
                 </div>
                 <div>
-                    <span class="d-block lh-1 fw-extrabold text-navy" style="font-size:1.35rem; font-family: var(--font-heading);">Hinton<span style="color:var(--hinton-secondary);">Quality</span></span>
-                    <span class="d-block text-muted" style="font-size:0.68rem; letter-spacing:0.06em; font-weight:700;">HOSPITAL STANDARDS & ACCREDITATION</span>
+                    <span class="d-block lh-1 fw-extrabold text-navy" style="font-size:1.35rem; font-family: var(--font-heading);">Hospital<span style="color:var(--hinton-secondary);">Quality</span></span>
+                    <span class="d-block text-muted" style="font-size:0.68rem; letter-spacing:0.06em; font-weight:700;">NABH DIGITAL MITRA &amp; DQMS</span>
                 </div>
             </a>
 
@@ -63,7 +63,7 @@
 
                     <!-- Dropdown: Standards & Accreditation -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle <?= (uri_string() === 'standards' || uri_string() === 'sop-suite' || uri_string() === 'hr-suite' || uri_string() === 'equipment-grid' || uri_string() === 'checklists' || uri_string() === 'assessment-tool') ? 'active' : '' ?>" href="#" id="standardsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle <?= (in_array(uri_string(), ['standards', 'sop-suite', 'hr-suite', 'equipment-grid', 'clinical-workflow', 'checklists', 'assessment-tool'])) ? 'active' : '' ?>" href="#" id="standardsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             NABH Standards
                         </a>
                         <ul class="dropdown-menu shadow-lg border-0" aria-labelledby="standardsDropdown">
@@ -100,6 +100,15 @@
                                     <div>
                                         <span class="item-title">Equipment &amp; Utilities Grid</span>
                                         <span class="item-desc">Biomedical calibrations, PPM &amp; utility NOCs</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="<?= site_url('clinical-workflow') ?>">
+                                    <i class="fas fa-heart-pulse"></i>
+                                    <div>
+                                        <span class="item-title">Clinical &amp; DPDP Workflow</span>
+                                        <span class="item-desc">UHID, ABHA linking &amp; DPDP 2023 e-consent</span>
                                     </div>
                                 </a>
                             </li>
@@ -163,7 +172,7 @@
                     <i class="fas fa-stethoscope"></i>
                 </div>
                 <div>
-                    <h5 class="offcanvas-title fw-bold text-navy mb-0" id="mobileOffcanvasNavLabel" style="font-size:1.15rem;">Hinton<span style="color:var(--hinton-secondary);">Quality</span></h5>
+                    <h5 class="offcanvas-title fw-bold text-navy mb-0" id="mobileOffcanvasNavLabel" style="font-size:1.15rem;">Hospital<span style="color:var(--hinton-secondary);">Quality</span></h5>
                     <span class="text-muted" style="font-size:0.65rem; font-weight:700;">HOSPITAL STANDARDS PORTAL</span>
                 </div>
             </div>
@@ -196,6 +205,11 @@
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'equipment-grid' ? 'active' : '' ?>" href="<?= site_url('equipment-grid') ?>">
                             <i class="fas fa-microscope"></i> Equipment &amp; Utilities Grid
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <?= uri_string() === 'clinical-workflow' ? 'active' : '' ?>" href="<?= site_url('clinical-workflow') ?>">
+                            <i class="fas fa-heart-pulse"></i> Clinical &amp; DPDP Workflow
                         </a>
                     </li>
                     <li class="nav-item">
@@ -368,7 +382,7 @@
                     <p class="newsletter-text">
                         Sign up for our newsletter to latest weekly updates &amp; news
                     </p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Hinton updates!');">
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Hospital Quality updates!');">
                         <input type="email" placeholder="Enter your email address" required>
                         <button type="submit" class="btn-newsletter" aria-label="Subscribe">
                             <i class="fas fa-arrow-right"></i>
@@ -380,7 +394,7 @@
             <!-- Footer Bottom Strip -->
             <div class="footer-hinton-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
                 <p class="mb-0 copyright-text text-white small">
-                    &copy; <?= date('Y') ?> <strong class="text-white">Hinton</strong> Hospital Quality Management. All Rights Reserved. &nbsp;|&nbsp; Developed by <a href="https://nikhilworks.com" target="_blank" rel="noopener noreferrer" class="dev-link">nikhilworks.com</a>
+                    &copy; <?= date('Y') ?> <strong class="text-white">Hospital Quality Management</strong> (HQM). All Rights Reserved. &nbsp;|&nbsp; Developed by <a href="https://nikhilworks.com" target="_blank" rel="noopener noreferrer" class="dev-link">nikhilworks.com</a>
                 </p>
                 <div class="d-flex flex-wrap gap-4 small">
                     <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>

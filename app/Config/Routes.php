@@ -13,6 +13,9 @@ $routes->get('hr-suite', 'HomeController::hrSuite');
 $routes->get('hr-credentialing', 'HomeController::hrSuite');
 $routes->get('equipment-grid', 'HomeController::equipmentGrid');
 $routes->get('equipment-utilities', 'HomeController::equipmentGrid');
+$routes->get('clinical-workflow', 'HomeController::clinicalWorkflow');
+$routes->get('patient-workflow', 'HomeController::clinicalWorkflow');
+$routes->get('dpdp-consent', 'HomeController::clinicalWorkflow');
 $routes->get('quality-indicators', 'HomeController::qualityIndicators');
 $routes->get('checklists', 'HomeController::checklists');
 $routes->get('assessment-tool', 'HomeController::assessmentTool');
@@ -99,7 +102,7 @@ $routes->group(
 
 $routes->group(
     'equipment',
-    ['filter' => ['role:nabh_coordinator,dept_user,hospital_admin', 'deptscope']],
+    ['filter' => ['role:nabh_coordinator,dept_user,hospital_admin,super_admin', 'deptscope']],
     static function ($routes) {
         $routes->get('/', 'Equipment\EquipmentController::index');
         $routes->post('create', 'Equipment\EquipmentController::create');
@@ -109,5 +112,20 @@ $routes->group(
         $routes->post('record-ppm', 'Equipment\EquipmentController::recordPpm');
         $routes->post('request-condemnation', 'Equipment\EquipmentController::requestCondemnation');
         $routes->post('review-condemnation', 'Equipment\EquipmentController::reviewCondemnation');
+    }
+);
+
+// --- Phase 3: Digital Clinical Workflow & DPDP Consent Management -------------
+$routes->group(
+    'clinical',
+    ['filter' => ['role:nabh_coordinator,dept_user,hospital_admin,super_admin', 'deptscope']],
+    static function ($routes) {
+        $routes->get('/', 'Clinical\ClinicalWorkflowController::index');
+        $routes->post('register-patient', 'Clinical\ClinicalWorkflowController::registerPatient');
+        $routes->post('link-abha', 'Clinical\ClinicalWorkflowController::linkAbha');
+        $routes->post('grant-consent', 'Clinical\ClinicalWorkflowController::grantConsent');
+        $routes->post('revoke-consent', 'Clinical\ClinicalWorkflowController::revokeConsent');
+        $routes->post('update-step', 'Clinical\ClinicalWorkflowController::updateStep');
+        $routes->post('update-status', 'Clinical\ClinicalWorkflowController::updateAdmissionStatus');
     }
 );
