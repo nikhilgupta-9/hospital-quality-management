@@ -129,11 +129,11 @@ class HomeController extends BaseController
     {
         $page = $this->pageModel->getBySlug('privacy-policy');
         return view('layouts/public', [
-            'title'   => $page['meta_title'] ?? 'Privacy Policy — Hinton Hospital Quality Management',
+            'title'   => $page['meta_title'] ?? 'Privacy & Data Protection Policy — Hospital Quality Management',
             'content' => view('public/page', [
                 'page'      => $page,
                 'slug'      => 'privacy-policy',
-                'badge'     => 'Data Protection & Security',
+                'badge'     => 'DPDP Act 2023 & Security',
                 'badgeIcon' => 'fas fa-user-shield',
             ]),
         ]);
@@ -146,7 +146,7 @@ class HomeController extends BaseController
     {
         $page = $this->pageModel->getBySlug('terms-of-service');
         return view('layouts/public', [
-            'title'   => $page['meta_title'] ?? 'Terms of Service — Hinton Hospital Quality Management',
+            'title'   => $page['meta_title'] ?? 'Terms of Service & Hospital Agreement — Hospital Quality Management',
             'content' => view('public/page', [
                 'page'      => $page,
                 'slug'      => 'terms-of-service',
@@ -163,7 +163,7 @@ class HomeController extends BaseController
     {
         $page = $this->pageModel->getBySlug('compliance-disclaimer');
         return view('layouts/public', [
-            'title'   => $page['meta_title'] ?? 'Compliance Disclaimer — Hinton Hospital Quality Management',
+            'title'   => $page['meta_title'] ?? 'Statutory Compliance Disclaimer — Hospital Quality Management',
             'content' => view('public/page', [
                 'page'      => $page,
                 'slug'      => 'compliance-disclaimer',
@@ -180,7 +180,7 @@ class HomeController extends BaseController
     {
         $page = $this->pageModel->getBySlug('portal-gateway');
         return view('layouts/public', [
-            'title'   => $page['meta_title'] ?? 'Portal Gateway — Hinton Hospital Quality Management',
+            'title'   => $page['meta_title'] ?? 'Role Portal Gateway & SSO Authentication — Hospital Quality Management',
             'content' => view('public/portal_gateway', [
                 'page' => $page,
             ]),
