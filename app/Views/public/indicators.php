@@ -71,6 +71,76 @@
 <section class="py-5" style="background-color: #f8fafc; min-height: 80vh;">
     <div class="container">
 
+        <!-- PARALLAX COMMAND CENTER SHOWCASE -->
+        <div class="card border-0 mb-5 shadow-sm parallax-depth-card" style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px;">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-7 position-relative">
+                    <div class="parallax-image-holder h-100" style="min-height: 380px;">
+                        <img src="<?= base_url('assets/images/hospital_kpi_command_center.jpg') ?>" alt="Hospital Quality Command Center" class="img-fluid h-100 w-100" style="object-fit: cover; filter: brightness(0.95);">
+                        
+                        <!-- Floating Parallax Badge 1 -->
+                        <div class="parallax-badge-float-1 p-3 rounded-3 text-white shadow" style="background-color: #1a2340; border-left: 4px solid #0c74c5; max-width: 260px;">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <span class="badge" style="background-color: #10b981; font-size: 0.7rem;"><i class="fas fa-satellite-dish me-1"></i> LIVE TELEMETRY</span>
+                                <span class="small text-white-50" style="font-size: 0.7rem;">Active Hub</span>
+                            </div>
+                            <div class="fw-bold small">Hospital Sentinel Command</div>
+                            <div class="text-white-50 small" style="font-size: 0.72rem;">Tracking 24+ NABH Quality Metrics 24/7</div>
+                        </div>
+
+                        <!-- Floating Parallax Badge 2 -->
+                        <div class="parallax-badge-float-2 p-3 rounded-3 text-white shadow d-none d-sm-block" style="background-color: #0c74c5; border-right: 4px solid #ff7a00;">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fas fa-shield-heart fs-4 text-warning"></i>
+                                <div>
+                                    <div class="fw-extrabold fs-6 mb-0">99.4% Safety</div>
+                                    <div class="small text-white-50" style="font-size: 0.7rem;">Zero Unplanned Sentinels</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 d-flex flex-column justify-content-between p-4 p-xl-5" style="background-color: #ffffff;">
+                    <div>
+                        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-3" style="background-color: #f1f5f9; color: #1a2340; font-size: 0.78rem; font-weight: 700;">
+                            <i class="fas fa-tv text-sapphire" style="color: #0c74c5;"></i> Real-Time Clinical Surveillance
+                        </div>
+                        <h3 class="fw-bold text-navy mb-3" style="font-family: var(--font-heading); font-size: 1.5rem;">
+                            Digitized Clinical Telemetry &amp; Continuous Audits
+                        </h3>
+                        <p class="text-muted small mb-4" style="line-height: 1.6;">
+                            Say goodbye to manual paper tallies. HQM bridges clinical wards, ICU device telemetry, and pharmacy error tracking directly into an automated regulatory compliance pipeline aligned with <strong>NABH 5th Edition Standards</strong>.
+                        </p>
+
+                        <div class="row g-2 mb-4">
+                            <div class="col-6">
+                                <div class="p-3 rounded-3" style="background-color: #f8fafc; border: 1px solid #e2e8f0;">
+                                    <i class="fas fa-stopwatch text-warning mb-1"></i>
+                                    <div class="fw-bold text-navy small">Zero Latency</div>
+                                    <div class="text-muted" style="font-size: 0.72rem;">Instant CAPA Escalation</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 rounded-3" style="background-color: #f8fafc; border: 1px solid #e2e8f0;">
+                                    <i class="fas fa-lock text-success mb-1"></i>
+                                    <div class="fw-bold text-navy small">DPDP Verified</div>
+                                    <div class="text-muted" style="font-size: 0.72rem;">100% UHID Anonymized</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#kpi-calculator-suite" class="btn w-100 fw-bold text-white py-2" style="background-color: #0c74c5; border-radius: 8px;">
+                            <i class="fas fa-calculator me-1"></i> Open Interactive Calculation Suite
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- SECTION 1: LIVE MULTI-CALCULATOR WORKBENCH -->
         <div id="kpi-calculator-suite" class="card border-0 mb-5 shadow-sm" style="border-radius: 12px; overflow: hidden; background-color: #ffffff; border: 1px solid #e2e8f0;">
             <div class="card-header p-4" style="background-color: #1a2340; border-bottom: 3px solid #0c74c5;">
@@ -577,6 +647,51 @@
                         </div>
                     </div>
 
+        <!-- DUAL CLINICAL GOVERNANCE PARALLAX CARDS -->
+        <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm parallax-depth-card parallax-tilt-card h-100" style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden;">
+                    <div class="parallax-image-holder position-relative" style="height: 240px;">
+                        <img src="<?= base_url('assets/images/clinical_infection_audit.jpg') ?>" alt="Infection Control Audit Rounds" class="w-100 h-100" style="object-fit: cover;">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background-color: rgba(26, 35, 64, 0.85); backdrop-filter: blur(4px);">
+                            <span class="badge" style="background-color: #ff7a00; color: #ffffff; font-size: 0.72rem;">HIC COMMITTEE</span>
+                            <h5 class="text-white fw-bold mb-0 mt-1" style="font-size: 1.05rem;">Active Infection Surveillance Rounds</h5>
+                        </div>
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <p class="text-muted small mb-3">
+                            Direct tablet rounds empower nursing superintendents and microbiologists to record sterile bundle adherence and track HAI sentinel breaches on the move.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                            <span class="badge bg-light text-navy border fw-bold">Daily Hand Hygiene Checks</span>
+                            <a href="#tab-hygiene" class="small fw-bold text-decoration-none" style="color: #0c74c5;">
+                                Audit Tool <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm parallax-depth-card parallax-tilt-card h-100" style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden;">
+                    <div class="parallax-image-holder position-relative" style="height: 240px;">
+                        <img src="<?= base_url('assets/images/hospital_digital_kpi_dashboard.jpg') ?>" alt="Hospital Executive Quality Council" class="w-100 h-100" style="object-fit: cover;">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background-color: rgba(26, 35, 64, 0.85); backdrop-filter: blur(4px);">
+                            <span class="badge" style="background-color: #0c74c5; color: #ffffff; font-size: 0.72rem;">NABH EXECUTIVE</span>
+                            <h5 class="text-white fw-bold mb-0 mt-1" style="font-size: 1.05rem;">Clinical Quality Governance Board</h5>
+                        </div>
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+                        <p class="text-muted small mb-3">
+                            Executive dashboards aggregate department telemetry into automated NABH 5th Edition regulatory compliance reports with root-cause CAPA tracking.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                            <span class="badge bg-light text-navy border fw-bold">Automated CAPA Escalation</span>
+                            <a href="<?= site_url('login') ?>" class="small fw-bold text-decoration-none" style="color: #ff7a00;">
+                                Executive Portal <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

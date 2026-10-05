@@ -212,5 +212,46 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    // Interactive 3D Card Tilt & Parallax Elements
+    const tiltCards = document.querySelectorAll('.parallax-tilt-card');
+    tiltCards.forEach(card => {
+        card.addEventListener('mousemove', function(e) {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = ((y - centerY) / centerY) * -5;
+            const rotateY = ((x - centerX) / centerX) * 5;
+            
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+        });
+    });
+
+    // Scroll-based parallax transform for floating elements
+    const parallaxScrollElements = document.querySelectorAll('[data-parallax-speed]');
+    if (parallaxScrollElements.length > 0) {
+        let ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    const scrollY = window.pageYOffset;
+                    parallaxScrollElements.forEach(el => {
+                        const speed = parseFloat(el.getAttribute('data-parallax-speed')) || 0.1;
+                        const offset = scrollY * speed;
+                        el.style.transform = `translate3d(0, ${offset}px, 0)`;
+                    });
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+    }
 });
+
 
