@@ -26,16 +26,27 @@ $routes->get('terms-of-service', 'HomeController::termsOfService');
 $routes->get('compliance-disclaimer', 'HomeController::complianceDisclaimer');
 $routes->get('portal-gateway', 'HomeController::portalGateway');
 
-// --- Auth ------------------------------------------------------------------
-$routes->get('login', 'Auth\LoginController::show');
-$routes->post('login', 'Auth\LoginController::attempt');
-$routes->get('logout', 'Auth\LoginController::logout');
+// --- Isolated Authentication Suites ------------------------------------------
+// 1. Executive Admin Authentication Suite (Tier-1 Super Admin & Hospital Admin)
+$routes->get('admin/login', 'Auth\AdminAuthController::login');
+$routes->post('admin/login', 'Auth\AdminAuthController::attemptLogin');
+$routes->get('admin/register', 'Auth\AdminAuthController::register');
+$routes->post('admin/register', 'Auth\AdminAuthController::attemptRegister');
+$routes->get('admin/logout', 'Auth\AdminAuthController::logout');
+
+// 2. Clinical & Departmental Staff Authentication Suite (Coordinators, Doctors, Nurses, Staff)
+$routes->get('login', 'Auth\StaffAuthController::login');
+$routes->post('login', 'Auth\StaffAuthController::attemptLogin');
+$routes->get('register', 'Auth\StaffAuthController::register');
+$routes->post('register', 'Auth\StaffAuthController::attemptRegister');
+$routes->get('logout', 'Auth\StaffAuthController::logout');
+$routes->get('api/departments-by-hospital/(:num)', 'Auth\StaffAuthController::getDepartments/$1');
 
 // --- Post-login landing, redirects by role ----------------------------------
 $routes->get('dashboard', 'DashboardController::index', ['filter' => 'role']);
 
 // --- Super Admin -------------------------------------------------------------
-$routes->group('admin', ['filter' => 'role:super_admin'], static function ($routes) {
+$routes->group('admin', ['filter' => 'admin_auth:super_admin'], static function ($routes) {
     $routes->get('/', 'Admin\HospitalController::index');
     $routes->post('hospitals', 'Admin\HospitalController::create');
     $routes->resource('hospitals', ['controller' => 'Admin\HospitalController']);
@@ -54,7 +65,7 @@ $routes->group('admin', ['filter' => 'role:super_admin'], static function ($rout
 });
 
 // --- Hospital Admin ------------------------------------------------------------
-$routes->group('hospital-admin', ['filter' => 'role:hospital_admin'], static function ($routes) {
+$routes->group('hospital-admin', ['filter' => 'admin_auth:hospital_admin,super_admin'], static function ($routes) {
     $routes->get('/', 'HospitalAdmin\DashboardController::index');
     $routes->get('departments', 'HospitalAdmin\DepartmentController::index');
     $routes->get('approvals', 'HospitalAdmin\ApprovalController::index');

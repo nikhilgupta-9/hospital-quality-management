@@ -66,7 +66,7 @@
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Legal &amp; public pages (CMS)</li>
                         </ul>
                     </div>
-                    <a href="<?= site_url('login') ?>" class="btn btn-outline-primary w-100 rounded-pill fw-bold">
+                    <a href="<?= site_url('admin/login') ?>" class="btn btn-outline-warning w-100 rounded-pill fw-bold" style="border-color: #9333ea; color: #9333ea;">
                         Super Admin Sign In <i class="fas fa-chevron-right ms-1"></i>
                     </a>
                 </div>
@@ -95,7 +95,7 @@
                             <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Executive PDF compliance exports</li>
                         </ul>
                     </div>
-                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary w-100 rounded-pill fw-bold">
+                    <a href="<?= site_url('admin/login') ?>" class="btn btn-hinton-primary w-100 rounded-pill fw-bold">
                         Hospital Admin Sign In <i class="fas fa-chevron-right ms-1"></i>
                     </a>
                 </div>

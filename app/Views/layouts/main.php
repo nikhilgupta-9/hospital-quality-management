@@ -109,7 +109,8 @@ $currentPath = trim(current_url(true)->getPath(), '/');
                         <span class="text-gold d-block text-truncate" style="font-size: 0.72rem; font-weight: 600;"><?= esc($user['role_name'] ?? 'Staff') ?></span>
                     </div>
                 </div>
-                <a href="<?= site_url('logout') ?>" class="text-light opacity-75 hover-opacity-100 ms-2" title="Sign Out">
+                <?php $logoutUrl = in_array(session()->get('role_slug'), ['super_admin', 'hospital_admin']) ? site_url('admin/logout') : site_url('logout'); ?>
+                <a href="<?= $logoutUrl ?>" class="text-light opacity-75 hover-opacity-100 ms-2" title="Sign Out">
                     <i class="fas fa-arrow-right-from-bracket"></i>
                 </a>
             </div>

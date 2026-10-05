@@ -14,6 +14,8 @@ use CodeIgniter\Filters\PerformanceMetrics;
 use CodeIgniter\Filters\SecureHeaders;
 use App\Filters\RoleFilter;
 use App\Filters\DeptScopeFilter;
+use App\Filters\AdminAuthFilter;
+use App\Filters\StaffAuthFilter;
 
 class Filters extends BaseFilters
 {
@@ -38,6 +40,8 @@ class Filters extends BaseFilters
         'performance'   => PerformanceMetrics::class,
         'role'          => RoleFilter::class,
         'deptscope'     => DeptScopeFilter::class,
+        'admin_auth'    => AdminAuthFilter::class,
+        'staff_auth'    => StaffAuthFilter::class,
     ];
 
     /**
