@@ -2110,5 +2110,72 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     border-radius: 22px;
     border: 1px solid var(--hinton-border);
     overflow: hidden;
+}
+
+/* =========================================================
+   GLOBAL THEME COLOR UTILITIES & HIGH CONTRAST HELPERS
+========================================================= */
+.text-navy {
+    color: #1a2340 !important;
+}
+
+.bg-navy {
+    background-color: #1a2340 !important;
+    color: #ffffff !important;
+}
+
+.text-blue, .text-hqm-blue {
+    color: #0c74c5 !important;
+}
+
+.bg-blue, .bg-hqm-blue {
+    background-color: #0c74c5 !important;
+    color: #ffffff !important;
+}
+
+.text-orange, .text-hqm-orange {
+    color: #ff7a00 !important;
+}
+
+.bg-orange, .bg-hqm-orange {
+    background-color: #ff7a00 !important;
+    color: #ffffff !important;
+}
+
+.bg-slate {
+    background-color: #f8fafc !important;
+}
+
+.border-theme {
+    border-color: #e2e8f0 !important;
+}
+
+/* Glassmorphism Pricing & Plan Cards */
+.pricing-card-glass {
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #dce8f6;
+    box-shadow: 0 4px 20px rgba(12, 116, 197, 0.06);
+    transition: all 0.25s var(--ease-smooth);
+    position: relative;
+}
+
+.pricing-card-glass:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(12, 116, 197, 0.12);
+}
+
+.pricing-card-featured {
+    border: 2px solid #0c74c5 !important;
+    box-shadow: 0 8px 30px rgba(12, 116, 197, 0.14) !important;
+}
+
+/* Table Category Header */
+.table-category-row {
+    background-color: #f1f5f9 !important;
+    color: #1a2340 !important;
+    font-weight: 700;
+}
+
 
 
