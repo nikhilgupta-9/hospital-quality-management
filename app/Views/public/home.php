@@ -4,89 +4,99 @@
 ========================================================= -->
 
 <!-- =========================================================
-     SECTION 1: CLINICAL HERO SECTION (CLEAN & FLAT)
+     SECTION 1: CLINICAL HERO SECTION (CLEAN, FLAT & PARALLAX)
 ========================================================= -->
-<section class="position-relative overflow-hidden w-100" style="background: #f8fafc; border-bottom: 1px solid #e2e8f0; padding-top: 45px; padding-bottom: 65px;">
+<section class="position-relative overflow-hidden w-100" style="background: #f8fafc; border-bottom: 1px solid #e2e8f0; padding-top: clamp(35px, 5vw, 60px); padding-bottom: clamp(45px, 6vw, 70px);">
+    <div style="position: absolute; inset: 0; background-image: radial-gradient(circle at 15px 15px, rgba(12, 116, 197, 0.05) 1.5px, transparent 0); background-size: 24px 24px; pointer-events: none;"></div>
     <div class="container position-relative" style="z-index: 2;">
-        <div class="row align-items-center g-5">
+        <div class="row align-items-center g-4 g-lg-5">
             
             <!-- Left Column: Vision & Objectives -->
             <div class="col-lg-7">
                 <!-- Trust & Accreditation Badges -->
                 <div class="d-flex flex-wrap gap-2 mb-3">
-                    <span class="badge px-3 py-2 rounded-2 fw-bold bg-white text-primary border shadow-xs" style="color: #0c74c5 !important; border-color: #cbd5e1 !important;">
-                        <i class="fas fa-shield-halved text-success me-1"></i> NABH Digital Mitra Empanelment Track
+                    <span class="badge px-3 py-2 rounded-2 fw-bold bg-white text-primary border shadow-xs" style="color: #0c74c5 !important; border-color: #cbd5e1 !important; font-size: 0.78rem;">
+                        <i class="fas fa-shield-halved text-success me-1"></i> NABH Digital Mitra Track
                     </span>
-                    <span class="badge px-3 py-2 rounded-2 fw-bold bg-white border shadow-xs" style="color: #0284c7 !important; border-color: #cbd5e1 !important;">
+                    <span class="badge px-3 py-2 rounded-2 fw-bold bg-white border shadow-xs" style="color: #0284c7 !important; border-color: #cbd5e1 !important; font-size: 0.78rem;">
                         <i class="fas fa-network-wired me-1"></i> ABDM M3 Interoperable
                     </span>
-                    <span class="badge px-3 py-2 rounded-2 fw-bold bg-white text-warning border shadow-xs" style="color: #ff7a00 !important; border-color: #cbd5e1 !important;">
+                    <span class="badge px-3 py-2 rounded-2 fw-bold bg-white text-warning border shadow-xs" style="color: #ff7a00 !important; border-color: #cbd5e1 !important; font-size: 0.78rem;">
                         <i class="fas fa-gavel me-1"></i> DPDP Act 2023 Compliant
                     </span>
                 </div>
 
                 <!-- Main Hospital Headline -->
-                <h1 class="display-5 fw-extrabold mb-3 text-navy" style="font-family: var(--font-heading); line-height: 1.2; letter-spacing: -0.02em;">
+                <h1 class="fw-extrabold mb-3 text-navy" style="font-size: clamp(2rem, 4vw, 3rem); font-family: var(--font-heading); line-height: 1.18; letter-spacing: -0.02em;">
                     Smart Digital Quality Management <span style="color: #0c74c5;">Platform (DQMS)</span>
                 </h1>
 
                 <!-- Professional Subtitle -->
-                <p class="lead text-muted mb-4" style="font-size: 1.15rem; line-height: 1.6; max-width: 620px;">
+                <p class="lead text-muted mb-4" style="font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.6; max-width: 620px;">
                     Empowering multispecialty hospitals and healthcare networks across India with active clinical quality governance, continuous NABH 5th Edition compliance, tamper-evident audit trails, and seamless ABHA integration.
                 </p>
 
-                <!-- Core Call-to-Actions -->
-                <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#fourPillars" class="btn theme-btn text-white px-4 py-3 fw-bold shadow-sm" style="background: #0c74c5; border: none; border-radius: 8px;">
+                <!-- Core Call-to-Actions (Mobile Optimized) -->
+                <div class="d-flex flex-column flex-sm-row flex-wrap gap-2 gap-sm-3 mb-4">
+                    <a href="#fourPillars" class="btn text-white px-4 py-3 fw-bold shadow-sm" style="background: #0c74c5; border: none; border-radius: 8px;">
                         <i class="fas fa-cubes-stacked me-2"></i> Explore 4 Digital Pillars
                     </a>
-                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-outline-warning bg-white px-4 py-3 fw-semibold shadow-xs" style="border-radius: 8px; border-color: #ff7a00; color: #ff7a00;">
-                        <i class="fas fa-calculator me-2"></i> Instant Compliance Quiz
+                    <a href="<?= site_url('quality-indicators') ?>" class="btn text-white px-4 py-3 fw-bold shadow-sm" style="background: #ff7a00; border: none; border-radius: 8px;">
+                        <i class="fas fa-chart-line me-2"></i> Live KPI Indicators
                     </a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-light border px-4 py-3 fw-semibold shadow-xs text-navy" style="border-radius: 8px;">
-                        <i class="fas fa-lock me-1 text-primary"></i> Portal Sign In &rarr;
+                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-outline-navy bg-white px-4 py-3 fw-semibold shadow-xs" style="border-radius: 8px; border-color: #cbd5e1; color: #1a2340;">
+                        <i class="fas fa-calculator me-2 text-primary"></i> Gap Assessment
                     </a>
                 </div>
 
                 <!-- Quick Highlights Counters Strip -->
-                <div class="row g-3 pt-3 border-top">
+                <div class="row g-2 g-sm-3 pt-3 border-top">
                     <div class="col-4">
-                        <div class="fw-extrabold text-navy h4 mb-0 font-monospace" style="color: #0284c7 !important;">100%</div>
-                        <div class="small text-muted fw-semibold" style="font-size: 0.8rem;">Tamper-Proof Audit</div>
+                        <div class="fw-extrabold text-navy h4 mb-0 font-monospace" style="color: #0c74c5 !important; font-size: clamp(1.2rem, 2.5vw, 1.6rem);">100%</div>
+                        <div class="small text-muted fw-semibold" style="font-size: clamp(0.7rem, 1.2vw, 0.8rem);">Tamper-Proof Audit</div>
                     </div>
                     <div class="col-4">
-                        <div class="fw-extrabold h4 mb-0 font-monospace" style="color: #059669 !important;">32 KPIs</div>
-                        <div class="small text-muted fw-semibold" style="font-size: 0.8rem;">Live NABH Indicators</div>
+                        <div class="fw-extrabold h4 mb-0 font-monospace" style="color: #10b981 !important; font-size: clamp(1.2rem, 2.5vw, 1.6rem);">24+ KPIs</div>
+                        <div class="small text-muted fw-semibold" style="font-size: clamp(0.7rem, 1.2vw, 0.8rem);">Live Indicators</div>
                     </div>
                     <div class="col-4">
-                        <div class="fw-extrabold h4 mb-0 font-monospace" style="color: #d97706 !important;">651 Elem.</div>
-                        <div class="small text-muted fw-semibold" style="font-size: 0.8rem;">NABH 5th Standards</div>
+                        <div class="fw-extrabold h4 mb-0 font-monospace" style="color: #ff7a00 !important; font-size: clamp(1.2rem, 2.5vw, 1.6rem);">650+ Elem.</div>
+                        <div class="small text-muted fw-semibold" style="font-size: clamp(0.7rem, 1.2vw, 0.8rem);">NABH 5th Standards</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Column: High-Trust Hospital Tablet Mockup -->
+            <!-- Right Column: High-Trust Hospital Tablet Mockup with Parallax Floating Badges -->
             <div class="col-lg-5">
-                <div class="position-relative">
-                    <div class="card p-2 rounded-4 shadow-xl border bg-white" style="border-color: #cbd5e1 !important; transform: rotate(0.5deg);">
-                        <div class="position-relative rounded-3 overflow-hidden">
-                            <img src="<?= base_url('assets/images/dqms_vision_mission.jpg') ?>" 
+                <div class="position-relative parallax-depth-card parallax-tilt-card">
+                    <div class="card p-2 rounded-4 shadow-lg border bg-white" style="border-color: #cbd5e1 !important;">
+                        <div class="parallax-image-holder position-relative rounded-3 overflow-hidden">
+                            <img src="<?= base_url('assets/images/hospital_kpi_command_center.jpg') ?>" 
                                  alt="NABH Digital Quality Command Room" 
                                  class="img-fluid w-100" 
-                                 style="object-fit: cover; max-height: 380px;">
+                                 style="object-fit: cover; max-height: 360px; min-height: 260px;">
+                            
+                            <!-- Floating Badge -->
                             <div class="position-absolute top-0 start-0 m-3">
-                                <span class="badge bg-success shadow-sm px-3 py-2 fw-bold" style="font-size: 0.78rem;">
+                                <span class="badge shadow-sm px-3 py-2 fw-bold text-white" style="background-color: #10b981; font-size: 0.78rem;">
                                     <i class="fas fa-circle-check me-1"></i> Live Hospital Cockpit
                                 </span>
                             </div>
+
+                            <div class="position-absolute bottom-0 end-0 m-3 d-none d-sm-block">
+                                <span class="badge shadow-sm px-3 py-2 fw-bold text-white" style="background-color: #1a2340; border-left: 3px solid #ff7a00; font-size: 0.75rem;">
+                                    <i class="fas fa-shield-halved me-1 text-warning"></i> NABH 5th Track
+                                </span>
+                            </div>
                         </div>
+
                         <div class="p-3 bg-light rounded-3 mt-2 border">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
-                                    <strong class="d-block text-navy small"><i class="fas fa-hospital text-primary me-1"></i> Max Care Superspeciality Hospital</strong>
-                                    <span class="text-muted" style="font-size: 0.75rem;">NABH 5th Edition Track &bull; ABDM M3 Connected</span>
+                                    <strong class="d-block text-navy small"><i class="fas fa-hospital text-primary me-1"></i> Hospital Quality Management</strong>
+                                    <span class="text-muted" style="font-size: 0.72rem;">NABH Digital Mitra &bull; ABDM M3 Interoperable</span>
                                 </div>
-                                <span class="badge bg-primary px-2 py-1">Score: 98.4%</span>
+                                <span class="badge text-white px-2 py-1" style="background-color: #0c74c5;">Score: 99.4%</span>
                             </div>
                         </div>
                     </div>
@@ -221,14 +231,14 @@
             </div>
         </div>
 
-        <!-- 4 Cards Grid (Crisp White with Soft Pastel Badges) -->
+        <!-- 4 Cards Grid (Crisp White with Parallax Depth & 3D Tilt) -->
         <div class="row g-4">
             
             <!-- Pillar 1: HR & Credentialing -->
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 border bg-white shadow-xs d-flex flex-column justify-content-between" style="border-radius: 16px;">
+                <div class="card p-4 h-100 border bg-white shadow-sm d-flex flex-column justify-content-between parallax-depth-card parallax-tilt-card" style="border-radius: 16px; border-color: #e2e8f0 !important;">
                     <div>
-                        <div class="rounded-3 bg-primary bg-opacity-10 text-primary p-3 d-inline-flex mb-3" style="font-size: 1.5rem;">
+                        <div class="rounded-3 p-3 d-inline-flex mb-3 text-white" style="font-size: 1.5rem; background-color: #0c74c5;">
                             <i class="fas fa-user-doctor"></i>
                         </div>
                         <h4 class="h5 fw-bold text-navy mb-2">1. HR &amp; Credentialing</h4>
@@ -243,16 +253,16 @@
                         </ul>
                     </div>
                     <div class="pt-3 mt-3 border-top">
-                        <a href="<?= site_url('hr-suite') ?>" class="btn btn-sm btn-outline-primary w-100 fw-bold">Explore HR Suite &rarr;</a>
+                        <a href="<?= site_url('hr-suite') ?>" class="btn btn-sm text-white w-100 fw-bold" style="background-color: #0c74c5; border-radius: 6px;">Explore HR Suite &rarr;</a>
                     </div>
                 </div>
             </div>
 
             <!-- Pillar 2: Building & Infrastructure -->
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 border bg-white shadow-xs d-flex flex-column justify-content-between" style="border-radius: 16px;">
+                <div class="card p-4 h-100 border bg-white shadow-sm d-flex flex-column justify-content-between parallax-depth-card parallax-tilt-card" style="border-radius: 16px; border-color: #e2e8f0 !important;">
                     <div>
-                        <div class="rounded-3 bg-info bg-opacity-10 text-info p-3 d-inline-flex mb-3" style="font-size: 1.5rem;">
+                        <div class="rounded-3 p-3 d-inline-flex mb-3 text-white" style="font-size: 1.5rem; background-color: #1a2340;">
                             <i class="fas fa-hospital"></i>
                         </div>
                         <h4 class="h5 fw-bold text-navy mb-2">2. Building &amp; Facility</h4>
@@ -267,16 +277,16 @@
                         </ul>
                     </div>
                     <div class="pt-3 mt-3 border-top">
-                        <a href="<?= site_url('equipment-grid') ?>" class="btn btn-sm btn-outline-info w-100 fw-bold">Explore Facility Logs &rarr;</a>
+                        <a href="<?= site_url('equipment-grid') ?>" class="btn btn-sm text-white w-100 fw-bold" style="background-color: #1a2340; border-radius: 6px;">Explore Facility Logs &rarr;</a>
                     </div>
                 </div>
             </div>
 
             <!-- Pillar 3: Medical Equipment -->
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 border bg-white shadow-xs d-flex flex-column justify-content-between" style="border-radius: 16px;">
+                <div class="card p-4 h-100 border bg-white shadow-sm d-flex flex-column justify-content-between parallax-depth-card parallax-tilt-card" style="border-radius: 16px; border-color: #e2e8f0 !important;">
                     <div>
-                        <div class="rounded-3 bg-warning bg-opacity-10 text-warning p-3 d-inline-flex mb-3" style="font-size: 1.5rem;">
+                        <div class="rounded-3 p-3 d-inline-flex mb-3 text-white" style="font-size: 1.5rem; background-color: #ff7a00;">
                             <i class="fas fa-microscope"></i>
                         </div>
                         <h4 class="h5 fw-bold text-navy mb-2">3. Medical Equipment</h4>
@@ -291,16 +301,16 @@
                         </ul>
                     </div>
                     <div class="pt-3 mt-3 border-top">
-                        <a href="<?= site_url('equipment-grid') ?>" class="btn btn-sm btn-outline-warning w-100 fw-bold">Explore Equipment &rarr;</a>
+                        <a href="<?= site_url('equipment-grid') ?>" class="btn btn-sm text-white w-100 fw-bold" style="background-color: #ff7a00; border-radius: 6px;">Explore Equipment &rarr;</a>
                     </div>
                 </div>
             </div>
 
             <!-- Pillar 4: Patient Workflow & DPDP -->
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 border bg-white shadow-xs d-flex flex-column justify-content-between" style="border-radius: 16px;">
+                <div class="card p-4 h-100 border bg-white shadow-sm d-flex flex-column justify-content-between parallax-depth-card parallax-tilt-card" style="border-radius: 16px; border-color: #e2e8f0 !important;">
                     <div>
-                        <div class="rounded-3 bg-success bg-opacity-10 text-success p-3 d-inline-flex mb-3" style="font-size: 1.5rem;">
+                        <div class="rounded-3 p-3 d-inline-flex mb-3 text-white" style="font-size: 1.5rem; background-color: #10b981;">
                             <i class="fas fa-heart-pulse"></i>
                         </div>
                         <h4 class="h5 fw-bold text-navy mb-2">4. Patient Journey &amp; DPDP</h4>
@@ -315,7 +325,7 @@
                         </ul>
                     </div>
                     <div class="pt-3 mt-3 border-top">
-                        <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-sm btn-outline-success w-100 fw-bold">Explore Clinical &rarr;</a>
+                        <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-sm text-white w-100 fw-bold" style="background-color: #10b981; border-radius: 6px;">Explore Clinical &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -342,8 +352,8 @@
         <div class="row g-4">
             
             <div class="col-md-6">
-                <div class="p-4 rounded-4 border bg-white h-100 d-flex gap-3 align-items-start shadow-xs" style="border-left: 4px solid #0284c7 !important;">
-                    <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center p-3 flex-shrink-0" style="width: 52px; height: 52px; font-size: 1.3rem;">
+                <div class="p-4 rounded-4 border bg-white h-100 d-flex gap-3 align-items-start shadow-sm parallax-depth-card parallax-tilt-card" style="border-left: 4px solid #0c74c5 !important; border-color: #e2e8f0;">
+                    <div class="rounded-circle text-white d-flex align-items-center justify-content-center p-3 flex-shrink-0" style="width: 52px; height: 52px; font-size: 1.3rem; background-color: #0c74c5;">
                         <i class="fas fa-shield-halved"></i>
                     </div>
                     <div>
@@ -356,12 +366,12 @@
             </div>
 
             <div class="col-md-6">
-                <div class="p-4 rounded-4 border bg-white h-100 d-flex gap-3 align-items-start shadow-xs" style="border-left: 4px solid #059669 !important;">
-                    <div class="rounded-circle bg-success bg-opacity-10 text-success d-flex align-items-center justify-content-center p-3 flex-shrink-0" style="width: 52px; height: 52px; font-size: 1.3rem;">
+                <div class="p-4 rounded-4 border bg-white h-100 d-flex gap-3 align-items-start shadow-sm parallax-depth-card parallax-tilt-card" style="border-left: 4px solid #10b981 !important; border-color: #e2e8f0;">
+                    <div class="rounded-circle text-white d-flex align-items-center justify-content-center p-3 flex-shrink-0" style="width: 52px; height: 52px; font-size: 1.3rem; background-color: #10b981;">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <div>
-                        <h4 class="h5 fw-bold text-navy mb-2">2. Automated Quality Indicators (32 KPIs)</h4>
+                        <h4 class="h5 fw-bold text-navy mb-2">2. Automated Quality Indicators (24+ KPIs)</h4>
                         <p class="text-muted small mb-0">
                             Real-time aggregation of core NABH metrics: Medication Administration Errors, Inpatient Bed Occupancy, Surgical Site Infection (SSI) Rate, Hand Hygiene Compliance, and ICU Return Rate.
                         </p>
@@ -370,8 +380,8 @@
             </div>
 
             <div class="col-md-6">
-                <div class="p-4 rounded-4 border bg-white h-100 d-flex gap-3 align-items-start shadow-xs" style="border-left: 4px solid #e11d48 !important;">
-                    <div class="rounded-circle bg-danger bg-opacity-10 text-danger d-flex align-items-center justify-content-center p-3 flex-shrink-0" style="width: 52px; height: 52px; font-size: 1.3rem;">
+                <div class="p-4 rounded-4 border bg-white h-100 d-flex gap-3 align-items-start shadow-sm parallax-depth-card parallax-tilt-card" style="border-left: 4px solid #ff7a00 !important; border-color: #e2e8f0;">
+                    <div class="rounded-circle text-white d-flex align-items-center justify-content-center p-3 flex-shrink-0" style="width: 52px; height: 52px; font-size: 1.3rem; background-color: #ff7a00;">
                         <i class="fas fa-triangle-exclamation"></i>
                     </div>
                     <div>
@@ -384,8 +394,8 @@
             </div>
 
             <div class="col-md-6">
-                <div class="p-4 rounded-4 border bg-white h-100 d-flex gap-3 align-items-start shadow-xs" style="border-left: 4px solid #d97706 !important;">
-                    <div class="rounded-circle bg-warning bg-opacity-10 text-warning d-flex align-items-center justify-content-center p-3 flex-shrink-0" style="width: 52px; height: 52px; font-size: 1.3rem;">
+                <div class="p-4 rounded-4 border bg-white h-100 d-flex gap-3 align-items-start shadow-sm parallax-depth-card parallax-tilt-card" style="border-left: 4px solid #1a2340 !important; border-color: #e2e8f0;">
+                    <div class="rounded-circle text-white d-flex align-items-center justify-content-center p-3 flex-shrink-0" style="width: 52px; height: 52px; font-size: 1.3rem; background-color: #1a2340;">
                         <i class="fas fa-lock"></i>
                     </div>
                     <div>
@@ -419,7 +429,7 @@
         <div class="row g-4">
             
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 14px;">
+                <div class="card p-4 h-100 text-center border bg-white shadow-sm parallax-depth-card parallax-tilt-card" style="border-radius: 14px; border-color: #e2e8f0;">
                     <div class="rounded-circle text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 48px; height: 48px; font-size: 1.15rem; background: #0c74c5 !important;">
                         01
                     </div>
@@ -431,7 +441,7 @@
             </div>
 
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 14px;">
+                <div class="card p-4 h-100 text-center border bg-white shadow-sm parallax-depth-card parallax-tilt-card" style="border-radius: 14px; border-color: #e2e8f0;">
                     <div class="rounded-circle text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 48px; height: 48px; font-size: 1.15rem; background: #0284c7 !important;">
                         02
                     </div>
@@ -443,7 +453,7 @@
             </div>
 
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 14px;">
+                <div class="card p-4 h-100 text-center border bg-white shadow-sm parallax-depth-card parallax-tilt-card" style="border-radius: 14px; border-color: #e2e8f0;">
                     <div class="rounded-circle text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 48px; height: 48px; font-size: 1.15rem; background: #ff7a00 !important;">
                         03
                     </div>
@@ -455,7 +465,7 @@
             </div>
 
             <div class="col-md-6 col-lg-3">
-                <div class="card card-max p-4 h-100 text-center border bg-white shadow-xs" style="border-radius: 14px;">
+                <div class="card p-4 h-100 text-center border bg-white shadow-sm parallax-depth-card parallax-tilt-card" style="border-radius: 14px; border-color: #e2e8f0;">
                     <div class="rounded-circle text-white fw-bold mx-auto mb-3 d-flex align-items-center justify-content-center shadow-xs" style="width: 48px; height: 48px; font-size: 1.15rem; background: #16a34a !important;">
                         04
                     </div>
@@ -477,19 +487,19 @@
 <section class="py-5 bg-white">
     <div class="container py-4">
 
-        <div class="card card-max p-0 overflow-hidden border-0 shadow-sm" style="background: #1a2340; border-radius: 14px;">
+        <div class="card border-0 shadow-sm parallax-depth-card" style="background: #1a2340; border-radius: 16px; overflow: hidden;">
             <div class="row g-0 align-items-center">
                 
                 <div class="col-lg-6 p-4 p-md-5 text-white">
-                    <span class="badge bg-warning text-dark mb-3 px-3 py-2 fw-bold"><i class="fas fa-award me-1"></i> Zero-Gap Audit Readiness</span>
+                    <span class="badge mb-3 px-3 py-2 fw-bold" style="background-color: #ff7a00; color: #ffffff;"><i class="fas fa-award me-1"></i> Zero-Gap Audit Readiness</span>
                     <h2 class="display-6 fw-bold mb-3 text-white">Empower Your Hospital with 100% Digital NABH Governance</h2>
-                    <p class="text-white-50 mb-4" style="line-height: 1.6; font-size: 1.05rem; color: rgba(255, 255, 255, 0.95) !important;">
+                    <p class="text-white-50 mb-4" style="line-height: 1.6; font-size: 1.02rem; color: rgba(255, 255, 255, 0.95) !important;">
                         Join leading healthcare institutions that have replaced chaotic spreadsheets and missing paper logs with Hospital Quality Management (HQM). Experience effortless mock audits, automated incident resolution, and total peace of mind.
                     </p>
                     
-                    <div class="d-flex flex-wrap gap-3">
+                    <div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
                         <a href="<?= site_url('assessment-tool') ?>" class="btn px-4 py-3 fw-bold shadow-sm text-white" style="background: #ff7a00; border: none; border-radius: 8px;">
-                            <i class="fas fa-play me-2"></i> Take Compliance Readiness Quiz
+                            <i class="fas fa-play me-2"></i> Compliance Readiness Quiz
                         </a>
                         <a href="<?= site_url('contact') ?>" class="btn btn-outline-light px-4 py-3 fw-semibold" style="border-radius: 8px;">
                             <i class="fas fa-calendar-check me-2"></i> Book Mock Hospital Audit
@@ -498,7 +508,9 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <img src="<?= base_url('assets/images/audit_ready_hospital.jpg') ?>" alt="Accredited Hospital Quality Team" class="img-fluid w-100" style="min-height: 380px; object-fit: cover;">
+                    <div class="parallax-image-holder h-100">
+                        <img src="<?= base_url('assets/images/hospital_digital_kpi_dashboard.jpg') ?>" alt="Accredited Hospital Quality Team" class="img-fluid w-100" style="min-height: 360px; max-height: 420px; object-fit: cover;">
+                    </div>
                 </div>
 
             </div>
@@ -506,3 +518,4 @@
 
     </div>
 </section>
+
