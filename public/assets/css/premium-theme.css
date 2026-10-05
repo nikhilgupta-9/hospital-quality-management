@@ -1192,14 +1192,15 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .page-banner-hinton {
-    background: #0c74c5;
+    background: linear-gradient(135deg, rgba(7, 24, 64, 0.55) 0%, rgba(5, 18, 50, 0.60) 100%),
+                url('../images/br-bg-2.jpg') center center / cover no-repeat;
     position: relative;
-    border-radius: 12px;
-    padding: 50px 24px 55px;
+    border-radius: 20px;
+    padding: 65px 24px 70px;
     color: #ffffff;
     text-align: center;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(12, 116, 197, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* Floating Molecule Icons on Left & Right */
@@ -1274,7 +1275,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .page-banner-nav a:hover {
-    color: #00d084;
+    color: #ff7a00;
 }
 
 .page-banner-nav .nav-separator {
@@ -1283,7 +1284,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .page-banner-nav .nav-active {
-    color: #00d084;
+    color: #ff7a00;
     font-weight: 700;
 }
 
