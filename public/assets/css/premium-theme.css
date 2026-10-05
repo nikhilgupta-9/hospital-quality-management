@@ -1472,14 +1472,16 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     transform: translateY(-3px);
 }
 
-/* Footer */
-/* Footer (Hinton Exact Clone Style) */
+/* =========================================================
+   FOOTER (REJUVENATE DIGITAL HEALTH / HOSPITAL QUALITY)
+========================================================= */
 .hinton-pre-footer-bar {
-    background: #f8dee3;
-    border-radius: 22px;
+    background: #ffffff;
+    border: 1px solid #dce8f6;
+    border-radius: 20px;
     padding: 26px 36px;
     margin-bottom: 50px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(12, 116, 197, 0.08);
     position: relative;
     z-index: 2;
 }
@@ -1493,28 +1495,34 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .hinton-pre-footer-item .contact-icon {
     width: 52px;
     height: 52px;
-    border-radius: 50%;
-    background: var(--hinton-primary);
+    border-radius: 14px;
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.25rem;
     flex-shrink: 0;
-    box-shadow: 0 4px 14px rgba(0, 82, 204, 0.3);
+    box-shadow: 0 4px 14px rgba(12, 116, 197, 0.2);
+    transition: transform 0.25s var(--ease-smooth);
+}
+
+.hinton-pre-footer-item:hover .contact-icon {
+    transform: translateY(-2px) scale(1.05);
 }
 
 .hinton-pre-footer-item .contact-label {
-    font-size: 0.88rem;
-    color: #526071;
-    font-weight: 500;
-    margin-bottom: 2px;
+    font-size: 0.78rem;
+    color: #64748b;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 3px;
 }
 
 .hinton-pre-footer-item .contact-val {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
     font-weight: 800;
-    color: var(--hinton-navy);
+    color: #1a2340;
     font-family: var(--font-heading);
     letter-spacing: -0.01em;
     line-height: 1.2;
@@ -1523,21 +1531,20 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .hinton-pre-footer-divider {
     width: 1.5px;
-    height: 50px;
-    background: #e2c0c7;
-    transform: rotate(22deg);
+    height: 48px;
+    background: #e2e8f0;
     margin: 0 auto;
 }
 
 @media (max-width: 991.98px) {
     .hinton-pre-footer-bar {
-        padding: 24px 20px;
+        padding: 22px 18px;
     }
     .hinton-pre-footer-divider {
         display: none;
     }
     .hinton-pre-footer-item {
-        margin-bottom: 16px;
+        margin-bottom: 18px;
     }
     .hinton-pre-footer-item:last-child {
         margin-bottom: 0;
@@ -1545,54 +1552,19 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .footer-hinton {
-    background: #040e24;
+    background: #121b33;
     color: #94a3b8;
     padding: 60px 0 28px;
     font-size: 0.93rem;
     position: relative;
     overflow: hidden;
-}
-
-/* Hinton Circular Ambient Accent */
-.footer-hinton::before {
-    content: '';
-    position: absolute;
-    top: -120px;
-    right: -80px;
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(0, 208, 132, 0.12) 0%, rgba(0,0,0,0) 70%);
-    pointer-events: none;
-}
-
-.footer-decor-circle {
-    position: absolute;
-    top: 40px;
-    right: 8%;
-    width: 24px;
-    height: 24px;
-    border: 2px solid #00d084;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-    opacity: 0.6;
-}
-
-.footer-decor-circle::after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: #00d084;
-    border-radius: 50%;
+    border-top: 4px solid #0c74c5;
 }
 
 .footer-hinton .brand-logo-wrap {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     text-decoration: none;
     margin-bottom: 18px;
 }
@@ -1601,13 +1573,13 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     width: 44px;
     height: 44px;
     border-radius: 12px;
-    background: linear-gradient(135deg, #00d084 0%, #00bfa5 100%);
+    background: #0c74c5;
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.35rem;
-    box-shadow: 0 4px 15px rgba(0, 208, 132, 0.35);
+    box-shadow: 0 4px 14px rgba(12, 116, 197, 0.35);
 }
 
 .footer-hinton .brand-logo-text {
@@ -1620,18 +1592,18 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .footer-hinton .footer-desc {
     line-height: 1.75;
-    color: #a0aec0;
+    color: #cbd5e1;
     font-size: 0.92rem;
     margin-bottom: 22px;
-    max-width: 340px;
+    max-width: 360px;
 }
 
 .footer-hinton .footer-heading {
     color: #ffffff;
     font-family: var(--font-heading);
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     position: relative;
     letter-spacing: -0.01em;
 }
@@ -1639,12 +1611,12 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .footer-hinton .footer-heading::after {
     content: '';
     display: block;
-    width: 38px;
+    width: 32px;
     height: 3px;
-    background: #00d084;
+    background: #ff7a00;
     border-radius: 3px;
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .footer-hinton .footer-links {
@@ -1654,28 +1626,30 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .footer-hinton .footer-links li {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 }
 
 .footer-hinton .footer-links a {
-    color: #a0aec0;
+    color: #94a3b8;
     text-decoration: none;
     transition: all 0.22s var(--ease-smooth);
-    display: inline-block;
-    font-size: 0.94rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.92rem;
     font-weight: 400;
 }
 
 .footer-hinton .footer-links a:hover {
-    color: #00d084;
-    transform: translateX(5px);
+    color: #38bdf8;
+    transform: translateX(4px);
 }
 
 .footer-hinton .social-icon-btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.06);
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.12);
     display: inline-flex;
     align-items: center;
@@ -1684,39 +1658,39 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     transition: all 0.25s var(--ease-smooth);
     margin-right: 8px;
     margin-bottom: 0;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
 }
 
 .footer-hinton .social-icon-btn:hover {
-    background: #00d084;
+    background: #0c74c5;
     color: #ffffff;
-    border-color: #00d084;
+    border-color: #0c74c5;
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0, 208, 132, 0.4);
+    box-shadow: 0 4px 14px rgba(12, 116, 197, 0.4);
 }
 
 .footer-hinton .newsletter-text {
-    color: #a0aec0;
-    font-size: 0.92rem;
+    color: #cbd5e1;
+    font-size: 0.9rem;
     line-height: 1.65;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .footer-hinton .newsletter-form {
     position: relative;
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50px;
-    padding: 6px 6px 6px 18px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    padding: 5px 5px 5px 16px;
     transition: all 0.25s ease;
 }
 
 .footer-hinton .newsletter-form:focus-within {
-    border-color: #00d084;
-    box-shadow: 0 0 0 3px rgba(0, 208, 132, 0.2);
-    background: rgba(255, 255, 255, 0.08);
+    border-color: #0c74c5;
+    box-shadow: 0 0 0 3px rgba(12, 116, 197, 0.3);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .footer-hinton .newsletter-form input {
@@ -1729,45 +1703,45 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .footer-hinton .newsletter-form input::placeholder {
-    color: #64748b;
+    color: #94a3b8;
 }
 
 .footer-hinton .newsletter-form .btn-newsletter {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #00d084;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #ff7a00;
     color: #ffffff;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 0.95rem;
     flex-shrink: 0;
     transition: all 0.25s ease;
 }
 
 .footer-hinton .newsletter-form .btn-newsletter:hover {
-    background: #00b371;
-    transform: scale(1.06);
-    box-shadow: 0 4px 12px rgba(0, 208, 132, 0.5);
+    background: #e66e00;
+    transform: scale(1.04);
+    box-shadow: 0 4px 12px rgba(255, 122, 0, 0.4);
 }
 
 .footer-hinton-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 24px;
-    margin-top: 45px;
-    font-size: 0.9rem;
-    color: #ffffff;
+    margin-top: 40px;
+    font-size: 0.88rem;
+    color: #cbd5e1;
 }
 
 .footer-hinton-bottom .copyright-text {
-    color: #ffffff !important;
-    font-weight: 500;
+    color: #cbd5e1 !important;
+    font-weight: 400;
 }
 
 .footer-hinton-bottom .dev-link {
-    color: #00d084 !important;
+    color: #ff7a00 !important;
     font-weight: 700;
     text-decoration: underline !important;
     transition: all 0.2s ease;
@@ -1775,18 +1749,17 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .footer-hinton-bottom .dev-link:hover {
     color: #ffffff !important;
-    text-decoration: underline;
 }
 
 .footer-hinton-bottom a {
     margin-bottom: 0;
-    color: #cbd5e1;
+    color: #94a3b8;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .footer-hinton-bottom a:hover {
-    color: #00d084;
+    color: #38bdf8;
 }
 
 /* App Portal Layout (Independent Sidebar + Sticky Topbar + Scrollable Main Content) */

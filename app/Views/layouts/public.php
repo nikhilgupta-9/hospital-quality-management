@@ -276,9 +276,6 @@
 
     <!-- Footer -->
     <footer class="footer-hinton">
-        <!-- Floating Ambient Decoration Circle -->
-        <div class="footer-decor-circle"></div>
-
         <div class="container position-relative">
             <!-- Pre-Footer Contact Bar -->
             <div class="hinton-pre-footer-bar">
@@ -286,12 +283,14 @@
                     <!-- Item 1: Support Hotline -->
                     <div class="col-lg-4 col-md-12">
                         <div class="hinton-pre-footer-item">
-                            <div class="contact-icon" style="background: rgba(255, 122, 0, 0.15); color: #ff7a00;">
+                            <div class="contact-icon" style="background-color: #ff7a00;">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
                                 <div class="contact-label">Hospital Support Helpline</div>
-                                <div class="contact-val">+91 1800-419-5959</div>
+                                <a href="tel:18004195959" class="contact-val text-decoration-none text-navy d-block">
+                                    +91 1800-419-5959
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -304,12 +303,14 @@
                     <!-- Item 2: Support Email -->
                     <div class="col-lg-3 col-md-12">
                         <div class="hinton-pre-footer-item">
-                            <div class="contact-icon" style="background: rgba(12, 116, 197, 0.15); color: #0c74c5;">
+                            <div class="contact-icon" style="background-color: #0c74c5;">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div>
-                                <div class="contact-label">Official Support Email</div>
-                                <div class="contact-val">support@hospitalquality.org</div>
+                                <div class="contact-label">Official Advisory Email</div>
+                                <a href="mailto:support@hospitalquality.org" class="contact-val text-decoration-none text-navy d-block" style="font-size: 0.95rem;">
+                                    support@hospitalquality.org
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -322,12 +323,12 @@
                     <!-- Item 3: Visit Us On -->
                     <div class="col-lg-4 col-md-12">
                         <div class="hinton-pre-footer-item">
-                            <div class="contact-icon" style="background: rgba(255, 122, 0, 0.15); color: #ff7a00;">
+                            <div class="contact-icon" style="background-color: #ff7a00;">
                                 <i class="fas fa-location-dot"></i>
                             </div>
                             <div>
-                                <div class="contact-label">Headquarters</div>
-                                <div class="contact-val">New Delhi, India</div>
+                                <div class="contact-label">Headquarters &amp; Registry</div>
+                                <div class="contact-val" style="font-size: 1rem;">New Delhi, India</div>
                             </div>
                         </div>
                     </div>
@@ -339,20 +340,32 @@
                 <!-- Column 1: Brand Logo & Mission -->
                 <div class="col-lg-4 col-md-6 pe-lg-4">
                     <a href="<?= site_url('/') ?>" class="brand-logo-wrap text-decoration-none">
-                        <div class="brand-logo-icon" style="background: #0c74c5;">
-                            <i class="fas fa-hospital"></i>
+                        <div class="brand-logo-icon" style="background-color: #0c74c5;">
+                            <i class="fas fa-hospital text-white"></i>
                         </div>
                         <span class="brand-logo-text text-white">Hospital <span style="color:#ff7a00;">Quality</span></span>
                     </a>
                     <p class="footer-desc">
-                        Empowering hospitals, clinical networks, and healthcare providers across India with robust NABH 5th Edition digital quality management, ABHA / ABDM ecosystem integration, and DPDP compliant patient workflows.
+                        Empowering hospitals, clinical networks, and healthcare providers across India with robust NABH 5th Edition digital quality management, ABHA / ABDM ecosystem integration, and DPDP 2023 compliant clinical workflows.
                     </p>
+                    
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge py-1 px-2 text-white" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.72rem;">
+                            <i class="fas fa-shield-halved text-warning me-1"></i> NABH 5th Ed
+                        </span>
+                        <span class="badge py-1 px-2 text-white" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.72rem;">
+                            <i class="fas fa-certificate text-success me-1"></i> ABDM M3
+                        </span>
+                        <span class="badge py-1 px-2 text-white" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.72rem;">
+                            <i class="fas fa-fingerprint text-info me-1"></i> DPDP 2023
+                        </span>
+                    </div>
+
                     <div class="d-flex align-items-center gap-2">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Twitter"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
 
@@ -360,12 +373,12 @@
                 <div class="col-lg-3 col-6">
                     <h5 class="footer-heading">NABH &amp; Quality Suites</h5>
                     <ul class="footer-links">
-                        <li><a href="<?= site_url('standards') ?>">NABH Standards (5th Ed)</a></li>
-                        <li><a href="<?= site_url('sop-suite') ?>">Document &amp; SOP Suite</a></li>
-                        <li><a href="<?= site_url('hr-suite') ?>">HR &amp; Doctor Privileging</a></li>
-                        <li><a href="<?= site_url('equipment-grid') ?>">Equipment &amp; Utilities Grid</a></li>
-                        <li><a href="<?= site_url('clinical-workflow') ?>">Clinical &amp; DPDP Workflow</a></li>
-                        <li><a href="<?= site_url('quality-indicators') ?>">Quality KPIs &amp; Metrics</a></li>
+                        <li><a href="<?= site_url('standards') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> NABH Standards (5th Ed)</a></li>
+                        <li><a href="<?= site_url('clinical-workflow') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> Clinical &amp; DPDP Workflow</a></li>
+                        <li><a href="<?= site_url('sop-suite') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> Document &amp; SOP Suite</a></li>
+                        <li><a href="<?= site_url('hr-suite') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> HR &amp; Doctor Privileging</a></li>
+                        <li><a href="<?= site_url('equipment-grid') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> Equipment &amp; Utilities Grid</a></li>
+                        <li><a href="<?= site_url('quality-indicators') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> Quality KPIs &amp; Telemetry</a></li>
                     </ul>
                 </div>
 
@@ -373,42 +386,43 @@
                 <div class="col-lg-2 col-6">
                     <h5 class="footer-heading">Portals &amp; Tools</h5>
                     <ul class="footer-links">
-                        <li><a href="<?= site_url('/') ?>">Home Portal</a></li>
-                        <li><a href="<?= site_url('pricing') ?>">SaaS Pricing &amp; Plans</a></li>
-                        <li><a href="<?= site_url('about') ?>">About Framework</a></li>
-                        <li><a href="<?= site_url('checklists') ?>">Audit &amp; Inspection Checklists</a></li>
-                        <li><a href="<?= site_url('assessment-tool') ?>">Compliance Readiness Quiz</a></li>
-                        <li><a href="<?= site_url('contact') ?>">Contact Advisory Desk</a></li>
-                        <li><a href="https://healthid.ndhm.gov.in" target="_blank">ABHA Health ID Portal</a></li>
-                        <li><a href="https://esanjeevani.mohfw.gov.in" target="_blank">E-Sanjeevani Teleconsult</a></li>
+                        <li><a href="<?= site_url('/') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> Home Portal</a></li>
+                        <li><a href="<?= site_url('pricing') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> SaaS Pricing &amp; Plans</a></li>
+                        <li><a href="<?= site_url('about') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> About Framework</a></li>
+                        <li><a href="<?= site_url('checklists') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> Audit Checklists</a></li>
+                        <li><a href="<?= site_url('assessment-tool') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> Readiness Quiz</a></li>
+                        <li><a href="<?= site_url('login') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> Staff Portal Login</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 4: Subscribe Newsletter -->
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-heading">Stay Updated</h5>
+                    <h5 class="footer-heading">Compliance Bulletins</h5>
                     <p class="newsletter-text">
-                        Subscribe to receive monthly NABH compliance bulletins, statutory updates, and clinical safety alerts.
+                        Subscribe for monthly NABH 5th edition compliance circulars, DPDP 2023 legal alerts, and clinical safety checklists.
                     </p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Hospital Quality Management updates!');">
-                        <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="btn-newsletter" aria-label="Subscribe" style="background: #0c74c5;">
-                            <i class="fas fa-arrow-right"></i>
+                    <form class="newsletter-form mb-3" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Hospital Quality Management bulletins!');">
+                        <input type="email" placeholder="Enter official email" required>
+                        <button type="submit" class="btn-newsletter" aria-label="Subscribe">
+                            <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
+                    <div class="small text-white-50" style="font-size: 0.75rem;">
+                        <i class="fas fa-lock text-success me-1"></i> 256-Bit SSL Encrypted Healthcare Portal
+                    </div>
                 </div>
             </div>
 
             <!-- Footer Bottom Strip -->
             <div class="footer-hinton-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
                 <p class="mb-0 copyright-text text-white small">
-                    &copy; <?= date('Y') ?> <strong class="text-white">Hospital Quality Management</strong> (HQM). All Rights Reserved. &nbsp;|&nbsp; Developed by <a href="https://nikhilworks.com" target="_blank" rel="noopener noreferrer" class="dev-link" style="color: #ff7a00;">nikhilworks.com</a>
+                    &copy; <?= date('Y') ?> <strong class="text-white">Hospital Quality Management</strong> (HQM). All Rights Reserved. &nbsp;|&nbsp; Developed by <a href="https://nikhilworks.com" target="_blank" rel="noopener noreferrer" class="dev-link">nikhilworks.com</a>
                 </p>
-                <div class="d-flex flex-wrap gap-4 small">
-                    <a href="<?= site_url('privacy-policy') ?>" style="color: #a0aec0;">Privacy Policy</a>
-                    <a href="<?= site_url('terms-of-service') ?>" style="color: #a0aec0;">Terms of Service</a>
-                    <a href="<?= site_url('compliance-disclaimer') ?>" style="color: #a0aec0;">Compliance Disclaimer</a>
-                    <a href="<?= site_url('portal-gateway') ?>" style="color: #a0aec0;">Portal Gateway</a>
+                <div class="d-flex flex-wrap gap-3 gap-md-4 small">
+                    <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
+                    <a href="<?= site_url('terms-of-service') ?>">Terms of Service</a>
+                    <a href="<?= site_url('compliance-disclaimer') ?>">Compliance Disclaimer</a>
+                    <a href="<?= site_url('portal-gateway') ?>">Portal Gateway</a>
                 </div>
             </div>
         </div>
