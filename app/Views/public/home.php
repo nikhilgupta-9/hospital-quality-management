@@ -1,14 +1,14 @@
 <!-- =========================================================
      HOME PAGE: HOSPITAL QUALITY MANAGEMENT (HQM)
-     Authentic, Clean & Interactive Clinical Quality Platform
+     Rejuvenate Digital Health Aesthetic
 ========================================================= -->
 
 <!-- =========================================================
-     SECTION 1: BRIGHT & AUTHENTIC CLINICAL HERO SECTION
+     SECTION 1: REJUVENATE DIGITAL HEALTH HERO SECTION
 ========================================================= -->
-<section class="position-relative overflow-hidden w-100" style="background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 35%, #ffffff 100%); border-bottom: 1px solid #e2e8f0; padding-top: 45px; padding-bottom: 65px;">
+<section class="position-relative overflow-hidden w-100" style="background: linear-gradient(135deg, #f4fbfb 0%, #e8f7f5 40%, #ffffff 100%); border-bottom: 1px solid #e2e8f0; padding-top: 45px; padding-bottom: 65px;">
     <!-- Subtle Ambient Medical Glow -->
-    <div class="position-absolute top-0 end-0 w-50 h-100" style="background: radial-gradient(circle at 70% 30%, rgba(2, 132, 199, 0.12) 0%, rgba(255, 255, 255, 0) 70%); pointer-events: none;"></div>
+    <div class="position-absolute top-0 end-0 w-50 h-100" style="background: radial-gradient(circle at 70% 30%, rgba(2, 201, 184, 0.12) 0%, rgba(255, 255, 255, 0) 70%); pointer-events: none;"></div>
 
     <div class="container position-relative" style="z-index: 2;">
         <div class="row align-items-center g-5">
@@ -17,36 +17,36 @@
             <div class="col-lg-7">
                 <!-- Trust & Accreditation Badges -->
                 <div class="d-flex flex-wrap gap-2 mb-3">
-                    <span class="badge px-3 py-2 rounded-pill fw-bold bg-white text-primary border shadow-xs">
+                    <span class="badge px-3 py-2 rounded-pill fw-bold bg-white text-primary border shadow-xs" style="color: #0c74c5 !important; border-color: rgba(12, 116, 197, 0.25) !important;">
                         <i class="fas fa-shield-halved text-success me-1"></i> NABH Digital Mitra Empanelment Track
                     </span>
-                    <span class="badge px-3 py-2 rounded-pill fw-bold bg-white text-info border shadow-xs">
+                    <span class="badge px-3 py-2 rounded-pill fw-bold bg-white border shadow-xs" style="color: #02c9b8 !important; border-color: rgba(2, 201, 184, 0.35) !important;">
                         <i class="fas fa-network-wired me-1"></i> ABDM M3 Interoperable
                     </span>
-                    <span class="badge px-3 py-2 rounded-pill fw-bold bg-white text-warning border shadow-xs">
+                    <span class="badge px-3 py-2 rounded-pill fw-bold bg-white text-warning border shadow-xs" style="color: #d97706 !important;">
                         <i class="fas fa-gavel me-1"></i> DPDP Act 2023 Compliant
                     </span>
                 </div>
 
                 <!-- Main Hospital Headline -->
                 <h1 class="display-5 fw-extrabold mb-3 text-navy" style="font-family: var(--font-heading); line-height: 1.2; letter-spacing: -0.02em;">
-                    Smart Digital Quality Management <span style="color: var(--hinton-primary);">Platform (DQMS)</span>
+                    Smart Digital Quality Management <span style="color: #0c74c5;">Platform (DQMS)</span>
                 </h1>
 
                 <!-- Professional Subtitle -->
                 <p class="lead text-muted mb-4" style="font-size: 1.15rem; line-height: 1.6; max-width: 620px;">
-                    Empowering multispecialty hospitals and clinics to transition from passive paper binders to an active, automated clinical quality management system. Continuous compliance, tamper-evident audit trails, and zero-gap accreditation readiness.
+                    Empowering multispecialty hospitals and healthcare networks across India with active clinical quality governance, continuous NABH 5th Edition compliance, tamper-evident audit trails, and seamless ABHA integration.
                 </p>
 
                 <!-- Core Call-to-Actions -->
                 <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#fourPillars" class="btn btn-primary px-4 py-3 fw-bold shadow-sm" style="background: linear-gradient(135deg, #0284c7 0%, #0052cc 100%); border: none; border-radius: 12px;">
+                    <a href="#fourPillars" class="btn theme-btn text-white px-4 py-3 fw-bold shadow-sm" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%); border: none; border-radius: 50px;">
                         <i class="fas fa-cubes-stacked me-2"></i> Explore 4 Digital Pillars
                     </a>
-                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-outline-primary bg-white px-4 py-3 fw-semibold shadow-xs" style="border-radius: 12px;">
+                    <a href="<?= site_url('assessment-tool') ?>" class="btn btn-outline-primary bg-white px-4 py-3 fw-semibold shadow-xs" style="border-radius: 50px; border-color: #0c74c5; color: #0c74c5;">
                         <i class="fas fa-calculator me-2"></i> Instant Compliance Quiz
                     </a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-light border px-4 py-3 fw-semibold shadow-xs text-navy" style="border-radius: 12px;">
+                    <a href="<?= site_url('login') ?>" class="btn btn-light border px-4 py-3 fw-semibold shadow-xs text-navy" style="border-radius: 50px;">
                         <i class="fas fa-lock me-1 text-primary"></i> Portal Sign In &rarr;
                     </a>
                 </div>
@@ -202,20 +202,20 @@
             </p>
         </div>
 
-        <!-- Visual Framework Banner Card (Clean Sapphire Gradient) -->
-        <div class="card card-max p-0 mb-5 overflow-hidden border-0 shadow-md" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 60%, #0f4c81 100%); border-radius: 18px;">
+        <!-- Visual Framework Banner Card (Rejuvenate Gradient) -->
+        <div class="card card-max p-0 mb-5 overflow-hidden border-0 shadow-md" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%); border-radius: 18px;">
             <div class="row g-0 align-items-center">
                 <div class="col-lg-6 p-4 p-md-5 text-white">
-                    <span class="badge bg-white text-primary mb-3 fw-bold px-3 py-2"><i class="fas fa-atom me-1"></i> Unified Telemetry Model</span>
+                    <span class="badge bg-white text-primary mb-3 fw-bold px-3 py-2" style="color: #0c74c5 !important;"><i class="fas fa-atom me-1"></i> Unified Telemetry Model</span>
                     <h3 class="h3 fw-bold mb-3 text-white">Interconnected Clinical Governance</h3>
-                    <p class="text-white-50 mb-4" style="line-height: 1.6;">
+                    <p class="text-white-50 mb-4" style="line-height: 1.6; color: rgba(255, 255, 255, 0.9) !important;">
                         HQM seamlessly integrates medical credentialing, physical building safety, biomedical asset telemetry, and patient consent into a single unified dashboard.
                     </p>
                     <div class="d-flex flex-wrap gap-2">
-                        <a href="<?= site_url('hr-suite') ?>" class="btn btn-sm btn-light fw-bold text-navy"><i class="fas fa-user-doctor me-1 text-primary"></i> HR Suite</a>
-                        <a href="<?= site_url('equipment-grid') ?>" class="btn btn-sm btn-light fw-bold text-navy"><i class="fas fa-microscope me-1 text-warning"></i> Biomedical Suite</a>
-                        <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-sm btn-light fw-bold text-navy"><i class="fas fa-heart-pulse me-1 text-success"></i> Clinical &amp; DPDP Suite</a>
-                        <a href="<?= site_url('sop-suite') ?>" class="btn btn-sm btn-light fw-bold text-navy"><i class="fas fa-file-shield me-1 text-info"></i> SOP Suite</a>
+                        <a href="<?= site_url('hr-suite') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 50px;"><i class="fas fa-user-doctor me-1 text-primary"></i> HR Suite</a>
+                        <a href="<?= site_url('equipment-grid') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 50px;"><i class="fas fa-microscope me-1 text-warning"></i> Biomedical Suite</a>
+                        <a href="<?= site_url('clinical-workflow') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 50px;"><i class="fas fa-heart-pulse me-1 text-success"></i> Clinical &amp; DPDP Suite</a>
+                        <a href="<?= site_url('sop-suite') ?>" class="btn btn-sm btn-light fw-bold text-navy" style="border-radius: 50px;"><i class="fas fa-file-shield me-1 text-info"></i> SOP Suite</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -480,21 +480,21 @@
 <section class="py-5 bg-white">
     <div class="container py-4">
 
-        <div class="card card-max p-0 overflow-hidden border-0 shadow-lg" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 60%, #0f4c81 100%); border-radius: 20px;">
+        <div class="card card-max p-0 overflow-hidden border-0 shadow-lg" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%); border-radius: 20px;">
             <div class="row g-0 align-items-center">
                 
                 <div class="col-lg-6 p-4 p-md-5 text-white">
-                    <span class="badge bg-white text-primary mb-3 px-3 py-2 fw-bold"><i class="fas fa-award me-1"></i> Zero-Gap Audit Readiness</span>
+                    <span class="badge bg-white text-primary mb-3 px-3 py-2 fw-bold" style="color: #0c74c5 !important;"><i class="fas fa-award me-1"></i> Zero-Gap Audit Readiness</span>
                     <h2 class="display-6 fw-bold mb-3 text-white">Empower Your Hospital with 100% Digital NABH Governance</h2>
-                    <p class="text-white-50 mb-4" style="line-height: 1.6; font-size: 1.05rem;">
-                        Join leading healthcare institutions that have replaced chaotic spreadsheets and missing paper logs with Hospital Quality Management (HQM). Experience effortless mock audits, automated incident resolution, and total peace of mind.
+                    <p class="text-white-50 mb-4" style="line-height: 1.6; font-size: 1.05rem; color: rgba(255, 255, 255, 0.95) !important;">
+                        Join leading healthcare institutions that have replaced chaotic spreadsheets and missing paper logs with REJUVENATE Digital Health Quality Management. Experience effortless mock audits, automated incident resolution, and total peace of mind.
                     </p>
                     
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="<?= site_url('assessment-tool') ?>" class="btn btn-warning px-4 py-3 fw-bold shadow-sm text-dark" style="background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); border: none; border-radius: 12px;">
-                            <i class="fas fa-play me-2"></i> Take Compliance Readiness Quiz
+                        <a href="<?= site_url('assessment-tool') ?>" class="btn px-4 py-3 fw-bold shadow-sm text-white" style="background: #1a2340; border: none; border-radius: 50px;">
+                            <i class="fas fa-play me-2 text-warning"></i> Take Compliance Readiness Quiz
                         </a>
-                        <a href="<?= site_url('contact') ?>" class="btn btn-outline-light px-4 py-3 fw-semibold" style="border-radius: 12px;">
+                        <a href="<?= site_url('contact') ?>" class="btn btn-outline-light px-4 py-3 fw-semibold" style="border-radius: 50px;">
                             <i class="fas fa-calendar-check me-2"></i> Book Mock Hospital Audit
                         </a>
                     </div>

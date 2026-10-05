@@ -163,7 +163,7 @@
                                 <textarea name="message" class="form-control" rows="4" placeholder="Mention your target audit dates, specific departmental requirements, or current gaps..."></textarea>
                             </div>
                             <div class="col-12 mt-4">
-                                <button type="submit" class="btn btn-primary w-100 py-3 fw-bold shadow-md" style="background: linear-gradient(135deg, #0284c7 0%, #0052cc 100%); border: none; border-radius: 12px;">
+                                <button type="submit" class="btn theme-btn text-white w-100 py-3 fw-bold shadow-md" style="background: linear-gradient(135deg, #0c74c5 0%, #02c9b8 100%); border: none; border-radius: 50px;">
                                     <i class="fas fa-paper-plane me-2"></i> Submit Consultation Request
                                 </button>
                             </div>

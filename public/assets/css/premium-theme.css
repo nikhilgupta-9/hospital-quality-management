@@ -1,35 +1,43 @@
 /**
- * Hospital Quality Management — Hinton Medical Template Inspired Premium Theme
- * Framework: Bootstrap 5 + Clean Modern Medical Corporate Design
- * Colors: Deep Medical Navy (#081839, #00205b), Vitality Blue (#0052cc, #0066f6),
- * Medical Emerald (#00bfa5, #059669), Golden Glow (#d97706, #f59e0b), Clean Slate (#f8fafc)
+ * Hospital Quality Management — Rejuvenate Digital Health Theme
+ * Framework: Bootstrap 5 + Rejuvenate Digital Health Medical Corporate Design
+ * Colors: RDH Blue (#0c74c5), RDH Teal (#02c9b8), RDH Dark (#1a2340), RDH Light (#f4fbfb)
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --hinton-primary: #0052cc;
-    --hinton-primary-dark: #07193b;
-    --hinton-secondary: #00bfa5;
-    --hinton-secondary-dark: #00897b;
+    --theme-color: #0c74c5;
+    --theme-color-2: #02c9b8;
+    --rdh-blue: #0c74c5;
+    --rdh-teal: #02c9b8;
+    --rdh-dark: #1a2340;
+    --rdh-light: #f4fbfb;
+    --header: #1a2340;
+    --text: #4b5563;
+    
+    --hinton-primary: #0c74c5;
+    --hinton-primary-dark: #1a2340;
+    --hinton-secondary: #02c9b8;
+    --hinton-secondary-dark: #00a89a;
     --hinton-accent: #f59e0b;
     --hinton-danger: #e11d48;
-    --hinton-navy: #081839;
-    --hinton-body: #4b5876;
-    --hinton-heading: #07193b;
-    --hinton-bg: #f8fafc;
+    --hinton-navy: #1a2340;
+    --hinton-body: #4b5563;
+    --hinton-heading: #1a2340;
+    --hinton-bg: #f4fbfb;
     --hinton-card-bg: #ffffff;
-    --hinton-border: #e6edf5;
-    --hinton-shadow-sm: 0 2px 8px rgba(7, 25, 59, 0.04);
-    --hinton-shadow: 0 10px 30px rgba(7, 25, 59, 0.07);
-    --hinton-shadow-lg: 0 20px 40px rgba(7, 25, 59, 0.12);
+    --hinton-border: #e6efff;
+    --hinton-shadow-sm: 0 2px 10px rgba(12, 116, 197, 0.05);
+    --hinton-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    --hinton-shadow-lg: 0 15px 35px rgba(12, 116, 197, 0.12);
     --radius-sm: 8px;
     --radius-md: 14px;
     --radius-lg: 20px;
     --radius-xl: 28px;
     --radius-full: 9999px;
     --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -55,13 +63,35 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     letter-spacing: -0.02em;
 }
 
-/* Top Header Bar */
+/* Rejuvenate Top Header Bar */
 .hinton-top-header {
-    background: var(--hinton-navy);
-    color: #b0c4de;
+    background: #1a2340;
+    color: #e0f2fe;
     font-size: 0.84rem;
-    padding: 9px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-topabha {
+    background: linear-gradient(135deg, #02c9b8 0%, #0c74c5 100%);
+    color: #ffffff !important;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.78rem;
+    padding: 3px 14px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(2, 201, 184, 0.3);
+}
+
+.btn-esanjeevni {
+    background: #ff7a00;
+    color: #ffffff !important;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.78rem;
+    padding: 3px 14px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(255, 122, 0, 0.3);
 }
 
 .hinton-top-header a {
