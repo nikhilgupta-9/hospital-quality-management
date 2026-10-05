@@ -632,6 +632,46 @@
             </div>
         </div>
 
+        <!-- Visual Infrastructure & Biomedical Deep-Dive Cards -->
+        <div class="row g-4 mt-2 mb-4">
+            <div class="col-lg-4">
+                <div class="card card-max h-100 overflow-hidden border-0 shadow-sm transition-all hover-translate">
+                    <img src="<?= base_url('assets/images/facility_safety_banner.jpg') ?>" alt="Facility Safety Rounds" class="img-fluid w-100" style="height: 180px; object-fit: cover;">
+                    <div class="p-4">
+                        <span class="badge badge-max badge-max-rose mb-2"><i class="fas fa-building-circle-check me-1"></i> FMS Chapter 1-3</span>
+                        <h5 class="fw-bold text-navy mb-2">Facility Safety Rounds</h5>
+                        <p class="small text-muted mb-0">
+                            Digital inspection logs capturing civil hazards, broken tiles, fire extinguisher tags, and HVAC pressure differentials with assigned resolution timelines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-max h-100 overflow-hidden border-0 shadow-sm transition-all hover-translate">
+                    <img src="<?= base_url('assets/images/biomedical_calibration_banner.jpg') ?>" alt="Biomedical Calibration" class="img-fluid w-100" style="height: 180px; object-fit: cover;">
+                    <div class="p-4">
+                        <span class="badge badge-max badge-max-gold mb-2"><i class="fas fa-sliders me-1"></i> Traceability</span>
+                        <h5 class="fw-bold text-navy mb-2">NABL Traceable Testing</h5>
+                        <p class="small text-muted mb-0">
+                            Calibrated biomedical master simulators ensuring ventilators, defibrillators, and anesthesia machines maintain exact clinical tolerances.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-max h-100 overflow-hidden border-0 shadow-sm transition-all hover-translate">
+                    <img src="<?= base_url('assets/images/equipment_condemnation_banner.jpg') ?>" alt="Condemnation Committee" class="img-fluid w-100" style="height: 180px; object-fit: cover;">
+                    <div class="p-4">
+                        <span class="badge badge-max badge-max-blue mb-2"><i class="fas fa-gavel me-1"></i> BER Decommissioning</span>
+                        <h5 class="fw-bold text-navy mb-2">Condemnation Desk</h5>
+                        <p class="small text-muted mb-0">
+                            Statutory committee approval pipeline generating official Scrap Certificates for assets exceeding economic repair thresholds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Statutory Licenses Grid -->
         <div class="card card-max p-4 mt-4">
             <div class="row align-items-center g-3">

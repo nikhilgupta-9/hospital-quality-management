@@ -103,5 +103,11 @@ $routes->group(
     static function ($routes) {
         $routes->get('/', 'Equipment\EquipmentController::index');
         $routes->post('create', 'Equipment\EquipmentController::create');
+        $routes->post('create-defect', 'Equipment\EquipmentController::createDefect');
+        $routes->post('update-defect-status', 'Equipment\EquipmentController::updateDefectStatus');
+        $routes->post('update-status', 'Equipment\EquipmentController::updateStatus');
+        $routes->post('record-ppm', 'Equipment\EquipmentController::recordPpm');
+        $routes->post('request-condemnation', 'Equipment\EquipmentController::requestCondemnation');
+        $routes->post('review-condemnation', 'Equipment\EquipmentController::reviewCondemnation');
     }
 );

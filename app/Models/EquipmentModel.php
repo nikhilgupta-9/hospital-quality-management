@@ -16,7 +16,9 @@ class EquipmentModel extends Model
     protected $allowedFields = [
         'hospital_id', 'department_id', 'asset_no', 'name', 'category',
         'manufacturer', 'model', 'serial_no', 'purchase_date', 'install_date',
-        'warranty_expiry', 'amc_cmc_expiry', 'status', 'service_agency'
+        'warranty_expiry', 'amc_cmc_expiry', 'status', 'service_agency',
+        'breakdown_downtime_hours', 'last_breakdown_at', 'current_ppm_date',
+        'next_ppm_date', 'ppm_frequency_months', 'condemnation_status'
     ];
 
     public function getWithDetails(int $hospitalId, ?int $departmentId = null, ?string $category = null, ?string $status = null)
