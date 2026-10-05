@@ -6,11 +6,11 @@
 <style>
 /* Phase 3 Custom Clinical Styling */
 .clinical-hud {
-    background: linear-gradient(135deg, #020b1e 0%, #061b3d 60%, #003a8c 100%);
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 60%, #0f4c81 100%);
     border-radius: 1.25rem;
     color: #ffffff;
-    box-shadow: 0 10px 30px rgba(2, 11, 30, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 25px rgba(2, 132, 199, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 .patient-card {
     background: #ffffff;

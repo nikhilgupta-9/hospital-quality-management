@@ -34,10 +34,10 @@
         </div>
 
         <!-- Visual Hero Card with AI Image -->
-        <div class="card card-max p-0 mb-5 overflow-hidden" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+        <div class="card card-max p-0 mb-5 overflow-hidden border-0 shadow-md" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 60%, #0f4c81 100%); border-radius: 18px;">
             <div class="row g-0 align-items-center">
                 <div class="col-lg-7 p-4 p-md-5 text-white">
-                    <span class="badge badge-max badge-max-emerald mb-3"><i class="fas fa-certificate me-1"></i> NABH Digital Health Standards (2nd Edition)</span>
+                    <span class="badge bg-white text-primary mb-3 px-3 py-2 fw-bold"><i class="fas fa-certificate me-1"></i> NABH Digital Health Standards (2nd Edition)</span>
                     <h3 class="h3 fw-bold mb-3 text-white">Smart Digital Credentialing &amp; Staff Immunity Platform</h3>
                     <p class="text-white-50 mb-4">Transforming medical staff credentialing from static paper files into an active, automated DQMS governance engine. Featuring 100% Primary Source Verification, 3-tier credentials committee approval, and real-time Hepatitis-B vaccination immunity monitoring.</p>
                     <div class="row g-3">

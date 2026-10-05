@@ -34,10 +34,10 @@
         </div>
 
         <!-- Visual Hero Banner Card -->
-        <div class="card card-max p-0 mb-5 overflow-hidden border-0" style="background: linear-gradient(135deg, #091e3a 0%, #102a4d 50%, #064e3b 100%);">
+        <div class="card card-max p-0 mb-5 overflow-hidden border-0 shadow-md" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 60%, #0f4c81 100%); border-radius: 18px;">
             <div class="row g-0 align-items-center">
                 <div class="col-lg-7 p-4 p-md-5 text-white">
-                    <span class="badge badge-max badge-max-emerald mb-3"><i class="fas fa-certificate me-1"></i> ABDM M3 Certified Architecture</span>
+                    <span class="badge bg-white text-primary mb-3 px-3 py-2 fw-bold"><i class="fas fa-certificate me-1"></i> ABDM M3 Certified Architecture</span>
                     <h3 class="h3 fw-bold mb-3 text-white">Next-Gen Clinical Cockpit &amp; Data Fiduciary Security</h3>
                     <p class="text-white-50 mb-4">Bridging hospital admission, clinical bedside safety checkpoints, and the Digital Personal Data Protection (DPDP) Act 2023 statutory mandate. Eliminate paper consent hazards, unverified identity bottlenecks, and manual compliance auditing.</p>
                     <div class="row g-3">
@@ -233,11 +233,11 @@
         </div>
 
         <!-- Action Callout -->
-        <div class="card card-max p-4 p-md-5 text-center text-white border-0" style="background: linear-gradient(135deg, #091e3a 0%, #1e3a8a 100%);">
+        <div class="card card-max p-4 p-md-5 text-center text-white border-0 shadow-md" style="background: linear-gradient(135deg, #0284c7 0%, #0052cc 100%); border-radius: 18px;">
             <h3 class="h3 fw-bold mb-3 text-white">Experience the Live Clinical Workflow Cockpit</h3>
             <p class="text-white-50 max-w-700 mx-auto mb-4">Hospital quality coordinators, nursing superintendents, and doctors can manage patient dossiers, verify ABHA numbers, and record DPDP e-signatures in real-time.</p>
             <div class="d-flex flex-wrap justify-content-center gap-3">
-                <a href="<?= site_url('clinical') ?>" class="btn btn-warning px-4 py-2 fw-bold">
+                <a href="<?= site_url('clinical') ?>" class="btn btn-warning px-4 py-2 fw-bold text-dark" style="background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%); border: none;">
                     <i class="fas fa-gauge me-1"></i> Launch Clinical Cockpit
                 </a>
                 <a href="<?= site_url('contact') ?>" class="btn btn-outline-light px-4 py-2">
