@@ -78,6 +78,9 @@ $routes->group('admin', ['filter' => 'admin_auth:super_admin'], static function 
 // --- Hospital Admin ------------------------------------------------------------
 $routes->group('hospital-admin', ['filter' => 'admin_auth:hospital_admin,super_admin'], static function ($routes) {
     $routes->get('/', 'HospitalAdmin\DashboardController::index');
+    $routes->get('profile', 'HospitalAdmin\ProfileController::index');
+    $routes->post('profile/update', 'HospitalAdmin\ProfileController::updateProfile');
+    $routes->post('profile/license/update', 'HospitalAdmin\ProfileController::updateLicense');
     $routes->get('departments', 'HospitalAdmin\DepartmentController::index');
     $routes->get('approvals', 'HospitalAdmin\ApprovalController::index');
     $routes->get('reports', 'HospitalAdmin\ReportController::index');

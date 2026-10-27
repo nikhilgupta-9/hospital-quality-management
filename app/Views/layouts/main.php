@@ -4,25 +4,27 @@ $nav  = [];
 
 if (has_role('super_admin')) {
     $nav = [
-        ['label' => 'Executive Overview',   'url' => '/admin',               'icon' => 'fas fa-gauge-high'],
-        ['label' => 'Hospitals / Branches', 'url' => '/admin/hospitals',     'icon' => 'fas fa-hospital-alt'],
-        ['label' => 'User Management & RBAC', 'url' => '/admin/users',       'icon' => 'fas fa-users-gear'],
-        ['label' => 'Hospital Subscriptions', 'url' => '/admin/subscriptions', 'icon' => 'fas fa-id-card-clip'],
-        ['label' => 'SaaS Pricing Plans',   'url' => '/admin/pricing',       'icon' => 'fas fa-tags'],
-        ['label' => 'Legal & Public Pages (CMS)', 'url' => '/admin/pages',    'icon' => 'fas fa-file-shield'],
-        ['label' => 'Site & Contact Settings', 'url' => '/admin/settings',   'icon' => 'fas fa-sliders'],
-        ['label' => 'System Audit Trail',   'url' => '/admin/audit-logs',    'icon' => 'fas fa-shield-halved'],
+        ['label' => 'Executive Overview',           'url' => '/admin',                   'icon' => 'fas fa-gauge-high'],
+        ['label' => 'Hospitals / Branches',         'url' => '/admin/hospitals',         'icon' => 'fas fa-hospital-alt'],
+        ['label' => 'Hospital Profile & Licences',  'url' => '/hospital-admin/profile', 'icon' => 'fas fa-id-card-clip'],
+        ['label' => 'User Management & RBAC',       'url' => '/admin/users',             'icon' => 'fas fa-users-gear'],
+        ['label' => 'Hospital Subscriptions',       'url' => '/admin/subscriptions',     'icon' => 'fas fa-id-card-clip'],
+        ['label' => 'SaaS Pricing Plans',           'url' => '/admin/pricing',           'icon' => 'fas fa-tags'],
+        ['label' => 'Legal & Public Pages (CMS)',   'url' => '/admin/pages',             'icon' => 'fas fa-file-shield'],
+        ['label' => 'Site & Contact Settings',      'url' => '/admin/settings',          'icon' => 'fas fa-sliders'],
+        ['label' => 'System Audit Trail',           'url' => '/admin/audit-logs',        'icon' => 'fas fa-shield-halved'],
     ];
 } elseif (has_role('hospital_admin')) {
     $nav = [
-        ['label' => 'Readiness Dashboard',   'url' => '/hospital-admin',             'icon' => 'fas fa-chart-pie'],
-        ['label' => 'Hospital Departments',  'url' => '/hospital-admin/departments', 'icon' => 'fas fa-sitemap'],
-        ['label' => 'Approval Queue',        'url' => '/hospital-admin/approvals',   'icon' => 'fas fa-signature'],
-        ['label' => 'Executive Reports',     'url' => '/hospital-admin/reports',     'icon' => 'fas fa-file-waveform'],
-        ['label' => 'Document Suite',        'url' => '/document',                   'icon' => 'fas fa-file-signature'],
-        ['label' => 'HR & Credentialing',    'url' => '/hr',                         'icon' => 'fas fa-user-doctor'],
-        ['label' => 'Equipment & Utilities', 'url' => '/equipment',                  'icon' => 'fas fa-microscope'],
-        ['label' => 'Clinical & DPDP Workflow', 'url' => '/clinical',                'icon' => 'fas fa-heart-pulse'],
+        ['label' => 'Readiness Dashboard',          'url' => '/hospital-admin',             'icon' => 'fas fa-chart-pie'],
+        ['label' => 'Hospital Profile & Licences',  'url' => '/hospital-admin/profile',     'icon' => 'fas fa-id-card-clip'],
+        ['label' => 'Hospital Departments',         'url' => '/hospital-admin/departments', 'icon' => 'fas fa-sitemap'],
+        ['label' => 'Approval Queue',               'url' => '/hospital-admin/approvals',   'icon' => 'fas fa-signature'],
+        ['label' => 'Executive Reports',            'url' => '/hospital-admin/reports',     'icon' => 'fas fa-file-waveform'],
+        ['label' => 'Document Suite',               'url' => '/document',                   'icon' => 'fas fa-file-signature'],
+        ['label' => 'HR & Credentialing',           'url' => '/hr',                         'icon' => 'fas fa-user-doctor'],
+        ['label' => 'Equipment & Utilities',        'url' => '/equipment',                  'icon' => 'fas fa-microscope'],
+        ['label' => 'Clinical & DPDP Workflow',     'url' => '/clinical',                   'icon' => 'fas fa-heart-pulse'],
     ];
 } else {
     // nabh_coordinator and dept_user

@@ -59,14 +59,16 @@
             </div>
 
             <div class="col-sm-6 col-md-3">
-                <div class="card-premium-stat border-top-rose h-100">
-                    <span class="small text-muted d-block mb-1">🔥 Fire & Safety NOC</span>
-                    <h3 class="h4 fw-bold text-navy mb-0">100%</h3>
-                    <div class="progress mt-2" style="height: 4px;">
-                        <div class="progress-bar bg-danger" style="width: 100%"></div>
+                <a href="<?= site_url('hospital-admin/profile?tab=licenses') ?>" class="text-decoration-none">
+                    <div class="card-premium-stat border-top-rose h-100">
+                        <span class="small text-muted d-block mb-1">📜 Statutory Licences</span>
+                        <h3 class="h4 fw-bold text-navy mb-0">7 Tracked</h3>
+                        <div class="progress mt-2" style="height: 4px;">
+                            <div class="progress-bar bg-danger" style="width: 85%"></div>
+                        </div>
+                        <span class="small text-danger mt-2 d-block fw-semibold"><i class="fas fa-triangle-exclamation me-1"></i>1 Overdue &bull; 2 Due Soon</span>
                     </div>
-                    <span class="small text-muted mt-2 d-block">NOC Valid (2027)</span>
-                </div>
+                </a>
             </div>
 
             <div class="col-sm-6 col-md-3">
@@ -122,10 +124,18 @@
         <div class="card card-max p-4 h-100">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <h5 class="h6 fw-bold text-navy mb-0"><i class="fas fa-triangle-exclamation text-danger me-2"></i> Immediate Action & Expiry Alerts</h5>
-                <span class="badge badge-max badge-max-rose">4 Critical</span>
+                <span class="badge badge-max badge-max-rose">5 Critical</span>
             </div>
 
             <div class="d-flex flex-column gap-3">
+                <div class="p-3 bg-surface-alt rounded-3 border-start border-4 border-danger d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong class="d-block small text-danger"><i class="fas fa-certificate me-1"></i> Consent to Operate (CTO) Expired &amp; BMW Due</strong>
+                        <span class="small text-muted">Statutory Licences &bull; Overdue! Immediate SPCB Renewal Required</span>
+                    </div>
+                    <a href="<?= site_url('hospital-admin/profile?tab=licenses') ?>" class="btn btn-sm btn-danger fw-bold">Manage Licences</a>
+                </div>
+
                 <div class="p-3 bg-surface-alt rounded-3 border-start border-4 border-warning d-flex justify-content-between align-items-center">
                     <div>
                         <strong class="d-block small text-dark">HIC Infection Control Manual Review Due</strong>
