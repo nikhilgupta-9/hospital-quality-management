@@ -24,9 +24,9 @@
                 <span class="ms-2 text-white-50 small">&bull; NABH Digital Health Standards (2nd Edition)</span>
             </div>
             <div class="d-flex align-items-center gap-4">
-                <a href="tel:+9118004195959"><i class="fas fa-phone text-warning me-1"></i> <strong>Helpline: +91 1800-419-5959</strong></a>
-                <a href="mailto:support@hospitalquality.org"><i class="fas fa-envelope text-info me-1"></i> support@hospitalquality.org</a>
-                <a href="<?= site_url('login') ?>" class="text-white fw-bold"><i class="fas fa-user-lock text-warning me-1"></i> Login / Portal</a>
+                <a href="tel:+9118004195959"><i class="fas fa-phone me-1" style="color: #F5A623;"></i> <strong>Helpline: +91 1800-419-5959</strong></a>
+                <a href="mailto:support@hospitalquality.org"><i class="fas fa-envelope me-1" style="color: #0EA5A4;"></i> support@hospitalquality.org</a>
+                <a href="<?= site_url('login') ?>" class="text-white fw-bold"><i class="fas fa-user-lock me-1" style="color: #F5A623;"></i> Login / Portal</a>
             </div>
         </div>
     </div>
@@ -35,17 +35,17 @@
     <nav class="navbar navbar-expand-lg navbar-hinton">
         <div class="container">
             <a class="navbar-brand" href="<?= site_url('/') ?>">
-                <div class="brand-icon" style="background: #0c74c5;">
+                <div class="brand-icon">
                     <i class="fas fa-hospital text-white"></i>
                 </div>
                 <div>
-                    <span class="d-block lh-1 fw-extrabold text-navy" style="font-size:1.35rem; font-family: var(--font-heading); color: #1a2340;">Hospital <span style="color:#ff7a00;">Quality</span></span>
+                    <span class="d-block lh-1 fw-extrabold text-navy" style="font-size:1.35rem; font-family: var(--font-heading);">Hospital <span style="color:#F5A623;">Quality</span></span>
                     <span class="d-block text-muted" style="font-size:0.68rem; letter-spacing:0.06em; font-weight:700;">HOSPITAL QUALITY MANAGEMENT (DQMS)</span>
                 </div>
             </a>
 
             <!-- Mobile Hamburger Button triggering Offcanvas -->
-            <button class="navbar-toggler border-0 shadow-none p-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvasNav" aria-controls="mobileOffcanvasNav" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0 shadow-none p-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvasNav" aria-controls="mobileOffcanvasNav" aria-label="Toggle navigation" style="min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center;">
                 <i class="fas fa-bars fs-3 text-navy"></i>
             </button>
 
@@ -66,7 +66,7 @@
                         <ul class="dropdown-menu shadow-lg border-0" aria-labelledby="standardsDropdown">
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('standards') ?>">
-                                    <i class="fas fa-book-medical" style="color: #0c74c5;"></i>
+                                    <i class="fas fa-book-medical" style="color: #1565C0;"></i>
                                     <div>
                                         <span class="item-title">Standards Directory</span>
                                         <span class="item-desc">All 10 chapters & 651 objective elements</span>
@@ -75,7 +75,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('sop-suite') ?>">
-                                    <i class="fas fa-file-signature" style="color: #ff7a00;"></i>
+                                    <i class="fas fa-file-signature" style="color: #F5A623;"></i>
                                     <div>
                                         <span class="item-title">Document &amp; SOP Suite</span>
                                         <span class="item-desc">Clinical SOPs, policies &amp; version control</span>
@@ -84,7 +84,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('hr-suite') ?>">
-                                    <i class="fas fa-user-doctor" style="color: #0c74c5;"></i>
+                                    <i class="fas fa-user-doctor" style="color: #0EA5A4;"></i>
                                     <div>
                                         <span class="item-title">HR &amp; Credentialing Suite</span>
                                         <span class="item-desc">Doctor privileging, PSV &amp; council renewals</span>
@@ -93,7 +93,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('equipment-grid') ?>">
-                                    <i class="fas fa-microscope" style="color: #ff7a00;"></i>
+                                    <i class="fas fa-microscope" style="color: #F5A623;"></i>
                                     <div>
                                         <span class="item-title">Equipment &amp; Utilities Grid</span>
                                         <span class="item-desc">Biomedical calibrations, PPM &amp; utility NOCs</span>
@@ -102,7 +102,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('clinical-workflow') ?>">
-                                    <i class="fas fa-heart-pulse" style="color: #0c74c5;"></i>
+                                    <i class="fas fa-heart-pulse" style="color: #1565C0;"></i>
                                     <div>
                                         <span class="item-title">Clinical &amp; DPDP Workflow</span>
                                         <span class="item-desc">UHID, ABHA linking &amp; DPDP 2023 e-consent</span>
@@ -111,7 +111,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('checklists') ?>">
-                                    <i class="fas fa-list-check" style="color: #ff7a00;"></i>
+                                    <i class="fas fa-list-check" style="color: #16A34A;"></i>
                                     <div>
                                         <span class="item-title">Hospital Audit Checklists</span>
                                         <span class="item-desc">OT, ICU, Fire Safety & BMW inspection logs</span>
@@ -120,7 +120,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item" href="<?= site_url('assessment-tool') ?>">
-                                    <i class="fas fa-calculator" style="color: #0c74c5;"></i>
+                                    <i class="fas fa-calculator" style="color: #1565C0;"></i>
                                     <div>
                                         <span class="item-title">Accreditation Readiness Quiz</span>
                                         <span class="item-desc">12-question instant compliance score</span>
@@ -156,10 +156,10 @@
                 </ul>
 
                 <div class="d-flex align-items-center gap-2">
-                    <a href="<?= site_url('contact') ?>" class="btn-hinton-outline-nav d-none d-xl-inline-flex" style="border-color: #ff7a00; color: #ff7a00;">
+                    <a href="<?= site_url('contact') ?>" class="btn-hinton-outline-nav d-none d-xl-inline-flex">
                         <i class="fas fa-calendar-check"></i> Book Mock Audit
                     </a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary">
+                    <a href="<?= site_url('login') ?>" class="btn btn-amber-pill">
                         <i class="fas fa-lock me-1"></i> Portal Sign In
                     </a>
                 </div>
@@ -171,11 +171,11 @@
     <div class="offcanvas offcanvas-end offcanvas-hinton" tabindex="-1" id="mobileOffcanvasNav" aria-labelledby="mobileOffcanvasNavLabel">
         <div class="offcanvas-header border-bottom py-3">
             <div class="d-flex align-items-center gap-2">
-                <div class="brand-icon" style="width:36px; height:36px; font-size:1.1rem; background: #0c74c5;">
+                <div class="brand-icon" style="width:36px; height:36px; font-size:1.1rem; background: #1565C0; border-radius: 10px;">
                     <i class="fas fa-hospital text-white"></i>
                 </div>
                 <div>
-                    <h5 class="offcanvas-title fw-bold text-navy mb-0" id="mobileOffcanvasNavLabel" style="font-size:1.1rem;">Hospital <span style="color:#ff7a00;">Quality</span></h5>
+                    <h5 class="offcanvas-title fw-bold text-navy mb-0" id="mobileOffcanvasNavLabel" style="font-size:1.1rem;">Hospital <span style="color:#F5A623;">Quality</span></h5>
                     <span class="text-muted" style="font-size:0.65rem; font-weight:700;">HOSPITAL QUALITY MANAGEMENT</span>
                 </div>
             </div>
@@ -187,70 +187,70 @@
                 <ul class="navbar-nav gap-1 mb-4">
                     <li class="nav-item">
                         <a class="nav-link <?= (uri_string() === '' || uri_string() === '/') ? 'active' : '' ?>" href="<?= site_url('/') ?>">
-                            <i class="fas fa-house text-primary"></i> Home
+                            <i class="fas fa-house" style="color: #1565C0;"></i> Home
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'standards' ? 'active' : '' ?>" href="<?= site_url('standards') ?>">
-                            <i class="fas fa-book-medical text-primary"></i> NABH Standards
+                            <i class="fas fa-book-medical" style="color: #1565C0;"></i> NABH Standards
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'sop-suite' ? 'active' : '' ?>" href="<?= site_url('sop-suite') ?>">
-                            <i class="fas fa-file-signature" style="color: #ff7a00;"></i> Document &amp; SOP Suite
+                            <i class="fas fa-file-signature" style="color: #F5A623;"></i> Document &amp; SOP Suite
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'hr-suite' ? 'active' : '' ?>" href="<?= site_url('hr-suite') ?>">
-                            <i class="fas fa-user-doctor text-primary"></i> HR &amp; Credentialing
+                            <i class="fas fa-user-doctor" style="color: #0EA5A4;"></i> HR &amp; Credentialing
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'equipment-grid' ? 'active' : '' ?>" href="<?= site_url('equipment-grid') ?>">
-                            <i class="fas fa-microscope" style="color: #ff7a00;"></i> Equipment &amp; Utilities
+                            <i class="fas fa-microscope" style="color: #F5A623;"></i> Equipment &amp; Utilities
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'quality-indicators' ? 'active' : '' ?>" href="<?= site_url('quality-indicators') ?>">
-                            <i class="fas fa-chart-line text-primary"></i> Quality KPIs
+                            <i class="fas fa-chart-line" style="color: #1565C0;"></i> Quality KPIs
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'pricing' ? 'active' : '' ?>" href="<?= site_url('pricing') ?>">
-                            <i class="fas fa-tags text-primary"></i> Pricing Plans
+                            <i class="fas fa-tags" style="color: #1565C0;"></i> Pricing Plans
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'checklists' ? 'active' : '' ?>" href="<?= site_url('checklists') ?>">
-                            <i class="fas fa-list-check" style="color: #ff7a00;"></i> Audit Checklists
+                            <i class="fas fa-list-check" style="color: #16A34A;"></i> Audit Checklists
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'assessment-tool' ? 'active' : '' ?>" href="<?= site_url('assessment-tool') ?>">
-                            <i class="fas fa-calculator text-primary"></i> Readiness Quiz
+                            <i class="fas fa-calculator" style="color: #1565C0;"></i> Readiness Quiz
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'about' ? 'active' : '' ?>" href="<?= site_url('about') ?>">
-                            <i class="fas fa-circle-info text-primary"></i> About Us
+                            <i class="fas fa-circle-info" style="color: #1565C0;"></i> About Us
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= uri_string() === 'contact' ? 'active' : '' ?>" href="<?= site_url('contact') ?>">
-                            <i class="fas fa-headset text-primary"></i> Contact Us
+                            <i class="fas fa-headset" style="color: #0EA5A4;"></i> Contact Us
                         </a>
                     </li>
                 </ul>
 
                 <div class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.72rem; letter-spacing: 0.08em;">Quick Portals &amp; Health ID</div>
                 <div class="d-grid gap-2 mb-4">
-                    <a href="https://healthid.ndhm.gov.in" target="_blank" class="btn btn-topabha text-center justify-content-center" style="border-radius: 6px;">
+                    <a href="https://healthid.ndhm.gov.in" target="_blank" class="btn btn-topabha text-center justify-content-center">
                         <i class="fas fa-id-card-clip me-1"></i> Create ABHA Card
                     </a>
-                    <a href="https://esanjeevani.mohfw.gov.in" target="_blank" class="btn btn-esanjeevni text-center justify-content-center" style="border-radius: 6px;">
+                    <a href="https://esanjeevani.mohfw.gov.in" target="_blank" class="btn btn-esanjeevni text-center justify-content-center">
                         <i class="fas fa-video me-1"></i> E-Sanjeevani Teleconsult
                     </a>
-                    <a href="<?= site_url('login') ?>" class="btn btn-hinton-primary text-center justify-content-center" style="border-radius: 6px;">
+                    <a href="<?= site_url('login') ?>" class="btn btn-amber-pill text-center justify-content-center">
                         <i class="fas fa-lock me-1"></i> Portal Sign In
                     </a>
                 </div>
@@ -259,7 +259,7 @@
             <!-- Offcanvas Footer Contact Info -->
             <div class="p-3 rounded-3 bg-light border">
                 <div class="d-flex align-items-center gap-2 mb-1">
-                    <i class="fas fa-phone-alt text-warning"></i>
+                    <i class="fas fa-phone-alt" style="color: #F5A623;"></i>
                     <strong class="text-navy small">+91 1800-419-5959</strong>
                 </div>
                 <div class="text-muted small" style="font-size: 0.75rem;">
@@ -293,7 +293,7 @@
                     <!-- Item 1: Support Hotline -->
                     <div class="col-lg-4 col-md-12">
                         <div class="hinton-pre-footer-item">
-                            <div class="contact-icon" style="background-color: #ff7a00;">
+                            <div class="contact-icon" style="background-color: #1565C0;">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
@@ -313,7 +313,7 @@
                     <!-- Item 2: Support Email -->
                     <div class="col-lg-3 col-md-12">
                         <div class="hinton-pre-footer-item">
-                            <div class="contact-icon" style="background-color: #0c74c5;">
+                            <div class="contact-icon" style="background-color: #0EA5A4;">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div>
@@ -333,7 +333,7 @@
                     <!-- Item 3: Visit Us On -->
                     <div class="col-lg-4 col-md-12">
                         <div class="hinton-pre-footer-item">
-                            <div class="contact-icon" style="background-color: #ff7a00;">
+                            <div class="contact-icon" style="background-color: #F5A623; color: #0F2A43;">
                                 <i class="fas fa-location-dot"></i>
                             </div>
                             <div>
@@ -350,24 +350,24 @@
                 <!-- Column 1: Brand Logo & Mission -->
                 <div class="col-lg-4 col-md-6 pe-lg-4">
                     <a href="<?= site_url('/') ?>" class="brand-logo-wrap text-decoration-none">
-                        <div class="brand-logo-icon" style="background-color: #0c74c5;">
+                        <div class="brand-logo-icon" style="background-color: #1565C0;">
                             <i class="fas fa-hospital text-white"></i>
                         </div>
-                        <span class="brand-logo-text text-white">Hospital <span style="color:#ff7a00;">Quality</span></span>
+                        <span class="brand-logo-text text-white">Hospital <span style="color:#F5A623;">Quality</span></span>
                     </a>
                     <p class="footer-desc">
                         Empowering hospitals, clinical networks, and healthcare providers across India with robust NABH 5th Edition digital quality management, ABHA / ABDM ecosystem integration, and DPDP 2023 compliant clinical workflows.
                     </p>
                     
                     <div class="d-flex flex-wrap gap-2 mb-3">
-                        <span class="badge py-1 px-2 text-white" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.72rem;">
-                            <i class="fas fa-shield-halved text-warning me-1"></i> NABH 5th Ed
+                        <span class="badge rounded-pill py-1 px-3 text-white" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.72rem;">
+                            <i class="fas fa-shield-halved me-1" style="color: #F5A623;"></i> NABH 5th Ed
                         </span>
-                        <span class="badge py-1 px-2 text-white" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.72rem;">
-                            <i class="fas fa-certificate text-success me-1"></i> ABDM M3
+                        <span class="badge rounded-pill py-1 px-3 text-white" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.72rem;">
+                            <i class="fas fa-certificate me-1" style="color: #16A34A;"></i> ABDM M3
                         </span>
-                        <span class="badge py-1 px-2 text-white" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.72rem;">
-                            <i class="fas fa-fingerprint text-info me-1"></i> DPDP 2023
+                        <span class="badge rounded-pill py-1 px-3 text-white" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); font-size: 0.72rem;">
+                            <i class="fas fa-fingerprint me-1" style="color: #0EA5A4;"></i> DPDP 2023
                         </span>
                     </div>
 
@@ -383,12 +383,12 @@
                 <div class="col-lg-3 col-6">
                     <h5 class="footer-heading">NABH &amp; Quality Suites</h5>
                     <ul class="footer-links">
-                        <li><a href="<?= site_url('standards') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> NABH Standards (5th Ed)</a></li>
-                        <li><a href="<?= site_url('clinical-workflow') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> Clinical &amp; DPDP Workflow</a></li>
-                        <li><a href="<?= site_url('sop-suite') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> Document &amp; SOP Suite</a></li>
-                        <li><a href="<?= site_url('hr-suite') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> HR &amp; Doctor Privileging</a></li>
-                        <li><a href="<?= site_url('equipment-grid') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> Equipment &amp; Utilities Grid</a></li>
-                        <li><a href="<?= site_url('quality-indicators') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #ff7a00;"></i> Quality KPIs &amp; Telemetry</a></li>
+                        <li><a href="<?= site_url('standards') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #F5A623;"></i> NABH Standards (5th Ed)</a></li>
+                        <li><a href="<?= site_url('clinical-workflow') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #F5A623;"></i> Clinical &amp; DPDP Workflow</a></li>
+                        <li><a href="<?= site_url('sop-suite') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #F5A623;"></i> Document &amp; SOP Suite</a></li>
+                        <li><a href="<?= site_url('hr-suite') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #F5A623;"></i> HR &amp; Doctor Privileging</a></li>
+                        <li><a href="<?= site_url('equipment-grid') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #F5A623;"></i> Equipment &amp; Utilities Grid</a></li>
+                        <li><a href="<?= site_url('quality-indicators') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #F5A623;"></i> Quality KPIs &amp; Telemetry</a></li>
                     </ul>
                 </div>
 
@@ -396,12 +396,12 @@
                 <div class="col-lg-2 col-6">
                     <h5 class="footer-heading">Portals &amp; Tools</h5>
                     <ul class="footer-links">
-                        <li><a href="<?= site_url('/') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> Home Portal</a></li>
-                        <li><a href="<?= site_url('pricing') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> SaaS Pricing &amp; Plans</a></li>
-                        <li><a href="<?= site_url('about') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> About Framework</a></li>
-                        <li><a href="<?= site_url('checklists') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> Audit Checklists</a></li>
-                        <li><a href="<?= site_url('assessment-tool') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> Readiness Quiz</a></li>
-                        <li><a href="<?= site_url('login') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #0c74c5;"></i> Staff Portal Login</a></li>
+                        <li><a href="<?= site_url('/') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #1565C0;"></i> Home Portal</a></li>
+                        <li><a href="<?= site_url('pricing') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #1565C0;"></i> SaaS Pricing &amp; Plans</a></li>
+                        <li><a href="<?= site_url('about') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #1565C0;"></i> About Framework</a></li>
+                        <li><a href="<?= site_url('checklists') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #1565C0;"></i> Audit Checklists</a></li>
+                        <li><a href="<?= site_url('assessment-tool') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #1565C0;"></i> Readiness Quiz</a></li>
+                        <li><a href="<?= site_url('login') ?>"><i class="fas fa-chevron-right me-1" style="font-size: 0.65rem; color: #1565C0;"></i> Staff Portal Login</a></li>
                     </ul>
                 </div>
 
@@ -426,22 +426,22 @@
             <!-- Trust Key Counter Metrics Strip -->
             <div class="p-3 rounded-3 mb-4 d-none d-md-flex align-items-center justify-content-around flex-wrap gap-3" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08);">
                 <div class="d-flex align-items-center gap-2 small text-white-50">
-                    <i class="fas fa-shield-check" style="color: #ff7a00;"></i>
+                    <i class="fas fa-shield-check" style="color: #F5A623;"></i>
                     <span class="text-light fw-semibold">650+ Objective Elements</span>
                 </div>
                 <div class="text-white-50 small">&bull;</div>
                 <div class="d-flex align-items-center gap-2 small text-white-50">
-                    <i class="fas fa-network-wired" style="color: #0c74c5;"></i>
+                    <i class="fas fa-network-wired" style="color: #1565C0;"></i>
                     <span class="text-light fw-semibold">ABDM M3 14-Digit ABHA Link</span>
                 </div>
                 <div class="text-white-50 small">&bull;</div>
                 <div class="d-flex align-items-center gap-2 small text-white-50">
-                    <i class="fas fa-signature" style="color: #10b981;"></i>
+                    <i class="fas fa-signature" style="color: #16A34A;"></i>
                     <span class="text-light fw-semibold">SHA-256 DPDP 2023 Consent</span>
                 </div>
                 <div class="text-white-50 small">&bull;</div>
                 <div class="d-flex align-items-center gap-2 small text-white-50">
-                    <i class="fas fa-server" style="color: #38bdf8;"></i>
+                    <i class="fas fa-server" style="color: #0EA5A4;"></i>
                     <span class="text-light fw-semibold">99.9% High Availability SLA</span>
                 </div>
             </div>
