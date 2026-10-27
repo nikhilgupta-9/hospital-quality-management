@@ -75,12 +75,44 @@ $routes->group('admin', ['filter' => 'admin_auth:super_admin'], static function 
     $routes->post('settings/update', 'Admin\SettingController::update');
 });
 
-// --- Hospital Admin ------------------------------------------------------------
+// --- Hospital Admin (Master 9-Point Diary Blueprint) --------------------------
 $routes->group('hospital-admin', ['filter' => 'admin_auth:hospital_admin,super_admin'], static function ($routes) {
+    // 1. Readiness Dashboard
     $routes->get('/', 'HospitalAdmin\DashboardController::index');
+
+    // 2. Hospital Profile & Licences (Part A & Part B)
     $routes->get('profile', 'HospitalAdmin\ProfileController::index');
     $routes->post('profile/update', 'HospitalAdmin\ProfileController::updateProfile');
     $routes->post('profile/license/update', 'HospitalAdmin\ProfileController::updateLicense');
+
+    // 3. NABH 10-Chapter Matrix
+    $routes->get('chapter-matrix', 'HospitalAdmin\ChapterMatrixController::index');
+    $routes->post('chapter-matrix/update-score', 'HospitalAdmin\ChapterMatrixController::updateScore');
+
+    // 4. Consultant Review / Auto Audit Points
+    $routes->get('consultant-audit', 'HospitalAdmin\ConsultantAuditController::index');
+    $routes->post('consultant-audit/create', 'HospitalAdmin\ConsultantAuditController::create');
+
+    // 5. Live Photo & Video Audit Evidence Library
+    $routes->get('evidence-library', 'HospitalAdmin\EvidenceLibraryController::index');
+    $routes->post('evidence-library/upload', 'HospitalAdmin\EvidenceLibraryController::upload');
+
+    // 6. Document Export & NABH Portal Sync
+    $routes->get('export-sync', 'HospitalAdmin\ExportSyncController::index');
+    $routes->get('export-sync/download-manifest', 'HospitalAdmin\ExportSyncController::downloadManifest');
+
+    // 7. Ready to Use Templates (Consultant Vault)
+    $routes->get('templates-vault', 'HospitalAdmin\TemplatesVaultController::index');
+    $routes->get('templates-vault/download/(:num)', 'HospitalAdmin\TemplatesVaultController::download/$1');
+
+    // 8. Government Schemes Support (Cashless & Ayush)
+    $routes->get('government-schemes', 'HospitalAdmin\GovernmentSchemesController::index');
+
+    // 9. Settings & Access Control (RBAC)
+    $routes->get('access-control', 'HospitalAdmin\AccessControlController::index');
+    $routes->post('access-control/create-user', 'HospitalAdmin\AccessControlController::createUser');
+
+    // Ancillary management panels
     $routes->get('departments', 'HospitalAdmin\DepartmentController::index');
     $routes->get('approvals', 'HospitalAdmin\ApprovalController::index');
     $routes->get('reports', 'HospitalAdmin\ReportController::index');

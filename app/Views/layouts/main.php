@@ -16,15 +16,15 @@ if (has_role('super_admin')) {
     ];
 } elseif (has_role('hospital_admin')) {
     $nav = [
-        ['label' => 'Readiness Dashboard',          'url' => '/hospital-admin',             'icon' => 'fas fa-chart-pie'],
-        ['label' => 'Hospital Profile & Licences',  'url' => '/hospital-admin/profile',     'icon' => 'fas fa-id-card-clip'],
-        ['label' => 'Hospital Departments',         'url' => '/hospital-admin/departments', 'icon' => 'fas fa-sitemap'],
-        ['label' => 'Approval Queue',               'url' => '/hospital-admin/approvals',   'icon' => 'fas fa-signature'],
-        ['label' => 'Executive Reports',            'url' => '/hospital-admin/reports',     'icon' => 'fas fa-file-waveform'],
-        ['label' => 'Document Suite',               'url' => '/document',                   'icon' => 'fas fa-file-signature'],
-        ['label' => 'HR & Credentialing',           'url' => '/hr',                         'icon' => 'fas fa-user-doctor'],
-        ['label' => 'Equipment & Utilities',        'url' => '/equipment',                  'icon' => 'fas fa-microscope'],
-        ['label' => 'Clinical & DPDP Workflow',     'url' => '/clinical',                   'icon' => 'fas fa-heart-pulse'],
+        ['label' => '1. Readiness Dashboard',         'url' => '/hospital-admin',                    'icon' => 'fas fa-chart-pie'],
+        ['label' => '2. Hospital Profile & Licences', 'url' => '/hospital-admin/profile',            'icon' => 'fas fa-id-card-clip'],
+        ['label' => '3. NABH 10-Chapter Matrix',      'url' => '/hospital-admin/chapter-matrix',     'icon' => 'fas fa-table-cells'],
+        ['label' => '4. Consultant Review / Audit',   'url' => '/hospital-admin/consultant-audit',   'icon' => 'fas fa-clipboard-check'],
+        ['label' => '5. Live Photo & Video Library',  'url' => '/hospital-admin/evidence-library',   'icon' => 'fas fa-images'],
+        ['label' => '6. Document Export & Sync',      'url' => '/hospital-admin/export-sync',        'icon' => 'fas fa-file-export'],
+        ['label' => '7. Ready to Use Templates',      'url' => '/hospital-admin/templates-vault',    'icon' => 'fas fa-box-archive'],
+        ['label' => '8. Government Schemes (Ayush)',  'url' => '/hospital-admin/government-schemes', 'icon' => 'fas fa-hand-holding-medical'],
+        ['label' => '9. Settings & Access Control',   'url' => '/hospital-admin/access-control',     'icon' => 'fas fa-user-shield'],
     ];
 } else {
     // nabh_coordinator and dept_user
@@ -79,13 +79,49 @@ $currentPath = trim(current_url(true)->getPath(), '/');
             <div class="nav-section-title">Navigation Hub</div>
             <?php foreach ($nav as $item) :
                 $itemPath = trim($item['url'], '/');
-                $isActive = (strpos($currentPath, $itemPath) !== false && $itemPath !== '') || ($currentPath === '' && $itemPath === 'admin');
+                if ($itemPath === 'admin' || $itemPath === 'hospital-admin') {
+                    $isActive = ($currentPath === $itemPath);
+                } else {
+                    $isActive = ($currentPath === $itemPath) || ($itemPath !== '' && strpos($currentPath, $itemPath) === 0);
+                }
             ?>
                 <a href="<?= site_url($item['url']) ?>" class="nav-item-link <?= $isActive ? 'active' : '' ?>">
                     <i class="<?= esc($item['icon'] ?? 'fas fa-circle') ?>"></i>
                     <span><?= esc($item['label']) ?></span>
                 </a>
             <?php endforeach; ?>
+
+            <?php if (has_role('hospital_admin') || has_role('super_admin')) : ?>
+                <div class="nav-section-title mt-4">Clinical & Operations</div>
+                <a href="<?= site_url('document') ?>" class="nav-item-link <?= (strpos($currentPath, 'document') === 0) ? 'active' : '' ?>">
+                    <i class="fas fa-file-signature"></i>
+                    <span>Document Suite (SOPs)</span>
+                </a>
+                <a href="<?= site_url('clinical') ?>" class="nav-item-link <?= (strpos($currentPath, 'clinical') === 0) ? 'active' : '' ?>">
+                    <i class="fas fa-heart-pulse"></i>
+                    <span>Clinical & DPDP Consent</span>
+                </a>
+                <a href="<?= site_url('hr') ?>" class="nav-item-link <?= (strpos($currentPath, 'hr') === 0) ? 'active' : '' ?>">
+                    <i class="fas fa-user-doctor"></i>
+                    <span>HR & Privileging</span>
+                </a>
+                <a href="<?= site_url('equipment') ?>" class="nav-item-link <?= (strpos($currentPath, 'equipment') === 0) ? 'active' : '' ?>">
+                    <i class="fas fa-microscope"></i>
+                    <span>Equipment & Utilities</span>
+                </a>
+                <a href="<?= site_url('hospital-admin/departments') ?>" class="nav-item-link <?= (strpos($currentPath, 'hospital-admin/departments') === 0) ? 'active' : '' ?>">
+                    <i class="fas fa-sitemap"></i>
+                    <span>Departments & Wards</span>
+                </a>
+                <a href="<?= site_url('hospital-admin/approvals') ?>" class="nav-item-link <?= (strpos($currentPath, 'hospital-admin/approvals') === 0) ? 'active' : '' ?>">
+                    <i class="fas fa-signature"></i>
+                    <span>Approval Queue</span>
+                </a>
+                <a href="<?= site_url('hospital-admin/reports') ?>" class="nav-item-link <?= (strpos($currentPath, 'hospital-admin/reports') === 0) ? 'active' : '' ?>">
+                    <i class="fas fa-file-waveform"></i>
+                    <span>Executive Reports</span>
+                </a>
+            <?php endif; ?>
 
             <div class="nav-section-title mt-4">Guidance & Tools</div>
             <a href="<?= site_url('standards') ?>" target="_blank" class="nav-item-link">

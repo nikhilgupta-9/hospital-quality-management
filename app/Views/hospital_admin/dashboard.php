@@ -15,8 +15,8 @@
             </p>
 
             <div class="d-flex justify-content-center gap-2">
-                <a href="<?= site_url('document/export') ?>" class="btn btn-gold-max btn-sm">
-                    <i class="fas fa-file-export me-1"></i> Export NABH Bundle
+                <a href="<?= site_url('hospital-admin/export-sync') ?>" class="btn btn-gold-max btn-sm">
+                    <i class="fas fa-file-export me-1"></i> Point #6: Export NABH Bundle
                 </a>
             </div>
         </div>
@@ -174,7 +174,12 @@
     <!-- Chart: Compliance by Chapter -->
     <div class="col-lg-6">
         <div class="card card-max p-4 h-100">
-            <h5 class="h6 fw-bold text-navy mb-3"><i class="fas fa-chart-radar text-sapphire me-2"></i> NABH Chapter Compliance Radar</h5>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="h6 fw-bold text-navy mb-0"><i class="fas fa-chart-radar text-sapphire me-2"></i> NABH Chapter Compliance Radar</h5>
+                <a href="<?= site_url('hospital-admin/chapter-matrix') ?>" class="btn btn-sm btn-outline-primary" style="font-size: 0.75rem;">
+                    <i class="fas fa-table-cells me-1"></i> Point #3: View 10-Chapter Matrix
+                </a>
+            </div>
             <div style="height: 250px; position: relative;">
                 <canvas id="chapterChart"></canvas>
             </div>
