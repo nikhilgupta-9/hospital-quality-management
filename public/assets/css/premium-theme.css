@@ -1842,22 +1842,23 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .portal-sidebar {
-    width: 270px;
+    width: 260px;
     height: 100vh;
     max-height: 100vh;
-    background: var(--hinton-navy);
+    background: #0F2A43 !important;
     color: #e2e8f0;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
-    z-index: 1040;
-    transition: all 0.3s var(--ease-smooth);
+    box-shadow: 2px 0 16px rgba(15, 42, 67, 0.2);
+    z-index: 1045;
+    transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     overflow: hidden;
 }
 
 .portal-sidebar .sidebar-brand {
-    padding: 20px;
+    padding: 18px 20px;
+    background: #091e31;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     display: flex;
     align-items: center;
@@ -1866,33 +1867,33 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .portal-sidebar .sidebar-brand .brand-logo {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--hinton-primary) 0%, var(--hinton-secondary) 100%);
-    border-radius: var(--radius-md);
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, #1565C0 0%, #1976D2 100%);
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-size: 1.25rem;
-    box-shadow: 0 4px 10px rgba(0, 82, 204, 0.4);
+    font-size: 1.15rem;
+    box-shadow: 0 4px 10px rgba(21, 101, 192, 0.4);
 }
 
 .portal-sidebar .sidebar-nav {
-    padding: 16px 12px;
+    padding: 14px 10px;
     flex-grow: 1;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
 }
 
 .portal-sidebar .sidebar-nav::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
 }
 
 .portal-sidebar .sidebar-nav::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 4px;
 }
 
@@ -1900,51 +1901,65 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #64748b;
+    color: #8da2b5;
     font-weight: 700;
-    padding: 12px 14px 6px;
+    padding: 14px 12px 6px;
 }
 
 .portal-sidebar .nav-item-link {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 11px 16px;
+    padding: 10px 14px;
     color: #cbd5e1;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 500;
-    border-radius: var(--radius-md);
+    border-radius: 10px;
     transition: all 0.2s ease;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
+    position: relative;
 }
 
 .portal-sidebar .nav-item-link i {
-    font-size: 1.1rem;
-    width: 22px;
-    color: #94a3b8;
+    font-size: 1rem;
+    width: 20px;
+    color: #8da2b5;
     text-align: center;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .portal-sidebar .nav-item-link:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: #16375A;
     color: #ffffff;
 }
 
 .portal-sidebar .nav-item-link:hover i {
-    color: var(--hinton-secondary);
+    color: #60a5fa;
 }
 
+/* ACTIVE BAR (Ref: hospital-dashboard-ui-skill.md) */
 .portal-sidebar .nav-item-link.active {
-    background: var(--hinton-primary);
-    color: #ffffff;
+    background: #1565C0 !important;
+    color: #ffffff !important;
     font-weight: 600;
-    box-shadow: 0 4px 12px rgba(0, 82, 204, 0.35);
+    box-shadow: 0 4px 14px rgba(21, 101, 192, 0.4);
+    padding-left: 14px;
 }
 
 .portal-sidebar .nav-item-link.active i {
-    color: #ffffff;
+    color: #ffffff !important;
+}
+
+.portal-sidebar .nav-item-link.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 4px;
+    border-radius: 0 4px 4px 0;
+    background: #F5A623;
 }
 
 .portal-main-area {
@@ -1974,27 +1989,243 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     position: sticky;
     top: 0;
     z-index: 1020;
-    background: rgba(255, 255, 255, 0.95);
-    border-bottom: 1px solid var(--hinton-border);
-    padding: 14px 24px;
+    background: #ffffff;
+    border-bottom: 1px solid #E5E9F0;
+    padding: 12px 24px;
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.05);
     flex-shrink: 0;
-    backdrop-filter: blur(8px);
+}
+
+.portal-topbar h1, .portal-topbar .page-title {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #0F2A43 !important;
+    margin-bottom: 0;
+    letter-spacing: -0.01em;
+}
+
+.portal-topbar .page-subtitle {
+    font-size: 13px !important;
+    color: #6B7280 !important;
 }
 
 .portal-content {
     padding: 20px;
     flex-grow: 1;
     max-width: 100%;
+    background-color: #F4F6F9;
 }
 
 @media (min-width: 992px) {
     .portal-content {
-        padding: 28px;
+        padding: 24px 28px;
     }
+}
+
+/* =========================================================
+   HOSPITAL DASHBOARD UI PATTERN COMPONENTS (Ref: hospital-dashboard-ui-skill.md)
+========================================================= */
+
+/* Fully Rounded Pill Buttons */
+.btn-amber-pill {
+    background-color: #F5A623 !important;
+    color: #0F2A43 !important;
+    font-weight: 700 !important;
+    border-radius: 999px !important;
+    padding: 8px 22px !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(245, 166, 35, 0.35) !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    text-decoration: none !important;
+    font-size: 0.88rem !important;
+    line-height: 1.4 !important;
+}
+.btn-amber-pill:hover {
+    background-color: #e0961d !important;
+    color: #000000 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 14px rgba(245, 166, 35, 0.5) !important;
+}
+
+.btn-primary-pill {
+    background-color: #1565C0 !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    border-radius: 999px !important;
+    padding: 8px 20px !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.3) !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    text-decoration: none !important;
+    font-size: 0.88rem !important;
+}
+.btn-primary-pill:hover {
+    background-color: #0D47A1 !important;
+    color: #ffffff !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 14px rgba(21, 101, 192, 0.45) !important;
+}
+
+.btn-outline-white-pill {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    border-radius: 999px !important;
+    padding: 8px 18px !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    backdrop-filter: blur(4px) !important;
+    transition: all 0.2s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+    text-decoration: none !important;
+    font-size: 0.88rem !important;
+}
+.btn-outline-white-pill:hover {
+    background: rgba(255, 255, 255, 0.22) !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Horizontal Scrollable Filter Pills Bar */
+.filter-pills-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 2px 8px 2px;
+    scrollbar-width: none;
+}
+.filter-pills-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-pill {
+    padding: 7px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6B7280;
+    background: #ffffff;
+    border: 1px solid #E5E9F0;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+.filter-pill:hover {
+    background: #F4F6F9;
+    color: #0F2A43;
+    border-color: #CBD5E1;
+}
+.filter-pill.active {
+    background: #1565C0 !important;
+    color: #ffffff !important;
+    border-color: #1565C0 !important;
+    box-shadow: 0 2px 8px rgba(21, 101, 192, 0.35) !important;
+}
+
+/* Hero Banner Card */
+.hero-banner-card {
+    background: linear-gradient(135deg, #0B3D63 0%, #1565C0 60%, #1976D2 100%);
+    border-radius: 16px;
+    color: #ffffff;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(11, 61, 99, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Clean White Stat Card */
+.stat-card-clean {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #E5E9F0;
+    box-shadow: 0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04);
+    padding: 18px 20px;
+    transition: all 0.2s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.stat-card-clean:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(16, 24, 40, 0.10);
+    border-color: #CBD5E1;
+}
+.stat-card-label {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #6B7280;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+}
+.stat-card-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0F2A43;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+.stat-card-sublabel {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6B7280;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Status Badges */
+.badge-status-pill {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.badge-teal-outline {
+    background: rgba(14, 165, 164, 0.15);
+    color: #0EA5A4;
+    border: 1px solid rgba(14, 165, 164, 0.35);
+}
+.badge-green-soft {
+    background: rgba(22, 163, 74, 0.12);
+    color: #16A34A;
+}
+.badge-amber-soft {
+    background: rgba(245, 166, 35, 0.15);
+    color: #b45309;
+}
+.badge-red-soft {
+    background: rgba(220, 38, 38, 0.12);
+    color: #DC2626;
 }
 
 .card-premium-stat {
@@ -2076,16 +2307,60 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     }
     .portal-sidebar {
         position: fixed;
-        left: -280px;
+        left: -290px;
         top: 0;
         bottom: 0;
-        z-index: 1050;
-        width: 280px;
-        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.2);
-        transition: left 0.35s var(--ease-smooth);
+        z-index: 1060;
+        width: 270px;
+        box-shadow: 10px 0 30px rgba(15, 42, 67, 0.35);
+        transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .portal-sidebar.show {
-        left: 0;
+        left: 0 !important;
+    }
+    .portal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 42, 67, 0.65);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        z-index: 1055;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .portal-backdrop.show {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    .portal-topbar {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+        padding: 10px 16px;
+        height: auto;
+        min-height: 56px;
+    }
+    .portal-topbar h1, .portal-topbar .page-title {
+        font-size: 18px !important;
+    }
+    .portal-content {
+        padding: 16px 12px;
+    }
+    .hero-banner-card {
+        padding: 20px 16px;
+    }
+    .hero-banner-card h2 {
+        font-size: 20px !important;
+    }
+    .btn-amber-pill, .btn-primary-pill, .btn-outline-white-pill {
+        min-height: 44px; /* Touch target >= 44px */
+    }
+    .stat-card-clean {
+        padding: 16px 14px;
+    }
+    .stat-card-value {
+        font-size: 22px;
     }
     .hero-main-img {
         max-height: 340px;
@@ -2104,15 +2379,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
         height: auto;
         max-height: none;
         overflow: visible;
-    }
-    .portal-topbar {
-        position: sticky;
-        top: 0;
-        z-index: 1020;
-        padding: 12px 16px;
-    }
-    .portal-content {
-        padding: 16px;
     }
 }
 

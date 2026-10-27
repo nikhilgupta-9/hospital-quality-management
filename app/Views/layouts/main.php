@@ -163,22 +163,22 @@ $currentPath = trim(current_url(true)->getPath(), '/');
         <!-- Topbar -->
         <header class="portal-topbar">
             <div class="d-flex align-items-center gap-3">
-                <button class="btn btn-sm btn-outline-secondary d-lg-none" type="button" onclick="toggleSidebar()" aria-label="Toggle Navigation">
-                    <i class="fas fa-bars"></i>
+                <button class="btn btn-sm btn-light border d-lg-none" type="button" onclick="toggleSidebar()" aria-label="Toggle Navigation" style="min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-bars fs-5 text-dark"></i>
                 </button>
                 <div>
-                    <h1 class="h5 mb-0 fw-bold text-navy"><?= esc($title ?? 'Dashboard') ?></h1>
-                    <span class="small text-muted">
-                        <i class="fas fa-hospital text-sapphire me-1"></i> Max Care Superspeciality Hospital 
-                        <span class="badge badge-max badge-max-emerald ms-2">NABH 5th Ed. Track</span>
-                    </span>
+                    <h1 class="page-title"><?= esc($title ?? 'Dashboard') ?></h1>
+                    <div class="page-subtitle">
+                        <i class="fas fa-hospital text-primary me-1"></i> Max Care Superspeciality Hospital 
+                        <span class="badge badge-status-pill badge-teal-outline ms-2">NABH 5th Ed. Track</span>
+                    </div>
                 </div>
             </div>
 
             <div class="d-flex align-items-center gap-3">
                 <div class="dropdown">
-                    <button class="btn btn-sm btn-light border position-relative" type="button" data-bs-toggle="dropdown">
-                        <i class="fas fa-bell text-muted"></i>
+                    <button class="btn btn-sm btn-light border position-relative" type="button" data-bs-toggle="dropdown" aria-label="View Alerts" style="min-width: 40px; min-height: 40px; display: inline-flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-bell text-muted fs-6"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.65rem;">
                             3
                         </span>
@@ -206,8 +206,9 @@ $currentPath = trim(current_url(true)->getPath(), '/');
 
                 <div class="vr d-none d-sm-block"></div>
 
-                <a href="<?= site_url('logout') ?>" class="btn btn-sm btn-outline-danger">
-                    <i class="fas fa-sign-out-alt me-1"></i> Logout
+                <?php $logoutUrl = in_array(session()->get('role_slug'), ['super_admin', 'hospital_admin']) ? site_url('admin/logout') : site_url('logout'); ?>
+                <a href="<?= $logoutUrl ?>" class="btn btn-sm btn-outline-danger rounded-pill px-3 fw-semibold d-inline-flex align-items-center gap-1" style="min-height: 38px;">
+                    <i class="fas fa-sign-out-alt"></i> <span class="d-none d-sm-inline">Logout</span>
                 </a>
             </div>
         </header>
@@ -245,6 +246,21 @@ function toggleSidebar() {
     if (sidebar) sidebar.classList.toggle('show');
     if (backdrop) backdrop.classList.toggle('show');
 }
+
+// Auto close mobile drawer on nav item tap
+document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('.portal-sidebar .nav-item-link');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            if (window.innerWidth < 992) {
+                var sidebar = document.getElementById('portalSidebar');
+                var backdrop = document.getElementById('portalBackdrop');
+                if (sidebar) sidebar.classList.remove('show');
+                if (backdrop) backdrop.classList.remove('show');
+            }
+        });
+    });
+});
 </script>
 </body>
 </html>
